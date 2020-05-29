@@ -10,9 +10,6 @@ import math
 from matplotlib.pyplot import figure
 import random
 
-metric = ['Confirmed','Deaths']
-
-
 def rankDiagnostic(filename_metric, filename_secondary_metric):
     df1 = pd.read_csv(filename_metric)
     df1 = df1.drop(['id'], axis=1)
@@ -60,48 +57,48 @@ def rankDiagnostic(filename_metric, filename_secondary_metric):
 
     plt.show()
 
-def score_rsc(filename):
+def score_rsc(filename, idColumnName, treatment, start, training_end, test_end, MetricName):
     df = pd.read_csv(filename)
     allColumns = df.columns.values
-    country_list = list(np.unique(df['id']))
-    balls = np.delete(allColumns, [0])
+    country_list = list(np.unique(df[idColumnName]))
+    days = np.delete(allColumns, [0])
 
-    treatment = 'Australia_New South Wales'
+    treatment = treatment
 
     country_list.remove(treatment)
     control_group = country_list
 
-    start = 0
-    training_end = 50
-    test_end = 56
+    start = start
+    training_end = training_end
+    test_end = test_end
     singvals = 20
     p = 1.0
 
-    trainingBalls = []
+    trainingDays = []
     for i in range(start, training_end, 1):
-        trainingBalls.append(str(i))
+        trainingDays.append(str(i))
 
-    testBalls = []
+    testDays = []
     for i in range(training_end, test_end, 1):
-        testBalls.append(str(i))
+        testDays.append(str(i))
 
     trainDataMasterDict = {}
     trainDataDict = {}
     testDataDict = {}
 
     for key in control_group:
-        series = df[df['id'] == key]
-        trainDataMasterDict.update({key: series[trainingBalls].values[0]})
+        series = df[df[idColumnName] == key]
+        trainDataMasterDict.update({key: series[trainingDays].values[0]})
 
         # randomly hide training data
         (trainData, pObservation) = tsUtils.randomlyHideValues(copy.deepcopy(trainDataMasterDict[key]), p)
         trainDataDict.update({key: trainData})
-        testDataDict.update({key: series[testBalls].values[0]})
+        testDataDict.update({key: series[testDays].values[0]})
 
-    series = df[df['id'] == treatment]
-    trainDataMasterDict.update({treatment: series[trainingBalls].values[0]})
-    trainDataDict.update({treatment: series[trainingBalls].values[0]})
-    testDataDict.update({treatment: series[testBalls].values[0]})
+    series = df[df[idColumnName] == treatment]
+    trainDataMasterDict.update({treatment: series[trainingDays].values[0]})
+    trainDataDict.update({treatment: series[trainingDays].values[0]})
+    testDataDict.update({treatment: series[testDays].values[0]})
 
     trainMasterDF = pd.DataFrame(data=trainDataMasterDict)
     trainDF = pd.DataFrame(data=trainDataDict)
@@ -121,48 +118,48 @@ def score_rsc(filename):
     predictions = rscModel.predict(testDF)
 
     # plot
-    ballsToPlot = range(start, test_end, 1)
-    interventionBall = training_end - 1
-    plt.plot(ballsToPlot, np.append(trainMasterDF[treatment], testDF[treatment], axis=0), color='red',
+    daysToPlot = range(start, test_end, 1)
+    interventionDay = training_end - 1
+    plt.plot(daysToPlot, np.append(trainMasterDF[treatment], testDF[treatment], axis=0), color='red',
              label='observations')
-    plt.plot(ballsToPlot, np.append(denoisedDF[treatment], predictions, axis=0), color='blue', label='predictions')
-    plt.axvline(x=interventionBall, linewidth=1, color='black', label='Intervention')
+    plt.plot(daysToPlot, np.append(denoisedDF[treatment], predictions, axis=0), color='blue', label='predictions')
+    plt.axvline(x=interventionDay, linewidth=1, color='black', label='Lockdown Day')
     legend = plt.legend(loc='best', shadow=True)
     plt.title(f'{treatment}', fontsize=8)
-    plt.xlabel('Days')
-    plt.ylabel('Cases')
+    plt.xlabel('Dates')
+    plt.ylabel(MetricName)
     plt.show()
 
 
 
-def score_mrsc(filename_metric, filename_secondary_metric):
+def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatment, start, training_end, test_end, MetricName, country):
     df1 = pd.read_csv(filename_metric)
 
     df2 = pd.read_csv(filename_secondary_metric)
 
     allColumns = df1.columns.values
-    country_list = list(np.unique(df1['id']))
-    balls = np.delete(allColumns, [0])
+    country_list = list(np.unique(df1[idColumnName]))
+    days = np.delete(allColumns, [0])
 
-    treatment = 'Australia'
+    treatment = treatment
 
     country_list.remove(treatment)
     control_group = country_list
 
-    start = 0
-    training_end = 35
-    test_end = 56
+    start = start
+    training_end = training_end
+    test_end = test_end
 
     singvals = 10
     p = 1.0
 
-    trainingBalls = []
+    trainingDays = []
     for i in range(start, training_end, 1):
-        trainingBalls.append(str(i))
+        trainingDays.append(str(i))
 
-    testBalls = []
+    testDays = []
     for i in range(training_end, test_end, 1):
-        testBalls.append(str(i))
+        testDays.append(str(i))
 
     trainDataMasterDict1 = {}
     trainDataDict1 = {}
@@ -174,36 +171,36 @@ def score_mrsc(filename_metric, filename_secondary_metric):
 
 
     for key in control_group:
-        series1 = df1[df1['id'] == key]
-        trainDataMasterDict1.update({key: series1[trainingBalls].values[0]})
+        series1 = df1[df1[idColumnName] == key]
+        trainDataMasterDict1.update({key: series1[trainingDays].values[0]})
 
         # randomly hide training data
         (trainData1, pObservation1) = tsUtils.randomlyHideValues(copy.deepcopy(trainDataMasterDict1[key]), p)
         trainDataDict1.update({key: trainData1})
-        testDataDict1.update({key: series1[testBalls].values[0]})
+        testDataDict1.update({key: series1[testDays].values[0]})
 
-        series2 = df2[df2['id'] == key]
-        trainDataMasterDict2.update({key: series2[trainingBalls].values[0]})
+        series2 = df2[df2[idColumnName] == key]
+        trainDataMasterDict2.update({key: series2[trainingDays].values[0]})
 
         # randomly hide training data
         (trainData2, pObservation2) = tsUtils.randomlyHideValues(copy.deepcopy(trainDataMasterDict2[key]), p)
         trainDataDict2.update({key: trainData2})
-        testDataDict2.update({key: series2[testBalls].values[0]})
+        testDataDict2.update({key: series2[testDays].values[0]})
 
-    series = df1[df1['id'] == treatment]
-    trainDataMasterDict1.update({treatment: series[trainingBalls].values[0]})
-    trainDataDict1.update({treatment: series[trainingBalls].values[0]})
-    testDataDict1.update({treatment: series[testBalls].values[0]})
+    series = df1[df1[idColumnName] == treatment]
+    trainDataMasterDict1.update({treatment: series[trainingDays].values[0]})
+    trainDataDict1.update({treatment: series[trainingDays].values[0]})
+    testDataDict1.update({treatment: series[testDays].values[0]})
 
     trainMasterDF1 = pd.DataFrame(data=trainDataMasterDict1)
     trainDF1 = pd.DataFrame(data=trainDataDict1)
     testDF1 = pd.DataFrame(data=testDataDict1)
 
     #-------
-    series = df2[df2['id'] == treatment]
-    trainDataMasterDict2.update({treatment: series[trainingBalls].values[0]})
-    trainDataDict2.update({treatment: series[trainingBalls].values[0]})
-    testDataDict2.update({treatment: series[testBalls].values[0]})
+    series = df2[df2[idColumnName] == treatment]
+    trainDataMasterDict2.update({treatment: series[trainingDays].values[0]})
+    trainDataDict2.update({treatment: series[trainingDays].values[0]})
+    testDataDict2.update({treatment: series[testDays].values[0]})
 
     trainMasterDF2 = pd.DataFrame(data=trainDataMasterDict2)
     trainDF2 = pd.DataFrame(data=trainDataDict2)
@@ -225,32 +222,22 @@ def score_mrsc(filename_metric, filename_secondary_metric):
     # predict - all at once
     predictions = mrscModel.predict([testDF1,testDF2])
 
-    final_score_predicted = math.ceil(max(predictions[0]))
-    final_wicket_predicted = abs(math.floor(max(predictions[1])))
+    final_deaths_predicted = math.ceil(max(predictions[0]))
+    final_cases_predicted = abs(math.floor(max(predictions[1])))
 
-    final_score_actual = int(max(testDF1[treatment].values.tolist()))
-    final_wicket_actual = int(max(testDF2[treatment].values.tolist()))
+    final_deaths_actual = int(max(testDF1[treatment].values.tolist()))
+    final_cases_actual = int(max(testDF2[treatment].values.tolist()))
 
 
     # plot
-    ballsToPlot = range(start, test_end, 1)
-    interventionBall = training_end - 1
-    plt.plot(ballsToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red',
+    daysToPlot = range(start, test_end, 1)
+    interventionDay = training_end - 1
+    plt.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red',
              label='observations')
-    plt.plot(ballsToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='blue', label='predictions')
-    plt.axvline(x=interventionBall, linewidth=1, color='black', label='Intervention')
+    plt.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='blue', label='predictions')
+    plt.axvline(x=interventionDay, linewidth=1, color='black', label='Lockdown Day')
     legend = plt.legend(loc='best', shadow=True)
-    plt.title(f'{treatment} \n Actual: {final_score_actual}/{final_wicket_actual} and Predicted: {final_score_predicted}/{final_wicket_predicted}', fontsize=8)
+    plt.title(f'{treatment} \n Actual - Deaths:{final_deaths_actual}, Confirmed:{final_cases_actual} \n Predicted - Deaths: {final_deaths_predicted}, Confirmed:{final_cases_predicted}', fontsize=8)
     plt.xlabel('Days')
-    plt.ylabel('Cases')
-    plt.show()
-
-def main():
-    file1 = f'./processed_stats/{metric[0]}.csv'
-    file2 = f'./processed_stats/{metric[1]}.csv'
-    #score_rsc(file1)
-    #rankDiagnostic(file1, file2)
-    score_mrsc(file1, file2)
-
-if __name__ == "__main__":
-    main()
+    plt.ylabel(MetricName)
+    plt.savefig(f'../img/{country}/{treatment}.png')
