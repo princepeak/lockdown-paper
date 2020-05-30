@@ -3,6 +3,18 @@ import urllib.request
 import json
 import datetime
 
+
+
+def get_resultant_DF(df, columns):
+    df = df.drop(
+        columns=['Status', 'Date', 'TT']).transpose()
+    df = df.cumsum(axis=1)
+    df.insert(loc=0, column='Province_State',
+                        value=df.index)
+    df.columns = columns
+    return df
+
+
 def get_IN_DF(filename):
 
     df = pd.read_csv(filename, delimiter=',')
@@ -22,22 +34,10 @@ def get_IN_DF(filename):
     date_range = pd.date_range(start=start, end=end)
     columns = ['Province_State'] + [i for i in range(0, len(date_range))]
 
-    df_confirmed = df_confirmed.drop(
-        columns=['Status', 'Date', 'TT']).transpose()
-    df_confirmed = df_confirmed.cumsum(axis=1)
-    df_confirmed.insert(loc=0, column='Province_State',
-                        value=df_confirmed.index)
-    df_confirmed.columns = columns
-
-
-    df_deceased = df_deceased.drop(
-        columns=['Status', 'Date', 'TT']).transpose()
-    df_deceased = df_deceased.cumsum(axis=1)
-    df_deceased.insert(loc=0, column='Province_State', value=df_deceased.index)
-    df_deceased.columns = columns
-
-
+    df_confirmed = get_resultant_DF(df_confirmed, columns)
+    df_deceased = get_resultant_DF(df_deceased, columns)
     return [df_confirmed, df_deceased, start, end, dates]
+
 
 
 def update():

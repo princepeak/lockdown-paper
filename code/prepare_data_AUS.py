@@ -2,8 +2,7 @@ import pandas as pd
 import urllib.request
 import json
 
-def get_AUS_Confirmed_DF(filename):
-    df = pd.read_csv(filename, delimiter=',')
+def get_resulting_DF(df):
     df = df[df['Country/Region']=='Australia']
     df = df.drop(columns=['Country/Region', 'Lat', 'Long'])
     columns = df.columns.tolist()
@@ -14,17 +13,15 @@ def get_AUS_Confirmed_DF(filename):
     df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
     return [df, start, end, dates]
 
+
+def get_AUS_Confirmed_DF(filename):
+    df = pd.read_csv(filename, delimiter=',')
+    return get_resulting_DF(df)
+
 def get_AUS_Death_DF(filename):
     df = pd.read_csv(filename, delimiter=',')
-    df = df[df['Country/Region']=='Australia']
-    df = df.drop(columns=['Country/Region', 'Lat', 'Long'])
-    columns = df.columns.tolist()
-    dates = columns[1:]
-    start = dates[0]
-    end = dates[-1]
-    date_range = pd.date_range(start=start, end=end)
-    df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
-    return [df, start, end, dates]
+    return get_resulting_DF(df)
+    
 
 def update():
     url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'

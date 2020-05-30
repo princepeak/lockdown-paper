@@ -2,8 +2,7 @@ import pandas as pd
 import urllib.request
 import json
 
-def get_OTH_Confirmed_DF(filename,countryList):
-    df = pd.read_csv(filename, delimiter=',')
+def get_resultant_DF(countryList, df):
     dfList =[]
     for country in countryList:
         dfList.append(df[df['Country/Region']==country])
@@ -17,20 +16,15 @@ def get_OTH_Confirmed_DF(filename,countryList):
     df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
     return [df, start, end, dates]
 
+
+def get_OTH_Confirmed_DF(filename,countryList):
+    df = pd.read_csv(filename, delimiter=',')
+    return get_resultant_DF(countryList, df)
+
 def get_OTH_Death_DF(filename,countryList):
     df = pd.read_csv(filename, delimiter=',')
-    dfList =[]
-    for country in countryList:
-        dfList.append(df[df['Country/Region']==country])
-    df = pd.concat(dfList)
-    df = df.drop(columns=['Province/State', 'Lat', 'Long'])
-    columns = df.columns.tolist()
-    dates = columns[1:]
-    start = dates[0]
-    end = dates[-1]
-    date_range = pd.date_range(start=start, end=end)
-    df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
-    return [df, start, end, dates]
+    return get_resultant_DF(countryList, df)
+
 
 def update():
     url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
