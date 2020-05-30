@@ -14,7 +14,7 @@ def get_AUS_Confirmed_DF(filename):
     df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
     return [df, start, end, dates]
 
-def get_US_Death_DF(filename):
+def get_AUS_Death_DF(filename):
     filename='../data/raw/global/time_series_covid19_confirmed_global.csv'
     df = pd.read_csv(filename, delimiter=',')
     df = df[df['Country/Region']=='Australia']
@@ -54,7 +54,7 @@ def prepare():
     with open('../data/processed/aus/confirmed.json', 'w', encoding='utf-8') as f:
         json.dump({'start':start, 'end': end, 'dates': dates}, f, ensure_ascii=False, indent=4)
 
-    [df, start, end, dates] = get_US_Death_DF(filename_deaths)
+    [df, start, end, dates] = get_AUS_Death_DF(filename_deaths)
     df.to_csv('../data/processed/aus/deaths.csv', index=False)
     with open('../data/processed/aus/deaths.json', 'w', encoding='utf-8') as f:
         json.dump({'start':start, 'end': end, 'dates': dates}, f, ensure_ascii=False, indent=4)
