@@ -12,7 +12,7 @@ def get_US_Confirmed_DF(filename):
     end = dates[-1]
     date_range = pd.date_range(start=start, end=end)
     df.columns = ['Province_State'] + [i for i in range(0,len(date_range))]
-    return [df, start, end]
+    return [df, start, end, dates]
 
 def get_US_Death_DF(filename):
     df = pd.read_csv(filename, delimiter=',')
@@ -24,7 +24,7 @@ def get_US_Death_DF(filename):
     end = dates[-1]
     date_range = pd.date_range(start=start, end=end)
     df.columns = ['Province_State'] + [i for i in range(0, len(date_range))]
-    return [df, start, end]
+    return [df, start, end, dates]
 
 def update():
     url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
@@ -48,12 +48,12 @@ def prepare():
     filename_confirmed = '../data/raw/us/time_series_covid19_confirmed_US.csv'
     filename_deaths = '../data/raw/us/time_series_covid19_deaths_US.csv'
 
-    [df, start, end] = get_US_Confirmed_DF(filename_confirmed)
+    [df, start, end, dates] = get_US_Confirmed_DF(filename_confirmed)
     df.to_csv('../data/processed/us/confirmed.csv', index=False)
     with open('../data/processed/us/confirmed.json', 'w', encoding='utf-8') as f:
-        json.dump({'start':start, 'end': end}, f, ensure_ascii=False, indent=4)
+        json.dump({'start':start, 'end': end, 'dates': dates}, f, ensure_ascii=False, indent=4)
 
-    [df, start, end] = get_US_Death_DF(filename_deaths)
+    [df, start, end, dates] = get_US_Death_DF(filename_deaths)
     df.to_csv('../data/processed/us/deaths.csv', index=False)
     with open('../data/processed/us/deaths.json', 'w', encoding='utf-8') as f:
-        json.dump({'start':start, 'end': end}, f, ensure_ascii=False, indent=4)
+        json.dump({'start':start, 'end': end, 'dates': dates}, f, ensure_ascii=False, indent=4)

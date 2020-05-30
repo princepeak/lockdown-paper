@@ -3,7 +3,7 @@ from mrsc_score import score_rsc, score_mrsc
 
 
 def main():
-    #update()
+    update()
     prepare()
     metric = ['deaths', 'confirmed']
     file1 = f'../data/processed/in/{metric[0]}.csv'

@@ -241,3 +241,4 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     plt.xlabel('Days')
     plt.ylabel(MetricName)
     plt.savefig(f'../img/{country}/{treatment}.png')
+    plt.clf()
