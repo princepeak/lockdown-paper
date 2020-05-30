@@ -1,4 +1,4 @@
-from prepare_data_IN import update, prepare
+from prepare_data_AUS import update, prepare
 from mrsc_score import score_rsc, score_mrsc
 import json
 
