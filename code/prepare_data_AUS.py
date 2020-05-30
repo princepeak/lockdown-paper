@@ -15,7 +15,6 @@ def get_AUS_Confirmed_DF(filename):
     return [df, start, end, dates]
 
 def get_AUS_Death_DF(filename):
-    filename='../data/raw/global/time_series_covid19_confirmed_global.csv'
     df = pd.read_csv(filename, delimiter=',')
     df = df[df['Country/Region']=='Australia']
     df = df.drop(columns=['Country/Region', 'Lat', 'Long'])
@@ -30,7 +29,7 @@ def get_AUS_Death_DF(filename):
 def update():
     url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
     filename_confirmed = '../data/raw/global/time_series_covid19_confirmed_global.csv'
-    url_deaths = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv'
+    url_deaths = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
     filename_deaths = '../data/raw/global/time_series_covid19_deaths_global.csv'
 
     print(f'Downloading {url_confirmed}')

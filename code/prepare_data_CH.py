@@ -15,7 +15,6 @@ def get_CH_Confirmed_DF(filename):
     return [df, start, end, dates]
 
 def get_CH_Death_DF(filename):
-    filename='../data/raw/global/time_series_covid19_confirmed_global.csv'
     df = pd.read_csv(filename, delimiter=',')
     df = df[df['Country/Region']=='China']
     df = df.drop(columns=['Country/Region', 'Lat', 'Long'])
