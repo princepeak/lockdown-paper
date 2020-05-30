@@ -14,7 +14,7 @@ lockdown_state = [
 ]
 
 def main():
-    #update()
+    update()
     prepare()
     metric = ['deaths', 'confirmed']
     file1 = f'../data/processed/us/{metric[0]}.csv'

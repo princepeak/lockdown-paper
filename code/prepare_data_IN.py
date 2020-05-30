@@ -10,8 +10,9 @@ def get_IN_DF(filename):
     df_deceased = df[df['Status'] == 'Deceased']
 
     dates = []
+    dfdates = list(dict.fromkeys(list(df['Date'])))
 
-    for d in list(df['Date']):
+    for d in dfdates:
         dt = datetime.datetime.strptime(d, '%d-%b-%y')
         s = f'{dt.month}/{dt.day}/{dt.year % 100}'
         dates.append(s)
