@@ -24,7 +24,7 @@ def main():
     for state in lockdown_state:
         name = state['name']
         lockdown_date = state['start']
-        lockdown_date_index = metadata['dates'].index(lockdown_date)
+        lockdown_date_index = metadata['dates'].index(lockdown_date) + 21
         end_date_index = len(metadata['dates'])
         score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'in')
 

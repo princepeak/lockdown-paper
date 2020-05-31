@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{taaa021}
+Y.~Liu, A.~A. Gayle, A.~Wilder-Smith, J.~Rocklöv,
+  \href{https://doi.org/10.1093/jtm/taaa021}{The reproductive number of
+  covid-19 is higher compared to sars coronavirus}, Journal of Travel Medicine
+  27~(2).
+\newblock \href {http://dx.doi.org/10.1093/jtm/taaa021}
+  {\path{doi:10.1093/jtm/taaa021}}.
+\newline\urlprefix\url{https://doi.org/10.1093/jtm/taaa021}
+
+\bibitem{ap08746}
+A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
+  comparative case studies: Estimating the effect of california’s tobacco
+  control program, Journal of the American Statistical Association 105~(490)
+  (2010) 493--505.
+\newblock \href {http://dx.doi.org/10.1198/jasa.2009.ap08746}
+  {\path{doi:10.1198/jasa.2009.ap08746}}.
+
+\bibitem{JMLR18}
+M.~Amjad, D.~Shah, D.~Shen,
+  \href{http://jmlr.org/papers/v19/17-777.html}{Robust synthetic control},
+  Journal of Machine Learning Research 19~(22) (2018) 1--51.
+\newline\urlprefix\url{http://jmlr.org/papers/v19/17-777.html}
+
+\end{thebibliography}

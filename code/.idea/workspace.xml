@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/prepare_data_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_IN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepare_data_OTH.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_OTH.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_IN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_US.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_US.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/processed/us/confirmed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/us/confirmed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/processed/us/deaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/us/deaths.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/raw/us/time_series_covid19_confirmed_US.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/raw/us/time_series_covid19_confirmed_US.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/raw/us/time_series_covid19_deaths_US.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/raw/us/time_series_covid19_deaths_US.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/Illinois.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Illinois.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/Minnesota.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Minnesota.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/New Jersey.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Jersey.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/New Mexico.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Mexico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/New York.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New York.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/Texas.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Texas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/us/Washington.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Washington.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_OTH.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_OTH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/lockdown.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../doc/lockdown.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/DL.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/DL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/MH.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/MH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/TN.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/TN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/WB.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/WB.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prepare_data_US.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mrsc_score.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,10 +38,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_US.py">
+        <entry file="file://$PROJECT_DIR$/run_IN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="5" selection-start-line="5" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -62,24 +50,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_IN.py">
+        <entry file="file://$PROJECT_DIR$/prepare_data_OTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="299">
+              <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
+        <entry file="file://$PROJECT_DIR$/run_OTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="390">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,8 +91,10 @@
         <option value="$PROJECT_DIR$/prepare_data_US.py" />
         <option value="$PROJECT_DIR$/mrsc_score.py" />
         <option value="$PROJECT_DIR$/run_US.py" />
-        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/prepare_data_IN.py" />
+        <option value="$PROJECT_DIR$/run_IN.py" />
+        <option value="$PROJECT_DIR$/prepare_data_OTH.py" />
+        <option value="$PROJECT_DIR$/run_OTH.py" />
       </list>
     </option>
   </component>
@@ -149,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_IN">
+  <component name="RunManager" selected="Python.run_OTH">
     <configuration name="prepare_data_IN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,6 +203,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_OTH" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_OTH.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_US" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,6 +247,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_OTH" />
         <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.run_US" />
         <item itemvalue="Python.prepare_data_IN" />
@@ -258,6 +270,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
@@ -309,7 +322,17 @@
     <entry file="file://$PROJECT_DIR$/prepare_data_US.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
-          <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="60" />
+          <caret line="51" column="60" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -326,16 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_IN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mrsc_score.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
@@ -346,12 +359,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
+    <entry file="file://$PROJECT_DIR$/run_IN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="390">
+          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_data_OTH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_OTH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
