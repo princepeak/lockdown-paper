@@ -24,8 +24,8 @@ def main():
         name = state['name']
         lockdown_date = state['start']
         lockdown_date_index = metadata['dates'].index(lockdown_date)
-        end_date_index = len(metadata['dates'])-20
-        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'other')
+        end_date_index = len(metadata['dates'])
+        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'other', metadata['dates'], lockdown_date)
 
 if __name__ == "__main__":
     main()  
