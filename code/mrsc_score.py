@@ -1,4 +1,4 @@
-from matplotlib import pyplot as plt
+
 import seaborn as sns; sns.set()
 import numpy as np
 import pandas as pd
@@ -8,7 +8,22 @@ from tslib.synthcontrol.syntheticControl import RobustSyntheticControl
 from tslib.synthcontrol.multisyntheticControl import MultiRobustSyntheticControl
 import math
 from matplotlib.pyplot import figure
-import random
+from matplotlib.dates import DayLocator, DateFormatter, date2num
+from matplotlib.ticker import FuncFormatter
+from matplotlib import rc
+import matplotlib.pyplot as plt
+import datetime
+
+dpi=300
+rc('text', usetex=True)
+plt.style.use('seaborn-pastel')
+pd.plotting.register_matplotlib_converters()
+plt.style.use("seaborn-ticks")
+plt.rcParams["xtick.direction"] = "in"
+plt.rcParams["ytick.direction"] = "in"
+plt.rcParams["font.size"] = 11.0
+plt.rcParams["figure.figsize"] = (9*50/dpi, 6*50/dpi)
+
 
 def rankDiagnostic(filename_metric, filename_secondary_metric):
     df1 = pd.read_csv(filename_metric)
@@ -120,6 +135,7 @@ def score_rsc(filename, idColumnName, treatment, start, training_end, test_end, 
     # plot
     daysToPlot = range(start, test_end, 1)
     interventionDay = training_end - 1
+
     plt.plot(daysToPlot, np.append(trainMasterDF[treatment], testDF[treatment], axis=0), color='red',
              label='observations')
     plt.plot(daysToPlot, np.append(denoisedDF[treatment], predictions, axis=0), color='blue', label='predictions')
@@ -130,16 +146,22 @@ def score_rsc(filename, idColumnName, treatment, start, training_end, test_end, 
     plt.ylabel(MetricName)
     plt.show()
 
+def number_formatter(number, pos=None):
+    """Convert larger number into a human readable format."""
+    magnitude = 0
+    while abs(number) >= 1000:
+        magnitude += 1
+        number /= 1000.0
+    return '%.1f%s' % (number, ['', 'K', 'M', 'B', 'T', 'Q'][magnitude])
 
-
-def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatment, start, training_end, test_end, MetricName, country):
+def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatment, start, training_end, test_end, MetricName, country, days, lockdown_date):
     df1 = pd.read_csv(filename_metric)
 
     df2 = pd.read_csv(filename_secondary_metric)
 
     allColumns = df1.columns.values
     country_list = list(np.unique(df1[idColumnName]))
-    days = np.delete(allColumns, [0])
+    #days = np.delete(allColumns, [0])
 
     treatment = treatment
 
@@ -150,7 +172,7 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     training_end = training_end
     test_end = test_end
 
-    singvals = 10
+    singvals = 15
     p = 1.0
 
     trainingDays = []
@@ -230,15 +252,35 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
 
 
     # plot
-    daysToPlot = range(start, test_end, 1)
-    interventionDay = training_end - 1
-    plt.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red',
+    daysToPlot = [datetime.datetime.strptime(d, '%m/%d/%y') for d in days]
+    interventionDay = lockdown_date
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+
+    ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red', linewidth=2, alpha=0.7, #marker='.',
              label='observations')
-    plt.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='blue', label='predictions')
-    plt.axvline(x=interventionDay, linewidth=1, color='black', label='Lockdown Day')
-    legend = plt.legend(loc='best', shadow=True)
-    plt.title(f'{treatment} \n Actual - Deaths:{final_deaths_actual}, Confirmed:{final_cases_actual} \n Predicted - Deaths: {final_deaths_predicted}, Confirmed:{final_cases_predicted}', fontsize=8)
-    plt.xlabel('Days')
-    plt.ylabel(MetricName)
+
+    ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='orange', linewidth=2, alpha=0.7, #marker='v',
+            label='predictions')
+
+    ax.axvline(x=interventionDay, linewidth=1, color='black', label='Lockdown Day')
+
+    # X-axis
+    ax.xaxis.set_major_formatter(DateFormatter('%m-%d'))
+    ax.set_xlim(days[0], days[-1])
+
+    # Y-axis
+    ax.yaxis.set_major_formatter(FuncFormatter(number_formatter))
+    ax.set_ylim(bottom=0)
+
+    # Labels
+    ax.set_title(f'{treatment} \n Actual - Deaths:{final_deaths_actual}, Confirmed:{final_cases_actual} \n Predicted - Deaths: {final_deaths_predicted}, Confirmed:{final_cases_predicted}', fontsize=8)
+    ax.set_xlabel('Date')
+    ax.set_ylabel(MetricName)
+    ax.legend(loc='best', framealpha=0.5)
+
+    # Use tight layout
+    fig.tight_layout()
+
     plt.savefig(f'../img/{country}/{treatment}.png')
     plt.clf()

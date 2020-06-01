@@ -47,7 +47,9 @@ def update():
 def prepare():
     filename_confirmed = '../data/raw/global/time_series_covid19_confirmed_global.csv'
     filename_deaths = '../data/raw/global/time_series_covid19_deaths_global.csv'
-    countryList = ["Italy", "Korea, South", "Singapore"]
+
+    countryList = ["Italy", "Spain", "Germany", "Iran", "Sweden"]
+
     [df, start, end, dates] = get_OTH_Confirmed_DF(filename_confirmed,countryList)
     df.to_csv('../data/processed/other/confirmed.csv', index=False)
     with open('../data/processed/other/confirmed.json', 'w', encoding='utf-8') as f:
