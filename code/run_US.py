@@ -14,8 +14,8 @@ lockdown_state = [
 ]
 
 def main():
-    update()
-    prepare()
+    #update()
+    #prepare()
     metric = ['deaths', 'confirmed']
     file1 = f'../data/processed/us/{metric[0]}.csv'
     file2 = f'../data/processed/us/{metric[1]}.csv'
@@ -28,7 +28,7 @@ def main():
         lockdown_date = state['start']
         lockdown_date_index = metadata['dates'].index(lockdown_date)
         end_date_index = len(metadata['dates'])
-        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'us')
+        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'us', metadata['dates'], lockdown_date)
 
 if __name__ == "__main__":
     main()
