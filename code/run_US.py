@@ -1,6 +1,7 @@
 from prepare_data_US import update, prepare
 from mrsc_score import score_rsc, score_mrsc
 import json
+from trend_analysis import trend_analysis
 
 # from https://www.businessinsider.com.au/us-map-stay-at-home-orders-lockdowns-2020-3?r=US&IR=T
 lockdown_state = [
@@ -14,7 +15,7 @@ lockdown_state = [
 ]
 
 def main():
-    update()
+    #update()
     prepare()
     metric = ['deaths', 'confirmed']
     file1 = f'../data/processed/us/{metric[0]}.csv'
@@ -28,6 +29,10 @@ def main():
         lockdown_date = state['start']
         lockdown_date_index = metadata['dates'].index(lockdown_date)
         end_date_index = len(metadata['dates'])
+
+        trend_analysis(file1, 'us', name, metric[0], metadata['dates'])
+        trend_analysis(file2, 'us', name, metric[1], metadata['dates'])
+
         score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'us', metadata['dates'], lockdown_date)
 
 if __name__ == "__main__":
