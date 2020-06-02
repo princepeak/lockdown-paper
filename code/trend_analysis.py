@@ -56,7 +56,7 @@ def show_trend(df, country, place, metric, n_changepoints=20):
 
     name = f"{place}: "
     plt.title(f"{name} {metric} over time and chainge points")
-    plt.ylabel(f"log10(the number of cases)")
+    plt.ylabel(f"the number of cases")
     plt.xlabel("")
 
     # Use tight layout

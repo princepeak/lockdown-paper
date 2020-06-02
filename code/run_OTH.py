@@ -2,7 +2,7 @@ from prepare_data_OTH import update, prepare
 from mrsc_score import score_rsc, score_mrsc
 from trend_analysis import trend_analysis
 import json
-
+import time
 
 lockdown_state = [
     {'name':'Italy','start': '3/9/20', 'end':''},
@@ -31,6 +31,7 @@ def main():
         trend_analysis(file2, 'other', name, metric[1], metadata['dates'])
 
         score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'other', metadata['dates'], lockdown_date)
+        time.sleep(5)
 
 if __name__ == "__main__":
     main()  
