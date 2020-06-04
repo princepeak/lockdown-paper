@@ -152,6 +152,7 @@ def number_formatter(number, pos=None):
     while abs(number) >= 1000:
         magnitude += 1
         number /= 1000.0
+    print (number, magnitude)
     return '%.1f%s' % (number, ['', 'K', 'M', 'B', 'T', 'Q'][magnitude])
 
 def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatment, start, training_end, test_end, MetricName, country, days, lockdown_date):
@@ -270,7 +271,7 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     ax.set_xlim(days[0], days[-1])
 
     # Y-axis
-    ax.yaxis.set_major_formatter(FuncFormatter(number_formatter))
+    #ax.yaxis.set_major_formatter(FuncFormatter(number_formatter))
     ax.set_ylim(bottom=0)
 
     # Labels

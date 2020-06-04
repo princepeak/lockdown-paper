@@ -32,7 +32,7 @@ def main():
     for state in lockdown_state:
         name = state['name']
         lockdown_date = state['start']
-        lockdown_date_index = metadata['dates'].index(lockdown_date)
+        lockdown_date_index = metadata['dates'].index(lockdown_date)+21
         end_date_index = len(metadata['dates'])
 
         trend_analysis(file1, 'in', name, metric[0], metadata['dates'])

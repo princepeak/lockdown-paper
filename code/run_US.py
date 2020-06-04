@@ -7,7 +7,7 @@ import time
 # from https://www.businessinsider.com.au/us-map-stay-at-home-orders-lockdowns-2020-3?r=US&IR=T
 lockdown_state = [
     {'name':'New Jersey','start': '3/21/20', 'end':''},
-    {'name':'New York','start': '3/22/20', 'end':'5/15/20'},
+    {'name':'New York','start': '4/5/20', 'end':'5/15/20'},
     {'name':'Illinois', 'start': '3/21/20', 'end':'5/1/20'},
     {'name':'Washington', 'start': '3/23/20', 'end':'5/11/20'},
     {'name':'Texas', 'start': '4/1/20', 'end':'4/30/20'},

@@ -2,11 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/run_AUS.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_AUS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hydrate_tweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrsc_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/mrsc_score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_IN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_OTH.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_OTH.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_US.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_US.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trend_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/trend_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/DL.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/DL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/DL_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/DL_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/DL_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/DL_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/DL_trend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/MH.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/MH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/MH_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/MH_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/MH_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/MH_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/MH_trend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/TN.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/TN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/TN_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/TN_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/TN_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/TN_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/TN_trend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/WB.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/WB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/WB_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/WB_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/WB_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/WB_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/WB_trend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Illinois.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Illinois.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Illinois_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Illinois_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Illinois_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Illinois_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Minnesota.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Minnesota.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Minnesota_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Minnesota_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Minnesota_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Minnesota_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Jersey.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Jersey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Jersey_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Jersey_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Jersey_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Jersey_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Mexico.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Mexico.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Mexico_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Mexico_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New Mexico_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New Mexico_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New York.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New York.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New York_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New York_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/New York_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/New York_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Texas.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Texas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Texas_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Texas_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Texas_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Texas_deaths_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Washington.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Washington.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Washington_confirmed_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Washington_confirmed_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/us/Washington_deaths_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../img/us/Washington_deaths_trend.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,55 +59,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mrsc_score.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4260">
-              <caret line="284" column="46" selection-start-line="284" selection-start-column="46" selection-end-line="284" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_IN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_OTH.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run_AUS.py">
+        <entry file="file://$PROJECT_DIR$/hydrate_tweets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_US.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +80,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>chan</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -88,12 +94,13 @@
         <option value="$PROJECT_DIR$/prepare_data_US.py" />
         <option value="$PROJECT_DIR$/prepare_data_IN.py" />
         <option value="$PROJECT_DIR$/prepare_data_OTH.py" />
-        <option value="$PROJECT_DIR$/mrsc_score.py" />
-        <option value="$PROJECT_DIR$/trend_analysis.py" />
-        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/run_OTH.py" />
         <option value="$PROJECT_DIR$/run_AUS.py" />
+        <option value="$PROJECT_DIR$/mrsc_score.py" />
+        <option value="$PROJECT_DIR$/run_IN.py" />
+        <option value="$PROJECT_DIR$/trend_analysis.py" />
         <option value="$PROJECT_DIR$/run_US.py" />
+        <option value="$PROJECT_DIR$/hydrate_tweets.py" />
       </list>
     </option>
   </component>
@@ -138,8 +145,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_US">
-    <configuration name="prepare_data_IN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.hydrate_tweets">
+    <configuration name="hydrate_tweets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +158,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prepare_data_IN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hydrate_tweets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hydrate_tweets" />
         <item itemvalue="Python.run_US" />
+        <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.run_AUS" />
         <item itemvalue="Python.run_OTH" />
-        <item itemvalue="Python.run_IN" />
-        <item itemvalue="Python.prepare_data_IN" />
       </list>
     </recent_temporary>
   </component>
@@ -269,15 +276,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -289,6 +295,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hydrate_tweets.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../data/raw/us/time_series_covid19_confirmed_US.csv">
@@ -328,13 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mrsc_score.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4260">
-          <caret line="284" column="46" selection-start-line="284" selection-start-column="46" selection-end-line="284" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3553">
@@ -342,32 +352,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trend_analysis.py">
+    <entry file="file://$PROJECT_DIR$/run_CH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_US.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state>
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_IN.py">
+    <entry file="file://$PROJECT_DIR$/prepare_data_CH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_AUS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -379,12 +387,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_AUS.py">
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="112">
+          <caret line="870" column="15" selection-start-line="870" selection-start-column="8" selection-end-line="870" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/fbprophet/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="446" column="29" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/fbprophet/forecaster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1520" column="8" selection-start-line="1520" selection-start-column="8" selection-end-line="1520" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_US.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trend_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mrsc_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="260" column="55" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/tweepy/binder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hydrate_tweets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
