@@ -18,3 +18,11 @@ from https://ieee-dataport.org/open-access/coronavirus-covid-19-geo-tagged-tweet
 4. Sentiment - second field in the JSON (see hydrate_tweets.py code Line 15)
 
 ### Subhas - Set-up LDA
+
+## Backlog
+
+1. We have decided to consider New York, New Jersey and Illinois from US. Need to decide the group of control states for each.
+2. We have decided to take Italy and Spain - control group for both.
+3. We have decided to go with Maharashtra from India - control group for this has to be determined.
+4. Gather graphs and Twitter analytics for all 5.
+5. Write
