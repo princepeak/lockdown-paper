@@ -3,6 +3,7 @@ import datetime
 import matplotlib.cm as cm
 import matplotlib
 from matplotlib.ticker import ScalarFormatter
+from matplotlib.pyplot import text
 from fbprophet import Prophet
 from fbprophet.plot import add_changepoints_to_plot
 import warnings
@@ -50,14 +51,19 @@ def show_trend(df, country, place, metric, n_changepoints=20):
     model.fit(df)
     future = model.make_future_dataframe(periods=14)
     forecast = model.predict(future)
+
+    c = model.changepoints
     # Create figure
     fig = model.plot(forecast)
     _ = add_changepoints_to_plot(fig.gca(), model, forecast)
 
+    for i, v in model.changepoints.items():
+        text(v, (df["y"].max() - df["y"].min())/2., f'{v.strftime("%Y-%m-%d")}', rotation=90, verticalalignment='center')
     name = f"{place}: "
     plt.title(f"{name} {metric} over time and chainge points")
     plt.ylabel(f"the number of cases")
     plt.xlabel("")
+
 
     # Use tight layout
     fig.tight_layout()
