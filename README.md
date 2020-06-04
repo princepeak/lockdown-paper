@@ -1,5 +1,16 @@
 # lockdown-paper
 
+## Tasks
+
+### Hydrate Tweets from https://ieee-dataport.org/open-access/coronavirus-covid-19-geo-tagged-tweets-dataset
+
+1. Latest JSON is here: /data/tweet/april28-june3.json
+2. Sample code is here: /code/hydrate_tweets.py
+3. Need to output
+
+|ID|status|Country|City|Lat|Lon|Sentiment
+
+
 A Study on The Effectiveness of Lockdown Measures to Control The Spread of COVID-19
 Introduction
 - Study reason
