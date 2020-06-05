@@ -14,6 +14,8 @@ def get_resultant_DF(df, columns):
     df.columns = columns
     return df
 
+def get_tests_DF(filename):
+    pass
 
 def get_IN_DF(filename):
 
@@ -43,11 +45,24 @@ def get_IN_DF(filename):
 def update():
     url_confirmed = 'https://api.covid19india.org/csv/latest/state_wise_daily.csv'
     filename_confirmed = '../data/raw/IN/time_series_covid19_confirmed_and_deaths.csv'
+    
+   
     print(f'Downloading {url_confirmed}')
     filename_confirmed, headers_confirmed = urllib.request.urlretrieve(
         url_confirmed, filename=filename_confirmed)
     print("download complete!")
     print("download file location: ", filename_confirmed)
+
+
+    url_tests = 'https://api.covid19india.org/csv/latest/statewise_tested_numbers_data.csv'
+    filename_tests = '../data/raw/IN/time_series_covid19_tests.csv'
+
+    print(f'Downloading {url_tests}')
+    filename_tests, headers_confirmed = urllib.request.urlretrieve(
+        url_tests, filename=filename_tests)
+    print("download complete!")
+    print("download file location: ", filename_tests)
+
     print("Processing")
 
 
@@ -65,3 +80,17 @@ def prepare():
         json.dump({'start': start, 'end': end, 'dates': dates},
                   f, ensure_ascii=False, indent=4)
 
+if __name__ == "__main__":
+    # update()
+    filename = '../data/raw/in/time_series_covid19_tests.csv'
+    df = pd.read_csv(filename, delimiter=',')
+    df = df.drop(columns=df.columns[3:])
+    start,end = df['Updated On'].min(), df['Updated On'].max()
+    dates = []
+    date_range = pd.date_range(start=datetime.datetime.strptime(start,'%d/%m/%Y'), end=datetime.datetime.strptime(end,'%d/%m/%Y'))
+    
+    for d in date_range:
+        dt = d#datetime.datetime.strptime(d, '%d/%m/%Y')
+        s = f'{dt.month}/{dt.day}/{dt.year % 100}'
+        dates.append(s)
+    myDF= pd.DataFrame(columns=['State'] + dates)
