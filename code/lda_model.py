@@ -13,6 +13,14 @@ def print_topics(model, count_vectorizer, n_top_words):
         print(" ".join([words[i]
                         for i in topic.argsort()[:-n_top_words - 1:-1]]))
 
+def get_topic_as_json(model, count_vectorizer, n_top_words):
+    json_dict = {}
+    words = count_vectorizer.get_feature_names()
+    for topic_idx, topic in enumerate(model.components_):
+        json_dict[f'topic{topic_idx}'] = [words[i]
+                        for i in topic.argsort()[:-n_top_words - 1:-1]]
+    return json_dict
+
 def remove_links(tweet):
     '''Takes a string and removes web links from it'''
     tweet = re.sub(r'http\S+', '', tweet) # remove http links
@@ -26,7 +34,7 @@ def remove_users(tweet):
     tweet = re.sub('(@[A-Za-z]+[A-Za-z0-9-_]+)', '', tweet) # remove tweeted at
     return tweet
 
-def clean(tweet, bigrams=False):
+def clean(tweet, bigrams=True):
     """
     Cleans twitter data
     :param data: is a list of string
@@ -72,17 +80,15 @@ def train(vdata, vectorizer, number_topics = 10, number_words = 10):
     lda = LDA(n_components=number_topics, n_jobs=-1)
     lda.fit(vdata)
     print_topics(lda, vectorizer, number_words)
+    return get_topic_as_json(lda, vectorizer, number_words)
 
 def run_lda(df, field='status'):
+    print(f'Cleaning..\n')
     df['clean'] = df[field].apply(clean)
     s = df['clean']
+    print(f'Vectorization..\n')
     [vectorizer, vdata] = vectorize(s)
-    train(vdata,vectorizer)
+    print(f'Running LDA..\n')
+    res = train(vdata,vectorizer)
+    return res
 
-
-import pandas as pd
-#df = pd.read_csv('../data/tweet_processed/april28-june3.csv')
-df = pd.read_csv('../data/news/OnlineNews-150Snippet.csv')
-df['text'] = df['Title'] + df['Context']
-df = df.dropna()
-run_lda(df, field="text")
