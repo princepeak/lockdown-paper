@@ -42,5 +42,5 @@ with open('../data/tweet/april28-june3.json', 'r') as f:
           f.close()
 
   sys.stdout.write("Writing to csv\n")
-  df.to_csv("./tweetsDataset.csv", sep=',',index=False)
+  df.to_csv("../data/tweet_processed/april28-june3.csv", sep=',',index=False)
   sys.stdout.write("Process Completed!")
