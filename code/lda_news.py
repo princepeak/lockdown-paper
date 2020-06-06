@@ -20,7 +20,7 @@ for day in date_of_interset:
     cd = day.strftime("%Y-%m-%d")
     day_df = df.loc[cd]
     print(f'Using {day_df.shape[0]} articles for {cd}')
-    res = run_lda(day_df, field="text")
+    res = run_lda(day_df, field="text", name=f'OnlineNews-150Snippet_{cd}')
     result[cd] = res
 
 with open('../data/news_processed/OnlineNews-150Snippet-LDA_bigram.json', 'w', encoding='utf-8') as f:

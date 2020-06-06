@@ -75,20 +75,27 @@ def vectorize(data):
 
     return [count_vectorizer,count_data]
 
-def train(vdata, vectorizer, number_topics = 10, number_words = 10):
+def train(vdata, vectorizer,  name='', number_topics = 10, number_words = 10):
     # Create and fit the LDA model
     lda = LDA(n_components=number_topics, n_jobs=-1)
     lda.fit(vdata)
     print_topics(lda, vectorizer, number_words)
+    lda_visual(lda,vdata,vectorizer,number_topics,name)
     return get_topic_as_json(lda, vectorizer, number_words)
 
-def run_lda(df, field='status'):
+def run_lda(df, field='status',name=''):
     print(f'Cleaning..\n')
     df['clean'] = df[field].apply(clean)
     s = df['clean']
     print(f'Vectorization..\n')
     [vectorizer, vdata] = vectorize(s)
     print(f'Running LDA..\n')
-    res = train(vdata,vectorizer)
+    res = train(vdata,vectorizer,name)
     return res
 
+def lda_visual(model, vdata, vectorizer, number_topics, name=''):
+    from pyLDAvis import sklearn as sklearn_lda
+    import pyLDAvis
+
+    LDAvis_prepared = sklearn_lda.prepare(model, vdata, vectorizer)
+    pyLDAvis.save_html(LDAvis_prepared, f'../data/news_processed/ldavis_prepared_{name}_{str(number_topics)}.html')
