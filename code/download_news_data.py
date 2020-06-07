@@ -10,7 +10,9 @@ start = datetime.datetime.strptime("20200326", "%Y%m%d")
 end = datetime.datetime.strptime("20200603", "%Y%m%d")
 date_of_interset = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
 
-topics = ['cases', 'covid19', 'falsehoods', 'masks', 'panic', 'prices', 'quarantine', 'shortages', 'socialdistancing', 'testing', 'ventilators']
+topics = ['quarantine', 'socialdistancing']
+
+#topics = ['cases', 'covid19', 'falsehoods', 'masks', 'panic', 'prices', 'quarantine', 'shortages', 'socialdistancing', 'testing', 'ventilators']
 
 extension = '.csv.gz'
 

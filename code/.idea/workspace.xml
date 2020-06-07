@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_news_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_news_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hydrate_tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/hydrate_tweets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lda_tweet.py" beforeDir="false" afterPath="$PROJECT_DIR$/lda_tweet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweetsDataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/OnlineNews-150Snippet-LDA_bigram.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/OnlineNews-150Snippet-LDA_bigram.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_tweet_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_tweet_10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepare_data_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_IN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_IN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/OnlineNews-150Snippet-LDA_bigram.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-12_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-13_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-14_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-15_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-16_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-17_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-18_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-19_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-20_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_OnlineNews-150Snippet_2020-02-21_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/news_processed/ldavis_prepared_tweet_10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/confirmed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/confirmed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/processed/in/deaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/processed/in/deaths.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/raw/in/time_series_covid19_confirmed_and_deaths.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/events.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/download_news_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="84" lean-forward="true" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1905">
+              <caret line="154" column="141" lean-forward="true" selection-start-line="154" selection-start-column="141" selection-end-line="154" selection-end-column="141" />
             </state>
           </provider>
         </entry>
@@ -63,12 +62,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/prepare_data_US.py" />
-        <option value="$PROJECT_DIR$/prepare_data_IN.py" />
         <option value="$PROJECT_DIR$/prepare_data_OTH.py" />
         <option value="$PROJECT_DIR$/run_OTH.py" />
         <option value="$PROJECT_DIR$/run_AUS.py" />
         <option value="$PROJECT_DIR$/mrsc_score.py" />
-        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/trend_analysis.py" />
         <option value="$PROJECT_DIR$/run_US.py" />
         <option value="$USER_HOME$/.local/lib/python3.7/site-packages/wordsegment/__init__.py" />
@@ -79,6 +76,8 @@
         <option value="$PROJECT_DIR$/hydrate_tweets_example.py" />
         <option value="$PROJECT_DIR$/lda_tweet.py" />
         <option value="$PROJECT_DIR$/download_news_data.py" />
+        <option value="$PROJECT_DIR$/prepare_data_IN.py" />
+        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/events.py" />
       </list>
     </option>
@@ -124,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.download_news_data">
+  <component name="RunManager" selected="Python.run_IN">
     <configuration name="download_news_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,10 +231,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.download_news_data" />
         <item itemvalue="Python.lda_tweet" />
         <item itemvalue="Python.lda_news" />
-        <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.lda_model" />
       </list>
     </recent_temporary>
@@ -257,12 +256,12 @@
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,13 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_OTH.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -358,16 +350,6 @@
           <caret line="60" column="77" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="77" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -476,26 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_US.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_IN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lda_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -553,18 +515,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_news_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="84" lean-forward="true" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run_US.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_OTH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="5339" selection-start-line="5339" selection-end-line="5339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="1905">
+          <caret line="154" column="141" lean-forward="true" selection-start-line="154" selection-start-column="141" selection-end-line="154" selection-end-column="141" />
         </state>
       </provider>
     </entry>

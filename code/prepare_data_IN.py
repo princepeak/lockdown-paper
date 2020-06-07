@@ -6,8 +6,47 @@ import datetime
 
 
 def get_resultant_DF(df, columns):
+    df = df.rename(columns={'TT' : 'Total',
+                            'AN' : 'Andaman and Nicobar Islands',
+                            'AP' : 'Andhra Pradesh',
+                            'AR' : 'Arunachal Pradesh',
+                            'AS' : 'Assam',
+                            'BR' : 'Bihar',
+                            'CH' : 'Chandigarh',
+                            'CT' : 'Chhattisgarh',
+                            'DN' : 'Dadra and Nagar Haveli',
+                            'DD' : 'Daman and Diu',
+                            'DL' : 'Delhi',
+                            'GA' : 'Goa',
+                            'GJ' : 'Gujarat',
+                            'HR' : 'Haryana',
+                            'HP' : 'Himachal Pradesh',
+                            'JK' : 'Jammu and Kashmir',
+                            'JH' : 'Jharkhand',
+                            'KA' : 'Karnataka',
+                            'KL' : 'Kerala',
+                            'LA' : 'Ladakh',
+                            'LD' : 'Lakshadweep',
+                            'MP' : 'Madhya Pradesh',
+                            'MH' : 'Maharashtra',
+                            'MN' : 'Manipur',
+                            'ML' : 'Meghalaya',
+                            'MZ' : 'Mizoram',
+                            'NL' : 'Nagaland',
+                            'OR' : 'Orissa',
+                            'PY' : 'Pondicherry',
+                            'PB' : 'Punjab',
+                            'RJ' : 'Rajasthan',
+                            'SK' : 'Sikkim',
+                            'TN' : 'Tamil Nadu',
+                            'TG' : 'Telangana',
+                            'TR' : 'Tripura',
+                            'UP' : 'Uttar Pradesh',
+                            'UT' : 'Uttarakhand',
+                            'WB' : 'West Bengal',
+                            'UN' : 'Unassigned'})
     df = df.drop(
-        columns=['Status', 'Date', 'TT']).transpose()
+        columns=['Status', 'Date', 'Total']).transpose()
     df = df.cumsum(axis=1)
     df.insert(loc=0, column='Province_State',
                         value=df.index)

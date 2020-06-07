@@ -12,10 +12,10 @@ Phase 4: 18 May 2020 – 31 May 2020 (14 days)
 Phase 5: 1 June 2020 – ongoing (0 days); scheduled to end on 30 June 2020
 """
 lockdown_state = [
-    {'name':'MH','start': '3/22/20', 'end':''},
-    {'name':'TN','start': '3/22/20', 'end':''},
-    {'name':'WB', 'start': '3/22/20', 'end':''},
-    {'name':'DL', 'start': '3/22/20', 'end':''}
+    {'name':'Maharashtra','start': '3/22/20', 'end':''},
+    {'name':'Tamil Nadu','start': '3/22/20', 'end':''},
+    {'name':'West Bengal', 'start': '3/22/20', 'end':''},
+    {'name':'Delhi', 'start': '3/22/20', 'end':''}
 ]
 
 def main():
