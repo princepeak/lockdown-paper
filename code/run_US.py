@@ -3,16 +3,26 @@ from mrsc_score import score_rsc, score_mrsc
 import json
 from trend_analysis import trend_analysis
 import time
+from events import get_events_between
 
 # from https://www.businessinsider.com.au/us-map-stay-at-home-orders-lockdowns-2020-3?r=US&IR=T
 lockdown_state = [
-    {'name':'New Jersey','start': '3/21/20', 'end':''},
-    {'name':'New York','start': '3/22/20', 'end':'5/15/20'},
-    {'name':'Illinois', 'start': '3/21/20', 'end':'5/1/20'},
-    {'name':'Washington', 'start': '3/23/20', 'end':'5/11/20'},
-    {'name':'Texas', 'start': '4/1/20', 'end':'4/30/20'},
-    {'name': 'New Mexico', 'start': '3/24/20', 'end':'5/16/20'},
-    {'name': 'Minnesota', 'start': '3/25/20', 'end':'5/17/20'}
+    {'name':'New Jersey','start': '3/21/20', 'end':'', 'control':['New York',
+                                                                       'California',
+                                                                       'Illinois',
+                                                                       'Massachusetts',
+                                                                       'Pennsylvania',
+                                                                       'Texas',
+                                                                       'Michigan']},
+    {'name':'New York','start': '3/22/20', 'end':'5/15/20', 'control':['New Jersey',
+                                                                       'California',
+                                                                       'Illinois',
+                                                                       'Massachusetts',
+                                                                       'Pennsylvania',
+                                                                       'Texas',
+                                                                       'Michigan',
+                                                                       'Florida']},
+    {'name':'Illinois', 'start': '3/21/20', 'end':'5/1/20', 'control':None}
 ]
 
 def main():
@@ -34,7 +44,25 @@ def main():
         trend_analysis(file1, 'us', name, metric[0], metadata['dates'])
         trend_analysis(file2, 'us', name, metric[1], metadata['dates'])
 
-        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'us', metadata['dates'], lockdown_date)
+        score_mrsc(file1, file2,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[0], 'us',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events = get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
+
+        score_mrsc(file2, file1,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[1], 'us',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
         time.sleep(5)
 
 if __name__ == "__main__":

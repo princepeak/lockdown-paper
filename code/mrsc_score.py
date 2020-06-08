@@ -1,4 +1,3 @@
-
 import seaborn as sns; sns.set()
 import numpy as np
 import pandas as pd
@@ -13,6 +12,7 @@ from matplotlib.ticker import FuncFormatter
 from matplotlib import rc
 import matplotlib.pyplot as plt
 import datetime
+from matplotlib.pyplot import text
 
 dpi=300
 rc('text', usetex=True)
@@ -22,7 +22,7 @@ plt.style.use("seaborn-ticks")
 plt.rcParams["xtick.direction"] = "in"
 plt.rcParams["ytick.direction"] = "in"
 plt.rcParams["font.size"] = 11.0
-plt.rcParams["figure.figsize"] = (9*50/dpi, 6*50/dpi)
+plt.rcParams["figure.figsize"] = (12, 6)
 
 
 def rankDiagnostic(filename_metric, filename_secondary_metric):
@@ -152,10 +152,21 @@ def number_formatter(number, pos=None):
     while abs(number) >= 1000:
         magnitude += 1
         number /= 1000.0
-    print (number, magnitude)
     return '%.1f%s' % (number, ['', 'K', 'M', 'B', 'T', 'Q'][magnitude])
 
-def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatment, start, training_end, test_end, MetricName, country, days, lockdown_date):
+def score_mrsc(filename_metric,
+               filename_secondary_metric,
+               idColumnName,
+               treatment,
+               start,
+               training_end,
+               test_end,
+               MetricName,
+               country,
+               days,
+               lockdown_date,
+               control_group=None,
+               events=None):
     df1 = pd.read_csv(filename_metric)
 
     df2 = pd.read_csv(filename_secondary_metric)
@@ -167,7 +178,8 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     treatment = treatment
 
     country_list.remove(treatment)
-    control_group = country_list
+    if not control_group:
+        control_group = country_list
 
     start = start
     training_end = training_end
@@ -256,7 +268,7 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     daysToPlot = [datetime.datetime.strptime(d, '%m/%d/%y') for d in days]
     interventionDay = lockdown_date
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(15, 5))
 
     ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red', linewidth=2, alpha=0.7, #marker='.',
              label='observations')
@@ -264,24 +276,31 @@ def score_mrsc(filename_metric, filename_secondary_metric, idColumnName, treatme
     ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='orange', linewidth=2, alpha=0.7, #marker='v',
             label='predictions')
 
-    ax.axvline(x=interventionDay, linewidth=1, color='black', label='Lockdown Day')
+    middle = (max(predictions[0]) - min(predictions[0])) / 2 - (max(predictions[0]) - min(predictions[0])) / 4
+    if events:
+        #plot events
+        for evt in events:
+            ax.axvline(x=evt['date'], linewidth=1, linestyle='--', color='lightgrey')
+            text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='tan')
+    else:
+        ax.axvline(x=interventionDay, linewidth=1, color='black')
+        text(interventionDay, middle, interventionDay, rotation=90, verticalalignment='center',fontsize=8)
 
     # X-axis
     ax.xaxis.set_major_formatter(DateFormatter('%m-%d'))
     ax.set_xlim(days[0], days[-1])
 
     # Y-axis
-    #ax.yaxis.set_major_formatter(FuncFormatter(number_formatter))
+    ax.yaxis.set_major_formatter(FuncFormatter(number_formatter))
     ax.set_ylim(bottom=0)
 
     # Labels
-    ax.set_title(f'{treatment} \n Actual - Deaths:{final_deaths_actual}, Confirmed:{final_cases_actual} \n Predicted - Deaths: {final_deaths_predicted}, Confirmed:{final_cases_predicted}', fontsize=8)
     ax.set_xlabel('Date')
-    ax.set_ylabel(MetricName)
-    ax.legend(loc='best', framealpha=0.5)
+    ax.set_ylabel(f'Cumulative number of {MetricName}')
+    ax.legend(loc='best', framealpha=0.2)
 
     # Use tight layout
     fig.tight_layout()
 
-    plt.savefig(f'../img/{country}/{treatment}.png')
+    plt.savefig(f'../img/{country}/{treatment}_{MetricName}.pdf',dpi=600)
     plt.clf()

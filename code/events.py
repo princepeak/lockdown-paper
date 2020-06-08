@@ -77,18 +77,25 @@ Based on #https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracki
 5/27/20 The United States surpassed 100,000 coronavirus deaths.
 5/31/20 Thousands gathered in cities across US to protest the in-custody death of George Floyd
 
+Relevance for
 ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']
+
+Use as:
+evs = get_events_between('1/1/20','5/31/20','New York')
+for e in evs:
+    print(e)
 """
 global_events = [
-    {'date': '1/23/20', 'event': 'Wuhan placed under quarantine', 'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']},
-    {'date': '1/30/20', 'event': 'WHO declares a Public Health Emergency of International Concern', 'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']},
-    {'date': '2/11/20', 'event': 'WHO announces name COVID-19', 'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']},
+    {'date': '1/23/20', 'event': 'Wuhan placed under quarantine', 'relevency': []},
+    {'date': '1/30/20', 'event': 'WHO declares a Public Health Emergency of International Concern', 'relevency': []},
+    {'date': '2/11/20', 'event': 'WHO announces name COVID-19', 'relevency': ['New York', 'New Jersey', 'Illinois']},
     {'date': '2/19/20', 'event': 'Confirmed cases in Iran', 'relevency': []},
-    {'date': '2/29/20', 'event': 'US reports first COVID-19 death', 'relevency': []},
+    {'date': '2/29/20', 'event': 'US reports first COVID-19 death', 'relevency': ['New York', 'New Jersey', 'Illinois']},
     {'date': '2/1/20', 'event': 'First reported case in Spain', 'relevency': []},
     {'date': '2/4/20', 'event': 'Diamond Princes cruise ship is quarantined in Japan', 'relevency': []},
     {'date': '2/18/20', 'event': 'Passengers begin to disembark the Diamond Princes', 'relevency': []},
     {'date': '2/20/20', 'event': 'First reported case in Italy', 'relevency': []},
+    {'date': '3/11/20', 'event' : 'WHO classifies COVID-19 as a pandemic', 'relevency': ['New York', 'New Jersey', 'Illinois']},
     {'date': '3/11/20', 'event': 'US bans travel from most European countries', 'relevency': []},
     {'date': '3/8/20', 'event': 'Italy begins Lockdown', 'relevency': []},
     {'date' : '12/31/19', 'event' : 'China, reported a cluster of cases of pneumonia in Wuhan, Hubei Province', 'relevency': []},
@@ -100,8 +107,8 @@ global_events = [
     {'date' : '2/7/20', 'event' : 'Dr Li Wenliang died in Wuhan', 'relevency': []},
     {'date' : '2/24/20', 'event' : 'Italy became the worst-hit country in Europe', 'relevency': []},
     {'date' : '3/10/20', 'event' : 'Lockdown extended to whole Italy', 'relevency': []},
-    {'date' : '3/13/20', 'event' : 'Trump declared a national state of emergency in US', 'relevency': []},
-    {'date' : '3/15/20', 'event' : 'New York school closure', 'relevency': []},
+    {'date' : '3/13/20', 'event' : 'Trump declared a national \n state of emergency in US', 'relevency': ['New Jersey', 'Illinois']},
+    {'date' : '3/15/20', 'event' : 'New York school closure', 'relevency': ['New York']},
     {'date' : '3/18/20', 'event' : 'Germany sealed its borders', 'relevency': []},
     {'date' : '3/16/20', 'event' : 'San Francisco lockdown', 'relevency': []},
     {'date' : '3/16/20', 'event' : 'France lockdown', 'relevency': []},
@@ -110,53 +117,69 @@ global_events = [
     {'date' : '3/19/20', 'event' : 'Australia and New Zealand closes border', 'relevency': []},
     {'date' : '3/19/20', 'event' : 'Italy records more coronavirus-related deaths than China', 'relevency': []},
     {'date' : '3/19/20', 'event' : 'California issued a statewide stay-at-home order', 'relevency': []},
-    {'date' : '3/21/20', 'event' : 'Coronavirus cases in New York State crosses 10,000', 'relevency': []},
+    {'date' : '3/21/20', 'event' : 'Coronavirus cases in New York State\n crosses 10,000', 'relevency': []},
     {'date' : '3/24/20', 'event' : 'India lockdown', 'relevency': []},
-    {'date' : '3/21/20', 'event' : 'New Jersey lockdown', 'relevency': []},
-    {'date' : '3/21/20', 'event' : 'New Illinois lockdown', 'relevency': []},
-    {'date' : '3/22/20', 'event' : 'New York lockdown', 'relevency': []},
+    {'date' : '3/21/20', 'event' : 'New Jersey lockdown', 'relevency': ['New Jersey']},
+    {'date' : '3/21/20', 'event' : 'Illinois lockdown', 'relevency': ['Illinois']},
+    {'date' : '3/22/20', 'event' : 'New York lockdown', 'relevency': ['New York']},
     {'date' : '3/24/20', 'event' : 'France entered a two-month state of emergency', 'relevency': []},
     {'date' : '3/25/20', 'event' : 'Prince Charles, 71, tested positive for coronavirus', 'relevency': []},
-    {'date' : '3/26/20', 'event' : 'Major disaster declaration for New Jersey', 'relevency': []},
+    {'date' : '3/26/20', 'event' : 'Major disaster declaration for New Jersey', 'relevency': ['New Jersey']},
     {'date' : '3/26/20', 'event' : 'U.S. coronavirus cases surpassed China', 'relevency': []},
     {'date' : '3/27/20', 'event' : 'Britain’s Prime Minister Boris Johnson tested positive for coronavirus', 'relevency': []},
     {'date' : '3/28/20', 'event' : 'South Korea recorded more recoveries than active coronavirus cases', 'relevency': []},
-    {'date' : '3/28/20', 'event' : 'An infant, younger than a year old died in Illinois', 'relevency': []},
+    {'date' : '3/28/20', 'event' : 'An infant, younger \n than a year old \n died in Illinois', 'relevency': ['Illinois']},
     {'date' : '3/29/20', 'event' : 'The city of Wuhan, China, reopened subways', 'relevency': []},
     {'date' : '3/30/20', 'event' : 'Moscow announced a lockdown', 'relevency': []},
     {'date' : '3/30/20', 'event' : 'Italy extends lockdown', 'relevency': []},
-    {'date' : '4/7/20', 'event' : 'New York saw its largest single-day increase in deaths', 'relevency': []},
+    {'date' : '4/7/20', 'event' : 'New York saw its largest single-day increase in deaths', 'relevency': ['New York']},
     {'date' : '4/9/20', 'event' : 'Second coronavirus vaccine trial began in the U.S.', 'relevency': []},
     {'date' : '4/9/20', 'event' : 'Spain extended state of emergency measures until April 26.', 'relevency': []},
-    {'date' : '4/11/20', 'event' : 'US becomes the worst-hit country in the world', 'relevency': []},
-    {'date' : '4/13/20', 'event' : 'New York outlined first steps towards easing lockdown restrictions', 'relevency': []},
+    {'date' : '4/11/20', 'event' : 'US becomes the worst-hit\n country in the world', 'relevency': ['New Jersey', 'Illinois']},
+    {'date' : '4/13/20', 'event' : 'New York outlined first steps \ntowards easing lockdown restrictions', 'relevency': ['New York']},
     {'date' : '4/14/20', 'event' : 'India extended the nationwide lockdown', 'relevency': []},
     {'date' : '4/17/20', 'event' : 'President Trump encouraged anti-lockdown groups', 'relevency': []},
     {'date' : '4/19/20', 'event' : 'Europe reached 100,000 coronavirus deaths', 'relevency': []},
     {'date' : '4/21/20', 'event' : 'Protest in North Carolina and Missouri against stay-at-home orders', 'relevency': []},
-    {'date' : '4/22/20', 'event' : 'Illinois reported a new daily high in coronavirus cases', 'relevency': []},
+    {'date' : '4/22/20', 'event' : 'Illinois reported a new daily high\n in coronavirus cases', 'relevency': ['Illinois']},
     {'date' : '4/23/20', 'event' : 'President Donald Trump suggested exploring disinfectants as a possible treatment for COVID-19 infections', 'relevency': []},
     {'date' : '4/25/20', 'event' : 'The Indian government allowed a limited reopening', 'relevency': []},
     {'date' : '5/1/20', 'event' : 'India extended its nationwide lockdown for another two weeks', 'relevency': []},
     {'date' : '5/4/20', 'event' : 'Around 4 million Italians returned to work', 'relevency': []},
     {'date' : '5/6/20', 'event' : 'European Commission forecast suggest 7.5 percent contraction in economy', 'relevency': []},
     {'date' : '5/8/20', 'event' : 'Cuomo said that the state has 73 cases of children developing symptoms similar to Kawasaki disease', 'relevency': []},
-    {'date' : '5/12/20', 'event' : 'Fauci warned of serious consequences if governors reopen state economies prematurely', 'relevency': []},
+    {'date' : '5/12/20', 'event' : 'Fauci warned of serious consequences \nif governors reopen state economies \nprematurely', 'relevency': ['New York', 'New Jersey', 'Illinois']},
     {'date' : '5/14/20', 'event' : 'Number of unemployment claim in US reaches 36.5 million', 'relevency': []},
     {'date' : '5/14/20', 'event' : 'MIS-C, has been reported in at least 19 states and Washington, D.C.', 'relevency': []},
     {'date' : '5/15/20', 'event' : 'In US April retail sales sank by 16.4 percent', 'relevency': []},
     {'date' : '5/16/20', 'event' : 'Restaurants, pubs and cafes in Australia reopens', 'relevency': []},
     {'date' : '5/18/20', 'event' : 'Restaurants and shops reopened in Italy', 'relevency': []},
     {'date' : '5/20/20', 'event' : 'In US, all 50 states had begun lifting some lockdown measures', 'relevency': []},
-    {'date' : '5/22/20', 'event' : 'The Justice Department backed a lawsuit challenging the stay at home restrictions in Illinois', 'relevency': []},
+    {'date' : '5/22/20', 'event' : 'The Justice Department backed \na lawsuit challenging the \nstay at home restrictions in Illinois', 'relevency': ['Illinois']},
     {'date' : '5/22/20', 'event' : 'Hertz filed for bankruptcy protection', 'relevency': []},
     {'date' : '5/26/20', 'event' : 'Lockdown eases in many states of US', 'relevency': []},
     {'date' : '5/27/20', 'event' : 'The United States surpassed 100,000 coronavirus deaths', 'relevency': []},
-    {'date' : '5/31/20', 'event' : 'Thousands gathered in cities across US to protest the in-custody death of George Floyd', 'relevency': []}
+    {'date' : '5/31/20', 'event' : 'Thousands gathered across US\n to protest the death \nof George Floyd', 'relevency': ['New York', 'New Jersey', 'Illinois']}
 ]
 
-def get_event(date):
-    pass
+def get_event(date, place):
+    for event in global_events:
+        if event['date'] == date and place in event['relevency']:
+            return event
+    return None
 
-def get_events_between(from_date, to_date):
-    pass
+def get_events_between(from_date, to_date, place):
+    events = []
+    import datetime
+
+    start = datetime.datetime.strptime(from_date, '%m/%d/%y')
+    end = datetime.datetime.strptime(to_date, '%m/%d/%y')
+
+    date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end - start).days)]
+    for dt in date_of_interest:
+        cd = f'{dt.month}/{dt.day}/{dt.year % 100}'
+        res = get_event(cd, place)
+        if res:
+            events.append(res)
+    return events
+

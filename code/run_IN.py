@@ -12,10 +12,10 @@ Phase 4: 18 May 2020 – 31 May 2020 (14 days)
 Phase 5: 1 June 2020 – ongoing (0 days); scheduled to end on 30 June 2020
 """
 lockdown_state = [
-    {'name':'Maharashtra','start': '3/22/20', 'end':''},
-    {'name':'Tamil Nadu','start': '3/22/20', 'end':''},
-    {'name':'West Bengal', 'start': '3/22/20', 'end':''},
-    {'name':'Delhi', 'start': '3/22/20', 'end':''}
+    {'name':'Maharashtra','start': '3/22/20', 'end':'', 'control':[]},
+    {'name':'Tamil Nadu','start': '3/22/20', 'end':'', 'control':[]},
+    {'name':'West Bengal', 'start': '3/22/20', 'end':'', 'control':[]},
+    {'name':'Delhi', 'start': '3/22/20', 'end':'', 'control':[]}
 ]
 
 def main():
@@ -32,7 +32,7 @@ def main():
     for state in lockdown_state:
         name = state['name']
         lockdown_date = state['start']
-        lockdown_date_index = metadata['dates'].index(lockdown_date)+21
+        lockdown_date_index = metadata['dates'].index(lockdown_date)
         end_date_index = len(metadata['dates'])
 
         trend_analysis(file1, 'in', name, metric[0], metadata['dates'])

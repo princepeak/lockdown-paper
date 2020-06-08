@@ -6,7 +6,7 @@ import datetime
 start = datetime.datetime.strptime("2020-02-12", "%Y-%m-%d")
 end = datetime.datetime.strptime("2020-03-12", "%Y-%m-%d")
 
-date_of_interset = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
+date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
 
 df = pd.read_csv('../data/news/OnlineNews-150Snippet.csv')
 df['text'] = df['Title'] + df['Context']
@@ -16,7 +16,7 @@ df = df.set_index(['Date'])
 
 result = {}
 
-for day in date_of_interset:
+for day in date_of_interest:
     cd = day.strftime("%Y-%m-%d")
     day_df = df.loc[cd]
     print(f'Using {day_df.shape[0]} articles for {cd}')

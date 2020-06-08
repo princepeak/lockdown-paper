@@ -68,5 +68,5 @@ def show_trend(df, country, place, metric, n_changepoints=20):
     # Use tight layout
     fig.tight_layout()
 
-    plt.savefig(f'../img/{country}/{place}_{metric}_trend.png')
+    plt.savefig(f'../img/{country}/{place}_{metric}_trend.pdf')
     plt.clf()
