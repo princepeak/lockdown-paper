@@ -2,7 +2,7 @@
 
 ## Tasks
 
-### Sai - Hydrate Tweets 
+### Sai - Geo tagging text data 
 1. Evaluate geotext
 
 ### Subhas 

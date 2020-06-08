@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_IN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed_trend.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed_trend.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_deaths.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_deaths.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_deaths_trend.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_deaths_trend.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
