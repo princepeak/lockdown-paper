@@ -6,19 +6,33 @@ import re
 
 load()
 
-def print_topics(model, count_vectorizer, n_top_words):
+def print_topics(model, vdata, count_vectorizer, n_top_words):
     words = count_vectorizer.get_feature_names()
+    Wordcount = vdata.toarray().sum(axis=0)
     for topic_idx, topic in enumerate(model.components_):
         print("\nTopic #%d:" % topic_idx)
-        print(" ".join([words[i]
+        print(" ".join([words[i] + ' ' + str(Wordcount[i])
                         for i in topic.argsort()[:-n_top_words - 1:-1]]))
 
-def get_topic_as_json(model, count_vectorizer, n_top_words):
+def get_topic_as_json(model, vdata, count_vectorizer, n_top_words):
     json_dict = {}
     words = count_vectorizer.get_feature_names()
+    Wordcount = vdata.toarray().sum(axis=0)
+
+    topic_term_dists = model.components_ / model.components_.sum(axis=1)[:, None]
+    doc_topic_dists = model.transform(vdata)/ model.transform(vdata).sum(axis=1)[:, None]
+    doc_length = vdata.sum(axis=1).getA1()
+
+    json_dict['topic'] = {}
+
     for topic_idx, topic in enumerate(model.components_):
-        json_dict[f'topic{topic_idx}'] = [words[i]
+        json_dict['topic'][f'topic{topic_idx}'] = [{'word': words[i], 'count': Wordcount[i]}
                         for i in topic.argsort()[:-n_top_words - 1:-1]]
+    json_dict['data'] = {}
+    json_dict['data']['topic_term_dists'] = topic_term_dists.tolist()
+    json_dict['data']['doc_topic_dists'] = doc_topic_dists.tolist()
+    json_dict['data']['doc_length'] = doc_length.tolist()
+
     return json_dict
 
 def remove_links(tweet):
@@ -75,27 +89,19 @@ def vectorize(data):
 
     return [count_vectorizer,count_data]
 
-def train(vdata, vectorizer,  name='', number_topics = 10, number_words = 10):
+def train(vdata, vectorizer, number_topics = 10, number_words = 10):
     # Create and fit the LDA model
     lda = LDA(n_components=number_topics, n_jobs=-1)
     lda.fit(vdata)
-    print_topics(lda, vectorizer, number_words)
-    lda_visual(lda,vdata,vectorizer,number_topics,name)
-    return get_topic_as_json(lda, vectorizer, number_words)
+    print_topics(lda, vdata, vectorizer, number_words)
+    return get_topic_as_json(lda, vdata, vectorizer, number_words)
 
-def run_lda(df, field='status',name=''):
+def run_lda(df, field):
     print(f'Cleaning..\n')
     df['clean'] = df[field].apply(clean)
     s = df['clean']
     print(f'Vectorization..\n')
     [vectorizer, vdata] = vectorize(s)
     print(f'Running LDA..\n')
-    res = train(vdata,vectorizer,name)
+    res = train(vdata,vectorizer)
     return res
-
-def lda_visual(model, vdata, vectorizer, number_topics, name=''):
-    from pyLDAvis import sklearn as sklearn_lda
-    import pyLDAvis
-
-    LDAvis_prepared = sklearn_lda.prepare(model, vdata, vectorizer)
-    pyLDAvis.save_html(LDAvis_prepared, f'../data/news_processed/ldavis_prepared_{name}_{str(number_topics)}.html')
