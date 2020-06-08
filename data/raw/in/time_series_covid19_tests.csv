@@ -65,6 +65,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 05/06/2020,Andhra Pradesh,423564,Tested,3427,419314,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/319,,http://hmfw.ap.gov.in/covid_dashboard.aspx,,,,,
 06/06/2020,Andhra Pradesh,436335,Tested,3588,431875,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/327,,http://hmfw.ap.gov.in/covid_dashboard.aspx,,,,,
 07/06/2020,Andhra Pradesh,454030,Tested,3718,449371,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/345,,http://hmfw.ap.gov.in/covid_dashboard.aspx,,,,,
+08/06/2020,Andhra Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,
 09/04/2020,Arunachal Pradesh,206,Samples Collected,1,185,20,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1248269356070363136?s=19,,,0.49%,0.14,137,206,1504000
 14/04/2020,Arunachal Pradesh,280,Samples Collected,1,250,29,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1249901653634867200,,,0.36%,0.19,186,280,1504000
 17/04/2020,Arunachal Pradesh,363,Samples Collected,1,338,25,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1251136883045752834,,,0.28%,0.24,241,363,1504000
@@ -115,7 +116,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 04/06/2020,Arunachal Pradesh,10025,Samples Collected,43,8552,1427,,,,,,,,,,,,6506,https://t.me/Covid19india_Auxiliary_Test_Data/312,,http://covid19.itanagarsmartcity.in/callstatus.php,,,,,
 05/06/2020,Arunachal Pradesh,10790,Samples Collected,46,8877,1755,,,,,,,,,,,,,https://t.me/indiacovid/6443,,,,,,,
 06/06/2020,Arunachal Pradesh,11261,Samples Collected,49,9350,1841,,,,,,,,,,,,6539,https://t.me/Covid19india_Auxiliary_Test_Data/335,,http://covid19.itanagarsmartcity.in/covidstatus.php,,,,,
-07/06/2020,Arunachal Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,
+07/06/2020,Arunachal Pradesh,11516,Samples Collected,51,9921,1520,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/356,,,,,,,
 02/04/2020,Assam,962,Tested,16,819,,,,,,,,,,,,,,https://twitter.com/nhm_assam/status/1245742375319691264/photo/1,,,1.66%,0.03,28,60,34293000
 10/04/2020,Assam,2863,Tested,29,2685,,,,,,,3212,440,240,,,,9245,https://t.me/indiacovid/2003?single,,,1.01%,0.08,83,99,34293000
 11/04/2020,Assam,3011,Tested,29,2842,,,,,,,3212,440,240,,,,9514,https://t.me/indiacovid/2075?single,,,0.96%,0.09,88,104,34293000
@@ -164,8 +165,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 02/06/2020,Assam,120375,Tested,1513,111229,,,,,,,3338,595,332,,,,49659,https://twitter.com/nhm_assam/status/1267850997898137603,,,,,,,
 03/06/2020,Assam,126726,Tested,1672,117650,,,,,,,3338,595,332,,,,,https://twitter.com/nhm_assam/status/1268230494988230656?s=19,,,,,,,
 04/06/2020,Assam,133029,Tested,1988,122618,,,,,,,3338,595,332,,,,51823,https://twitter.com/nhm_assam/status/1268576420630073347?s=09,,,,,,,
-06/06/2020,Assam,146605,Tested,2397,136154,8054,255482,27197,Facility,,,3338,595,332,,,,,https://twitter.com/nhm_assam/status/1269318718305206272/photo/1,,,,,,,
-07/06/2020,Assam,,,,,,,,,,,,,,,,,,,,,,,,,
+06/06/2020,Assam,146605,Tested,2397,136154,8054,,,,,,3338,595,332,,,,,https://twitter.com/nhm_assam/status/1269318718305206272/photo/1,,,,,,,
+07/06/2020,Assam,153326,Tested,2565,142192,,,,,,,3338,595,332,,,,54548,https://twitter.com/nhm_assam/status/1269669639807741953?s=19,,,,,,,
 05/04/2020,Bihar,3037,Tested,32,2299,706,,,,,,,,,,,,,https://twitter.com/sanjayjavin/status/1246667952054665216,,,1.05%,0.03,25,95,119520000
 08/04/2020,Bihar,4596,Tested,38,,465,,,,,,,,,,,,,https://twitter.com/sanjayjavin/status/1247762894063677440,,,0.83%,0.04,38,121,119520000
 09/04/2020,Bihar,4991,Tested,43,,394,,,,,,,,,,,,,https://twitter.com/BiharHealthDept/status/1248176830856626176/photo/1,,,0.86%,0.04,42,116,119520000
@@ -1091,6 +1092,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 05/06/2020,Maharashtra,524002,Tested,77793,440445,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1268781427182587904?s=19,,,,,,,
 06/06/2020,Maharashtra,538009,Tested,80229,451764,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1269143363204165632?s=19,,,,,,,
 07/06/2020,Maharashtra,553063,Tested,82968,463723,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1269505767914307584?s=19,,,,,,,
+08/06/2020,Maharashtra,565290,Tested,85975,473588,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1269867590207356928?s=19,,,,,,,
 14/04/2020,Manipur,276,Reports Received,2,,,321,109,Government,212,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/03/PHOTO-2020-04-14-21-19-48.jpg,,,0.72%,0.09,89,138,3103000
 17/04/2020,Manipur,311,Reports Received,2,,,359,126,Government,233,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/03/170420_status.jpg,,,0.64%,0.10,100,156,3103000
 24/04/2020,Manipur,402,Reports Received,2,,,391,80,Government,311,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/05/status_240420.jpg,,,0.50%,0.13,130,201,3103000
@@ -1341,6 +1343,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 05/06/2020,Odisha,169010,Tested,2608,,,,,,,,,296,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/317?single,,https://statedashboard.odisha.gov.in/,,,,,
 06/06/2020,Odisha,172598,Tested,2781,,,,,,,,,296,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/325,,https://statedashboard.odisha.gov.in/,,,,,
 07/06/2020,Odisha,176098,Tested,2856,,,,,,,,,296,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/344?single,,https://statedashboard.odisha.gov.in/,,,,,
+08/06/2020,Odisha,179415,Tested,2994,,,,,,,,,326,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/358?single,,https://statedashboard.odisha.gov.in/,,,,,
 18/04/2020,Puducherry,1207,Samples Sent,7,1159,41,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,0.58%,0.80,803,172,1504000
 19/04/2020,Puducherry,1245,Samples Sent,7,1214,24,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,0.56%,0.83,828,178,1504000
 20/04/2020,Puducherry,1272,Samples Sent,7,1232,33,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,0.55%,0.85,846,182,1504000

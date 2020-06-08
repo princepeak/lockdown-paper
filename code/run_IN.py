@@ -3,6 +3,7 @@ from mrsc_score import score_rsc, score_mrsc
 from trend_analysis import trend_analysis
 import json
 import time
+from events import get_events_between
 
 """
 Phase 1: 25 March 2020 – 14 April 2020 (21 days)
@@ -12,10 +13,10 @@ Phase 4: 18 May 2020 – 31 May 2020 (14 days)
 Phase 5: 1 June 2020 – ongoing (0 days); scheduled to end on 30 June 2020
 """
 lockdown_state = [
-    {'name':'Maharashtra','start': '3/22/20', 'end':'', 'control':[]},
-    {'name':'Tamil Nadu','start': '3/22/20', 'end':'', 'control':[]},
-    {'name':'West Bengal', 'start': '3/22/20', 'end':'', 'control':[]},
-    {'name':'Delhi', 'start': '3/22/20', 'end':'', 'control':[]}
+    {'name':'Maharashtra','start': '4/15/20', 'end':'', 'control':['Delhi',
+                                                                   'Gujarat',
+                                                                   'Rajasthan',
+                                                                   'Uttar Pradesh']}
 ]
 
 def main():
@@ -38,7 +39,25 @@ def main():
         trend_analysis(file1, 'in', name, metric[0], metadata['dates'])
         trend_analysis(file2, 'in', name, metric[1], metadata['dates'])
 
-        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'in', metadata['dates'], lockdown_date)
+        score_mrsc(file1, file2,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[0], 'in',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
+
+        score_mrsc(file2, file1,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[1], 'in',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
 
         time.sleep(5)
 

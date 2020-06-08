@@ -7,7 +7,7 @@ from events import get_events_between
 
 # from https://www.businessinsider.com.au/us-map-stay-at-home-orders-lockdowns-2020-3?r=US&IR=T
 lockdown_state = [
-    {'name':'New Jersey','start': '3/21/20', 'end':'', 'control':['New York',
+    {'name':'New Jersey','start': '3/28/20', 'end':'', 'control':['New York',
                                                                        'California',
                                                                        'Illinois',
                                                                        'Massachusetts',
@@ -26,7 +26,7 @@ lockdown_state = [
 ]
 
 def main():
-    #update()
+    update()
     prepare()
     metric = ['deaths', 'confirmed']
     file1 = f'../data/processed/us/{metric[0]}.csv'

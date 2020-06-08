@@ -46,7 +46,7 @@ def get_resultant_DF(df, columns):
                             'WB' : 'West Bengal',
                             'UN' : 'Unassigned'})
     df = df.drop(
-        columns=['Status', 'Date', 'Total']).transpose()
+        columns=['Status', 'Date']).transpose()
     df = df.cumsum(axis=1)
     df.insert(loc=0, column='Province_State',
                         value=df.index)
