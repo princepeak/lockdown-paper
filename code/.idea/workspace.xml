@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepare_data_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_IN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_IN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_US.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_US.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed_trend.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_confirmed_trend.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_deaths.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_deaths.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/in/Maharashtra_deaths_trend.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../img/in/Maharashtra_deaths_trend.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,25 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run_OTH.py">
+        <entry file="file://$PROJECT_DIR$/events.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_US.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="80" column="79" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -51,6 +39,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>chan</find>
+      <find>Mahara</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,9 +64,9 @@
         <option value="$PROJECT_DIR$/trend_analysis.py" />
         <option value="$PROJECT_DIR$/run_OTH.py" />
         <option value="$PROJECT_DIR$/prepare_data_IN.py" />
+        <option value="$PROJECT_DIR$/run_US.py" />
         <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/events.py" />
-        <option value="$PROJECT_DIR$/run_US.py" />
       </list>
     </option>
   </component>
@@ -122,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_US">
+  <component name="RunManager" selected="Python.run_IN">
     <configuration name="events" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,9 +219,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.run_US" />
         <item itemvalue="Python.run_OTH" />
-        <item itemvalue="Python.run_IN" />
         <item itemvalue="Python.events" />
         <item itemvalue="Python.geolocation" />
       </list>
@@ -255,12 +244,12 @@
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -583,33 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1543">
-          <caret line="83" column="55" lean-forward="true" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_IN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_US.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_OTH.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -617,6 +579,33 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_US.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="80" column="79" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="79" />
         </state>
       </provider>
     </entry>

@@ -89,7 +89,7 @@ global_events = [
     {'date': '1/23/20', 'event': 'Wuhan placed under quarantine', 'relevency': []},
     {'date': '1/30/20', 'event': 'WHO declares a Public Health Emergency of International Concern', 'relevency': []},
     {'date': '2/11/20', 'event': 'WHO announces name COVID-19',
-     'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra']},
+     'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']},
     {'date': '2/19/20', 'event': 'Confirmed cases in Iran', 'relevency': []},
     {'date': '2/29/20', 'event': 'US reports first COVID-19 death',
      'relevency': ['New York', 'New Jersey', 'Illinois']},
@@ -98,7 +98,7 @@ global_events = [
     {'date': '2/18/20', 'event': 'Passengers begin to disembark the Diamond Princes', 'relevency': []},
     {'date': '2/20/20', 'event': 'First reported case in Italy', 'relevency': ['Italy']},
     {'date': '3/11/20', 'event': 'WHO classifies COVID-19 as a pandemic',
-     'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra']},
+     'relevency': ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Maharashtra', 'Delhi']},
     {'date': '3/11/20', 'event': 'US bans travel from most European countries', 'relevency': []},
     {'date': '3/8/20', 'event': 'Italy begins Lockdown', 'relevency': ['Italy']},
     {'date': '12/31/19', 'event': 'China, reported a cluster of cases of pneumonia in Wuhan, Hubei Province',
@@ -127,7 +127,7 @@ global_events = [
     {'date': '3/19/20', 'event': 'Italy records more coronavirus-related deaths than China', 'relevency': ['Italy']},
     {'date': '3/19/20', 'event': 'California issued a statewide stay-at-home order', 'relevency': []},
     {'date': '3/21/20', 'event': 'Coronavirus cases in New York State\n crosses 10,000', 'relevency': []},
-    {'date': '3/24/20', 'event': 'A complete 21-day national lockdown', 'relevency': ['Maharashtra']},
+    {'date': '3/24/20', 'event': 'A complete 21-day national lockdown', 'relevency': ['Maharashtra', 'Delhi']},
     {'date': '3/21/20', 'event': 'New Jersey lockdown', 'relevency': ['New Jersey']},
     {'date': '3/21/20', 'event': 'Illinois lockdown', 'relevency': ['Illinois']},
     {'date': '3/22/20', 'event': 'New York lockdown', 'relevency': ['New York']},
@@ -150,7 +150,7 @@ global_events = [
      'relevency': ['New Jersey', 'Illinois']},
     {'date': '4/13/20', 'event': 'New York outlined first steps \ntowards easing lockdown restrictions',
      'relevency': ['New York']},
-    {'date': '4/14/20', 'event': 'India extended the nationwide lockdown', 'relevency': ['Maharashtra']},
+    {'date': '4/14/20', 'event': 'India extended the nationwide lockdown', 'relevency': ['Maharashtra', 'Delhi']},
     {'date': '4/17/20', 'event': 'President Trump encouraged anti-lockdown groups', 'relevency': []},
     {'date': '4/19/20', 'event': 'Europe reached 100,000 coronavirus deaths', 'relevency': ['Italy', 'Spain']},
     {'date': '4/21/20', 'event': 'Protest in North Carolina and Missouri against stay-at-home orders', 'relevency': []},
@@ -159,9 +159,9 @@ global_events = [
     {'date': '4/23/20',
      'event': 'President Donald Trump suggested exploring disinfectants as a possible treatment for COVID-19 infections',
      'relevency': []},
-    {'date': '4/25/20', 'event': 'The Indian government allowed a limited reopening', 'relevency': ['Maharashtra']},
+    {'date': '4/25/20', 'event': 'The Indian government allowed a limited reopening', 'relevency': ['Maharashtra', 'Delhi']},
     {'date': '5/1/20', 'event': 'India extended its nationwide lockdown for another two weeks',
-     'relevency': ['Maharashtra']},
+     'relevency': ['Maharashtra', 'Delhi']},
     {'date': '5/4/20', 'event': 'Around 4 million Italians returned to work', 'relevency': ['Italy']},
     {'date': '5/6/20', 'event': 'European Commission forecast suggest 7.5 percent contraction in economy',
      'relevency': []},
@@ -195,8 +195,8 @@ global_events = [
      'relevency': ["Spain"]},
     {'date': '5/11/20', 'event': 'Phase 1 De-escalation start', 'relevency': ["Spain"]},
     {'date': '4/6/20', 'event': 'The doubling rate had slowed \nto six days from three days',
-     'relevency': ['Maharashtra']},
-    {'date': '5/30/20', 'event': 'Lockdown extended till 30 June in containment zones', 'relevency': ['Maharashtra']}
+     'relevency': ['Maharashtra', 'Delhi']},
+    {'date': '5/30/20', 'event': 'Lockdown extended till 30 June in containment zones', 'relevency': ['Maharashtra', 'Delhi']}
 ]
 
 def get_event(date, place):

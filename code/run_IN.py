@@ -16,7 +16,8 @@ lockdown_state = [
     {'name':'Maharashtra','start': '4/15/20', 'end':'', 'control':['Delhi',
                                                                    'Gujarat',
                                                                    'Rajasthan',
-                                                                   'Uttar Pradesh']}
+                                                                   'Uttar Pradesh']},
+    {'name':'Delhi','start': '4/15/20', 'end':'', 'control':None}
 ]
 
 def main():
