@@ -270,18 +270,18 @@ def score_mrsc(filename_metric,
 
     fig, ax = plt.subplots(figsize=(15, 5))
 
-    ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='red', linewidth=2, alpha=0.7, #marker='.',
+    ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='firebrick', linewidth=2, alpha=0.7, #marker='.',
              label='observations')
 
-    ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='orange', linewidth=2, alpha=0.7, #marker='v',
+    ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='sandybrown', linewidth=2, alpha=0.7, #marker='v',
             label='predictions')
 
     middle = (max(predictions[0]) - min(predictions[0])) / 2 - (max(predictions[0]) - min(predictions[0])) / 4
     if events:
         #plot events
         for evt in events:
-            ax.axvline(x=evt['date'], linewidth=1, linestyle='--', color='lightgrey')
-            text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='tan')
+            ax.axvline(x=evt['date'], linewidth=1, color='lightgrey')
+            text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='gray')
     else:
         ax.axvline(x=interventionDay, linewidth=1, color='black')
         text(interventionDay, middle, interventionDay, rotation=90, verticalalignment='center',fontsize=8)

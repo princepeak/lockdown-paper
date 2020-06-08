@@ -5,7 +5,8 @@ import json
 def get_resultant_DF(countryList, df):
     dfList =[]
     for country in countryList:
-        dfList.append(df[df['Country/Region']==country])
+        tdf = df[(df['Country/Region']==country) & (df['Province/State'].isnull())]
+        dfList.append(tdf)
     df = pd.concat(dfList)
     df = df.drop(columns=['Province/State', 'Lat', 'Long'])
     columns = df.columns.tolist()
@@ -48,7 +49,7 @@ def prepare():
     filename_confirmed = '../data/raw/global/time_series_covid19_confirmed_global.csv'
     filename_deaths = '../data/raw/global/time_series_covid19_deaths_global.csv'
 
-    countryList = ["Italy", "Spain", "Germany", "Iran", "Sweden"]
+    countryList = ["France", "Italy", "Spain", "Germany", "Iran", "Sweden", "Brazil", "Russia", "United Kingdom", "Turkey", "Belgium", "Netherlands"]
 
     [df, start, end, dates] = get_OTH_Confirmed_DF(filename_confirmed,countryList)
     df.to_csv('../data/processed/other/confirmed.csv', index=False)

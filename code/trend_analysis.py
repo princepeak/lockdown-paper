@@ -45,7 +45,7 @@ def show_trend(df, country, place, metric, n_changepoints=20):
     warnings.resetwarnings()
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        df["y"] = df["y"] #np.log10(df["y"]).replace([np.inf, -np.inf], 0)
+        df["y"] = np.log10(df["y"]).replace([np.inf, -np.inf], 0)
     # fbprophet
     model = Prophet(growth="linear", daily_seasonality=False, n_changepoints=n_changepoints)
     model.fit(df)
@@ -60,8 +60,8 @@ def show_trend(df, country, place, metric, n_changepoints=20):
     for i, v in model.changepoints.items():
         text(v, (df["y"].max() - df["y"].min())/2., f'{v.strftime("%Y-%m-%d")}', rotation=90, verticalalignment='center')
     name = f"{place}: "
-    plt.title(f"{name} {metric} over time and chainge points")
-    plt.ylabel(f"the number of cases")
+    plt.title(f"{name} log10({metric}) over time and chainge points")
+    plt.ylabel(f"log10(the number of {metric})")
     plt.xlabel("")
 
 

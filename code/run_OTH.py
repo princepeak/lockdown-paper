@@ -3,15 +3,23 @@ from mrsc_score import score_rsc, score_mrsc
 from trend_analysis import trend_analysis
 import json
 import time
+from events import get_events_between
 
 lockdown_state = [
-    {'name':'Italy','start': '3/9/20', 'end':''},
-    #{'name':'Spain','start': '3/9/20', 'end':''},
-    # {'name':' ', 'start': '', 'end':''}
+    {'name':'Italy','start': '3/9/20', 'end':'', 'control':["France",
+                                                            "Spain",
+                                                            "Germany",
+                                                            "Sweden",
+                                                            "United Kingdom",
+                                                            "Belgium",
+                                                            "Netherlands"]},
+    {'name':'Spain','start': '3/9/20', 'end':'', 'control':["France",
+                                                            "Italy",
+                                                            "Brazil"]}
 ]
 
 def main():
-    #update()
+    update()
     prepare()
     metric = ['deaths', 'confirmed']
     file2 = f'../data/processed/other/{metric[1]}.csv'
@@ -28,9 +36,27 @@ def main():
         end_date_index = len(metadata['dates'])
 
         trend_analysis(file1, 'other', name, metric[0], metadata['dates'])
-        trend_analysis(file2, 'other', name, metric[1], metadata['dates'])
+        trend_analysis(file2, 'other', name, f'{metric[1]} cases', metadata['dates'])
 
-        score_mrsc(file1, file2,'Province_State', name, 0, lockdown_date_index, end_date_index, metric[0], 'other', metadata['dates'], lockdown_date)
+        score_mrsc(file1, file2,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[0], 'other',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
+
+        score_mrsc(file2, file1,
+                   'Province_State',
+                   name, 0,
+                   lockdown_date_index,
+                   end_date_index,
+                   metric[1], 'other',
+                   metadata['dates'], lockdown_date,
+                   control_group=state['control'],
+                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
         time.sleep(5)
 
 if __name__ == "__main__":
