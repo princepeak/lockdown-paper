@@ -7,7 +7,7 @@ from geolocation import filter_df
 start = datetime.datetime.strptime("2020-01-22", "%Y-%m-%d")
 end = datetime.datetime.strptime("2020-06-01", "%Y-%m-%d")
 date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
-places_of_interest = ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'India']
+places_of_interest = ['New Jersey', 'Illinois', 'Italy', 'Spain', 'India'] #'New York'
 topics_of_interest = ['covid19', 'quarantine', 'socialdistancing']
 
 for place in places_of_interest:
@@ -30,6 +30,6 @@ for place in places_of_interest:
                 with open(f'../data/news_processed/{place}/{topic}/{cd}.json', 'w', encoding='utf-8') as f:
                     json.dump(res, f, ensure_ascii=False, indent=4)
             else:
-                pass
+                print(f'Got {day_df.shape[0]} articles on {cd}')
 
 

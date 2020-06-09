@@ -1,8 +1,8 @@
 from geotext import GeoText
 
 def filter_by_location(text, location):
-    places = GeoText(text)
-    if location in places.cities:
+    places = GeoText(text.lower())
+    if location.lower() in places.cities or location.lower() in text.lower():
         return True
     else:
         return False
