@@ -1,10 +1,10 @@
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation as LDA
-from covidwordsegment import load, segment
+#from covidwordsegment import load, segment
 import nltk
 import re
 
-load()
+#load()
 
 def print_topics(model, vdata, count_vectorizer, n_top_words):
     words = count_vectorizer.get_feature_names()
@@ -23,16 +23,18 @@ def get_topic_as_json(model, vdata, count_vectorizer, n_top_words):
     doc_topic_dists = model.transform(vdata)/ model.transform(vdata).sum(axis=1)[:, None]
     doc_length = vdata.sum(axis=1).getA1()
 
-    json_dict['topic'] = {}
+    json_dict['topic_word_count'] = {}
 
     for topic_idx, topic in enumerate(model.components_):
-        json_dict['topic'][f'topic{topic_idx}'] = [{'word': words[i], 'count': Wordcount[i]}
+        json_dict['topic_word_count'][f'topic{topic_idx}'] = [{'word': words[i], 'count': int(Wordcount[i])}
                         for i in topic.argsort()[:-n_top_words - 1:-1]]
     json_dict['data'] = {}
+    json_dict['data']['vocab'] = words
+    json_dict['data']['freq'] = Wordcount.tolist()
     json_dict['data']['topic_term_dists'] = topic_term_dists.tolist()
     json_dict['data']['doc_topic_dists'] = doc_topic_dists.tolist()
     json_dict['data']['doc_length'] = doc_length.tolist()
-
+    json_dict['data']['model'] = model.components_.tolist()
     return json_dict
 
 def remove_links(tweet):
@@ -63,13 +65,14 @@ def clean(tweet, bigrams=True):
     tweet = re.sub('[' + punctuation + ']+', ' ', tweet)  # strip punctuation
     tweet = ' '.join(re.sub("(@[A-Za-z0–9]+)|(\w+://\S+)", " ", tweet).split())
     tweet = tweet.replace("#", "").replace("_", " ").replace("@", "").replace('…', '')
-    tweet = ' '.join([' '.join(segment(w)) for w in tweet.split()])
+    #tweet = ' '.join([' '.join(segment(w)) for w in tweet.split()]) useful for breaking hashtag
     tweet_token_list = [word for word in tweet.split(' ') if word not in stopwords]  # remove stopwords
 
     if bigrams:
         tweet_token_list = tweet_token_list + [tweet_token_list[i] + '_' + tweet_token_list[i + 1]
                                                for i in range(len(tweet_token_list) - 1)]
     tweet = ' '.join(tweet_token_list)
+    tweet = re.sub(r'\b[0-9_]+\b\W*', '', tweet)
     return tweet
 
 def vectorize(data):
