@@ -166,7 +166,9 @@ def score_mrsc(filename_metric,
                days,
                lockdown_date,
                control_group=None,
-               events=None):
+               events=None,
+               daily_confirmed = None,
+               daily_deaths = None):
     df1 = pd.read_csv(filename_metric)
 
     df2 = pd.read_csv(filename_secondary_metric)
@@ -271,10 +273,20 @@ def score_mrsc(filename_metric,
     fig, ax = plt.subplots(figsize=(15, 5))
 
     ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='firebrick', linewidth=2, alpha=0.7, #marker='.',
-             label='observations')
+             label=f'Observations (Cumulative number of {MetricName})')
 
     ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='sandybrown', linewidth=2, alpha=0.7, #marker='v',
-            label='predictions')
+            label=f'Predictions (Cumulative number of {MetricName})')
+
+    if daily_confirmed:
+        ax.plot(daysToPlot, daily_confirmed,
+                color='skyblue', linewidth=1, alpha=0.5,  # marker='v',
+                label='Number of confirmed cases daily')
+
+    if daily_deaths:
+        ax.plot(daysToPlot, daily_deaths,
+                color='chocolate', linewidth=1, alpha=0.5,  # marker='v',
+                label='Number of deaths daily')
 
     middle = (max(predictions[0]) - min(predictions[0])) / 2 - (max(predictions[0]) - min(predictions[0])) / 4
     if events:

@@ -7,6 +7,7 @@
 
 ### Subhas 
 1. News data - LDA - for ['covid19', 'quarantine', 'socialdistancing'], for ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'India'] as filter
+2. Mobility data
 
 
 ## Backlog
