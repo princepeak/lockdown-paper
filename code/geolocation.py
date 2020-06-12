@@ -1,6 +1,6 @@
 import spacy
-import en_core_web_lg
-nlp = en_core_web_lg.load()
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 def get_location_list(text):
     doc = nlp(text)
