@@ -2,71 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb82a13-bf0f-4fd9-8dec-954e66abc593" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LDA_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/LDA_DTM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geolocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/geolocation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lda_news.py" beforeDir="false" afterPath="$PROJECT_DIR$/lda_news.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200122.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200122.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200123.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200123.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200124.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200124.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200125.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200125.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200127.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200127.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200128.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200128.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200129.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200129.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200130.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200130.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200131.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200131.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200201.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200201.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200202.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200202.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200203.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200203.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200204.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200204.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200205.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200205.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200206.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200206.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200207.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200207.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200208.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200208.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200210.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200210.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200211.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200211.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200212.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200212.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200213.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200213.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200214.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200214.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200215.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200215.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200216.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200216.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200217.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200217.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200218.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200218.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200219.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200219.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200220.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200220.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200221.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200221.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200222.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200222.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200224.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200224.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200225.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200225.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200226.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200226.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200227.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200227.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200228.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200228.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200229.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200229.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200301.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200301.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200302.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200302.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200303.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200303.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200304.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200304.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200305.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200305.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200306.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200306.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200307.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200307.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200308.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200308.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200309.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200309.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200310.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200310.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200311.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200311.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200312.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200312.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200313.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200313.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200314.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200314.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200315.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200315.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200316.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200316.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200317.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200317.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200318.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200318.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200319.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200319.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200320.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200320.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200321.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200321.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200322.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200322.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200323.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200323.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200324.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200324.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200325.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/news_processed/New York/covid19/20200325.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess_news_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess_news_date.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lda_news.py">
+        <entry file="file://$PROJECT_DIR$/LDA_DTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="86" />
+            <state relative-caret-position="4125">
+              <caret line="275" column="60" selection-start-line="275" selection-start-column="60" selection-end-line="275" selection-end-column="60" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -89,52 +29,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobility.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mrsc_score.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="305" column="13" selection-start-line="304" selection-start-column="4" selection-end-line="305" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="48" column="35" selection-start-line="47" selection-start-column="9" selection-end-line="48" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_IN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geolocation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,6 +53,7 @@
     <findStrings>
       <find>chan</find>
       <find>Mahara</find>
+      <find>original_corpus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,19 +70,21 @@
         <option value="$PROJECT_DIR$/hydrate_tweets_example.py" />
         <option value="$PROJECT_DIR$/lda_tweet.py" />
         <option value="$PROJECT_DIR$/download_news_data.py" />
-        <option value="$PROJECT_DIR$/mrsc_score.py" />
         <option value="$PROJECT_DIR$/prepare_data_OTH.py" />
         <option value="$PROJECT_DIR$/trend_analysis.py" />
         <option value="$PROJECT_DIR$/run_OTH.py" />
-        <option value="$PROJECT_DIR$/prepare_data_IN.py" />
         <option value="$PROJECT_DIR$/run_US.py" />
-        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/events.py" />
+        <option value="$PROJECT_DIR$/mobility.py" />
+        <option value="$PROJECT_DIR$/prepare_data_IN.py" />
+        <option value="$PROJECT_DIR$/mrsc_score.py" />
+        <option value="$PROJECT_DIR$/run_IN.py" />
         <option value="$PROJECT_DIR$/lda_model.py" />
+        <option value="$PROJECT_DIR$/LDA_visualization.py" />
         <option value="$PROJECT_DIR$/preprocess_news_date.py" />
         <option value="$PROJECT_DIR$/lda_news.py" />
+        <option value="$PROJECT_DIR$/LDA_DTM.py" />
         <option value="$PROJECT_DIR$/geolocation.py" />
-        <option value="$PROJECT_DIR$/mobility.py" />
       </list>
     </option>
   </component>
@@ -201,6 +105,11 @@
             <path>
               <item name="code" type="b2602c69:ProjectViewProjectNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,7 +134,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mobility">
+  <component name="RunManager" selected="Python.LDA_visualization">
+    <configuration name="LDA_visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LDA_DTM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="lda_news" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -310,34 +240,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_US" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_US.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mobility" />
+        <item itemvalue="Python.LDA_visualization" />
         <item itemvalue="Python.lda_news" />
-        <item itemvalue="Python.preprocess_news_date" />
         <item itemvalue="Python.run_IN" />
-        <item itemvalue="Python.run_US" />
+        <item itemvalue="Python.mobility" />
+        <item itemvalue="Python.preprocess_news_date" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +272,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -663,34 +572,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess_news_date.py">
+    <entry file="file://$PROJECT_DIR$/mrsc_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        <state relative-caret-position="4320">
+          <caret line="288" column="7" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_IN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="38" column="31" selection-start-line="36" selection-start-column="4" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lda_model.py">
+    <entry file="file://$PROJECT_DIR$/preprocess_news_date.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geolocation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prepare_data_IN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="48" column="35" selection-start-line="47" selection-start-column="9" selection-end-line="48" selection-end-column="35" />
+        <state relative-caret-position="1708">
+          <caret line="130" column="54" selection-start-line="130" selection-start-column="54" selection-end-line="130" selection-end-column="54" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -699,34 +621,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lda_news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="86" />
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_IN.py">
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/gensim/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="154">
+          <caret line="1931" selection-start-line="1931" selection-end-line="1931" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mrsc_score.py">
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/selectors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="305" column="13" selection-start-line="304" selection-start-column="4" selection-end-line="305" selection-end-column="13" />
+        <state relative-caret-position="283">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobility.py">
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/gensim/models/wrappers/dtmmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
+        <state relative-caret-position="1468">
+          <caret line="408" column="8" selection-start-line="408" selection-start-column="8" selection-end-line="408" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/t20/lib/python3.7/site-packages/scipy/sparse/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="410" selection-start-line="410" selection-end-line="410" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lda_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="184" column="18" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LDA_DTM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="275" column="60" selection-start-line="275" selection-start-column="60" selection-end-line="275" selection-end-column="60" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geolocation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

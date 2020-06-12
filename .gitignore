@@ -137,4 +137,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 /data/news/
-/data/news_intermediate_datefile/
+/data/news_intermediate_datafile/
+/data/news_processed/
+/data/news_weekly_datafile/

@@ -1,12 +1,18 @@
-from geotext import GeoText
+import spacy
+import en_core_web_lg
+nlp = en_core_web_lg.load()
 
-def filter_by_location(text, location):
-    places = GeoText(text.lower())
-    if location.lower() in places.cities or location.lower() in text.lower():
+def get_location_list(text):
+    doc = nlp(text)
+    locations = [l.text for l in doc.ents if l.label_ in ['GPE']]
+    return locations
+
+def filter_by_location(text, location, sentinel):
+    places = set(get_location_list(text))
+    if places.intersection(sentinel):
         return True
     else:
         return False
 
-
-def filter_df(df,field,location):
-    return df[df[field].apply(filter_by_location, location=location)]
+def filter_df(df, field, location, sentinel):
+    return df[df[field].apply(filter_by_location, location=location, sentinel=sentinel)]

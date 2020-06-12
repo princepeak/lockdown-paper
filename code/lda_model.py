@@ -57,6 +57,9 @@ def clean(tweet, bigrams=True):
     :return: cleaned data as list of strings
     """
     stopwords = nltk.corpus.stopwords.words('english')
+    stopwords.extend(
+        ['from', 'subject', 're', 'edu', 'use', 'said', 'covid', 'coronavirus', 'new', 'novel', '19', 'covid19'])
+
     punctuation = '!"$%&\'()*+,-./:;<=>?[\\]^_`{|}~•@'
 
     tweet = remove_users(tweet)
@@ -99,6 +102,76 @@ def train(vdata, vectorizer, number_topics = 10, number_words = 10):
     print_topics(lda, vdata, vectorizer, number_words)
     return get_topic_as_json(lda, vdata, vectorizer, number_words)
 
+
+def gensim_lda(data):
+    import gensim
+    import gensim.corpora as corpora
+    from gensim.utils import simple_preprocess
+    from gensim.models import CoherenceModel
+    from nltk.corpus import stopwords
+    stop_words = stopwords.words('english')
+    stop_words.extend(['from', 'subject', 're', 'edu', 'use', 'said', 'covid', 'coronavirus', 'new', 'novel', '19', 'covid19', 'new', 'york'])
+
+    # Remove Emails
+    data = [re.sub('\S*@\S*\s?', '', sent) for sent in data]
+
+    # Remove new line characters
+    data = [re.sub('\s+', ' ', sent) for sent in data]
+
+    # Remove distracting single quotes
+    data = [re.sub("\'", "", sent) for sent in data]
+
+    def sent_to_words(sentences):
+        for sentence in sentences:
+            yield (gensim.utils.simple_preprocess(str(sentence), deacc=True))  # deacc=True removes punctuations
+
+    data_words = list(sent_to_words(data))
+
+    # Build the bigram and trigram models
+    bigram = gensim.models.Phrases(data_words, min_count=5, threshold=100)  # higher threshold fewer phrases.
+    trigram = gensim.models.Phrases(bigram[data_words], threshold=100)
+
+    # Faster way to get a sentence clubbed as a trigram/bigram
+    bigram_mod = gensim.models.phrases.Phraser(bigram)
+    trigram_mod = gensim.models.phrases.Phraser(trigram)
+
+    # Define functions for stopwords, bigrams, trigrams and lemmatization
+    def remove_stopwords(texts):
+        return [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in texts]
+
+    def make_bigrams(texts):
+        return [bigram_mod[doc] for doc in texts]
+
+    def make_trigrams(texts):
+        return [trigram_mod[bigram_mod[doc]] for doc in texts]
+
+    # Remove Stop Words
+    data_words_nostops = remove_stopwords(data_words)
+
+    # Form Bigrams
+    data_words_bigrams = make_bigrams(data_words_nostops)
+
+    # Create Dictionary
+    id2word = corpora.Dictionary(data_words_bigrams)
+
+    # Create Corpus
+    texts = data_words_bigrams
+
+    # Term Document Frequency
+    corpus = [id2word.doc2bow(text) for text in texts]
+
+    lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
+                                                id2word=id2word,
+                                                num_topics=10,
+                                                random_state=100,
+                                                update_every=1,
+                                                chunksize=100,
+                                                passes=10,
+                                                alpha='auto',
+                                                per_word_topics=True)
+    print(lda_model.print_topics())
+
+
 def run_lda(df, field):
     print(f'Cleaning..\n')
     df['clean'] = df[field].apply(clean)
@@ -108,3 +181,9 @@ def run_lda(df, field):
     print(f'Running LDA..\n')
     res = train(vdata,vectorizer)
     return res
+
+def run_gensim_lda(df, field):
+    print(f'Cleaning..\n')
+    df['clean'] = df[field].apply(clean)
+    s = df['clean']
+    gensim_lda(s)

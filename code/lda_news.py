@@ -1,21 +1,20 @@
 import pandas as pd
-from lda_model import run_lda
+from lda_model import run_lda, run_gensim_lda
 import json
 import datetime
 from geolocation import filter_df
 
-start = datetime.datetime.strptime("2020-01-22", "%Y-%m-%d")
+start = datetime.datetime.strptime("2020-03-22", "%Y-%m-%d")
 end = datetime.datetime.strptime("2020-06-01", "%Y-%m-%d")
 date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
-places_of_interest = ['New Jersey', 'Illinois', 'Italy', 'Spain', 'India'] #'New York'
+places_of_interest = ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'India']
 topics_of_interest = ['covid19', 'quarantine', 'socialdistancing']
 
 for place in places_of_interest:
     for topic in topics_of_interest:
-
         for day in date_of_interest:
             cd = day.strftime("%Y%m%d")
-            path = f'../data/news_intermediate_datefile/{topic}/{cd}-{topic}.csv'
+            path = f'../data/news_intermediate_datafile/{topic}/{cd}-{topic}.csv'
             day_df = pd.read_csv(path, engine='python')
             day_df = day_df.dropna()
             day_df = filter_df(day_df, 'text', place)

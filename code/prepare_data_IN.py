@@ -56,6 +56,53 @@ def get_resultant_DF(df, columns):
 def get_tests_DF(filename):
     pass
 
+def get_daily_data(df, columns):
+    df = df.rename(columns={'TT' : 'Total',
+                            'AN' : 'Andaman and Nicobar Islands',
+                            'AP' : 'Andhra Pradesh',
+                            'AR' : 'Arunachal Pradesh',
+                            'AS' : 'Assam',
+                            'BR' : 'Bihar',
+                            'CH' : 'Chandigarh',
+                            'CT' : 'Chhattisgarh',
+                            'DN' : 'Dadra and Nagar Haveli',
+                            'DD' : 'Daman and Diu',
+                            'DL' : 'Delhi',
+                            'GA' : 'Goa',
+                            'GJ' : 'Gujarat',
+                            'HR' : 'Haryana',
+                            'HP' : 'Himachal Pradesh',
+                            'JK' : 'Jammu and Kashmir',
+                            'JH' : 'Jharkhand',
+                            'KA' : 'Karnataka',
+                            'KL' : 'Kerala',
+                            'LA' : 'Ladakh',
+                            'LD' : 'Lakshadweep',
+                            'MP' : 'Madhya Pradesh',
+                            'MH' : 'Maharashtra',
+                            'MN' : 'Manipur',
+                            'ML' : 'Meghalaya',
+                            'MZ' : 'Mizoram',
+                            'NL' : 'Nagaland',
+                            'OR' : 'Orissa',
+                            'PY' : 'Pondicherry',
+                            'PB' : 'Punjab',
+                            'RJ' : 'Rajasthan',
+                            'SK' : 'Sikkim',
+                            'TN' : 'Tamil Nadu',
+                            'TG' : 'Telangana',
+                            'TR' : 'Tripura',
+                            'UP' : 'Uttar Pradesh',
+                            'UT' : 'Uttarakhand',
+                            'WB' : 'West Bengal',
+                            'UN' : 'Unassigned'})
+    df = df.drop(
+        columns=['Status', 'Date']).transpose()
+    df.insert(loc=0, column='Province_State',
+                        value=df.index)
+    df.columns = columns
+    return df
+
 def get_IN_DF(filename):
 
     df = pd.read_csv(filename, delimiter=',')
@@ -75,9 +122,16 @@ def get_IN_DF(filename):
     date_range = pd.date_range(start=start, end=end)
     columns = ['Province_State'] + [i for i in range(0, len(date_range))]
 
+    df_c = df_confirmed
+    df_d = df_deceased
+
     df_confirmed = get_resultant_DF(df_confirmed, columns)
     df_deceased = get_resultant_DF(df_deceased, columns)
-    return [df_confirmed, df_deceased, start, end, dates]
+
+    df_daily_confirmed = get_daily_data(df_c, columns)
+    df_daily_deceased = get_daily_data(df_d, columns)
+
+    return [df_confirmed, df_deceased, start, end, dates, df_daily_confirmed, df_daily_deceased]
 
 
 
@@ -108,7 +162,7 @@ def update():
 def prepare():
     filename = '../data/raw/in/time_series_covid19_confirmed_and_deaths.csv'
 
-    [df_confirmed, df_deceased, start, end, dates] = get_IN_DF(filename)
+    [df_confirmed, df_deceased, start, end, dates, df_daily_confirmed, df_daily_deceased] = get_IN_DF(filename)
     df_confirmed.to_csv('../data/processed/in/confirmed.csv', index=False)
     with open('../data/processed/in/confirmed.json', 'w', encoding='utf-8') as f:
         json.dump({'start': start, 'end': end, 'dates': dates},
@@ -118,6 +172,9 @@ def prepare():
     with open('../data/processed/in/deaths.json', 'w', encoding='utf-8') as f:
         json.dump({'start': start, 'end': end, 'dates': dates},
                   f, ensure_ascii=False, indent=4)
+
+    df_daily_confirmed.to_csv('../data/processed/in/daily_confirmed.csv', index=False)
+    df_daily_deceased.to_csv('../data/processed/in/daily_deceased.csv', index=False)
 
 if __name__ == "__main__":
     # update()

@@ -1,25 +1,6 @@
 import pandas as pd
 import datetime
 
-def get_start_end_dates(year, week):
-    d = datetime.date(year, 1, 1)
-    if (d.weekday() <= 3):
-        d = d - datetime.timedelta(d.weekday())
-    else:
-        d = d + datetime.timedelta(7 - d.weekday())
-    dlt = datetime.timedelta(days=(week - 1) * 7)
-    return [d + dlt, d + dlt + datetime.timedelta(days=6)]
-
-weeks_of_interst = []
-
-for i in range(5,22):
-    [s,e] = get_start_end_dates(2020, i)
-    r = {}
-    r['wno'] = i
-    r['sd'] = s
-    r['ed'] = e
-    weeks_of_interst.append(r)
-
 places_of_interest = ['New York', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'India']
 topics_of_interest = ['covid19', 'quarantine', 'socialdistancing']
 
@@ -42,7 +23,7 @@ def proces_20191101_20200326(topic):
         day_df = df.loc[cd]
         print(f'Using {day_df.shape[0]} articles for {cd}')
         #save a copy
-        save_path = f'../data/news_intermediate_datefile/{topic}/{cd}-{topic}.csv'
+        save_path = f'../data/news_intermediate_datafile/{topic}/{cd}-{topic}.csv'
         day_df.to_csv(save_path)
 
 def process_remaining(topic,cd):
@@ -57,7 +38,7 @@ def process_remaining(topic,cd):
     day_df = df.loc[cd]
     print(f'Using {day_df.shape[0]} articles for {cd}')
     # save a copy
-    save_path = f'../data/news_intermediate_datefile/{topic}/{cd}-{topic}.csv'
+    save_path = f'../data/news_intermediate_datafile/{topic}/{cd}-{topic}.csv'
     day_df.to_csv(save_path)
 
 
@@ -85,7 +66,7 @@ def process_oneoff(topic,cd):
     day_df = df.loc[cd]
     print(f'Using {day_df.shape[0]} articles for {cd}')
     # save a copy
-    save_path = f'../data/news_intermediate_datefile/{topic}/{cd}-{topic}.csv'
+    save_path = f'../data/news_intermediate_datafile/{topic}/{cd}-{topic}.csv'
     day_df.to_csv(save_path)
     
 for topic in topics_of_interest:
