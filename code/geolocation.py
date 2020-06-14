@@ -18,7 +18,7 @@ def flatten(list_of_lists):
 
 def process_chunk(texts,sentinel):
     preproc_pipe = []
-    for doc in nlp.pipe(texts, n_threads=5, batch_size=5000):
+    for doc in nlp.pipe(texts, n_threads=5, batch_size=1000):
         preproc_pipe.append(ner_pipe(doc, sentinel))
     return preproc_pipe
 
@@ -26,7 +26,7 @@ def filter_df(df, field, location, sentinel):
     print(df.shape)
     executor = Parallel(n_jobs=7, verbose=100, prefer="processes")
     do = delayed(process_chunk)
-    tasks = (do(chunk,sentinel) for chunk in chunker(df[field].values, len(df), chunksize=25000))
+    tasks = (do(chunk,sentinel) for chunk in chunker(df[field].values, len(df), chunksize=5000))
     result = executor(tasks)
     selected = flatten(result)
     return df[selected]

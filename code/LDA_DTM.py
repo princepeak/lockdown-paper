@@ -20,7 +20,7 @@ import en_core_web_lg
 nlp = en_core_web_lg.load()
 nlp.create_pipe('ner')
 HOME_DIR = str(Path(__file__).resolve().parents[1])
-MODEL_PATH = os.path.join(HOME_DIR, 'code', 'bin', 'dtm-darwin64')
+MODEL_PATH = os.path.join(HOME_DIR, 'code', 'bin', 'dtm')
 
 
 class Dtm(DtmModel):
@@ -299,6 +299,9 @@ def preprocess():
             combined_df = pd.concat([pd.read_csv(f, engine='python') for f in all_filenames])
             combined_df = combined_df.drop(columns=['Datetime','URL','Title','Content'])
             combined_df['week'] = wn
+            #Add NER
+            #Add Geolocation
+            #Clean and save final text [Date,Week,Text,Geo]
             combined_df.to_csv(f'../data/news_weekly_datafile/{topic}/{wn}.csv', index=False)
 
 
@@ -328,7 +331,7 @@ def train():
             time_slices = combined_place_df.groupby('week').size()
             time_slice_labels = combined_place_df.week.unique()
 
-            print(f'Got timeslices: {time_slice_labels}')
+            print(f'Got timeslices: {time_slices}')
 
             print(f'Cleaning.')
             combined_place_df['clean'] = combined_place_df['text'].apply(clean)
