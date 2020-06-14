@@ -16,7 +16,7 @@ def proces_20191101_20200326(topic):
 
     start = datetime.datetime.strptime("2020-01-22", "%Y-%m-%d")
     end = datetime.datetime.strptime("2020-03-26", "%Y-%m-%d")
-    date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end - start).days)]
+    date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end - start).days+1)]
 
     for day in date_of_interest:
         cd = day.strftime("%Y%m%d")

@@ -8,9 +8,9 @@ uri_prefix = 'http://data.gdeltproject.org/blog/2020-coronavirus-narrative/live_
 
 start = datetime.datetime.strptime("20200326", "%Y%m%d")
 end = datetime.datetime.strptime("20200603", "%Y%m%d")
-date_of_interset = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
+date_of_interset = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days+1)]
 
-topics = ['quarantine', 'socialdistancing']
+topics = ['covid19', 'quarantine', 'socialdistancing']
 
 #topics = ['cases', 'covid19', 'falsehoods', 'masks', 'panic', 'prices', 'quarantine', 'shortages', 'socialdistancing', 'testing', 'ventilators']
 

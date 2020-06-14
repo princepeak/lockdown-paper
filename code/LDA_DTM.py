@@ -18,7 +18,7 @@ import spacy
 import en_core_web_lg
 
 nlp = en_core_web_lg.load()
-
+nlp.create_pipe('ner')
 HOME_DIR = str(Path(__file__).resolve().parents[1])
 MODEL_PATH = os.path.join(HOME_DIR, 'code', 'bin', 'dtm-darwin64')
 
@@ -238,11 +238,6 @@ def clean(text):
     text = text.replace("#", "").replace("_", " ").replace("@", "").replace('…', '') #Replace few things like # _ ...
     text_token_list = [word for word in text.split(' ') if word not in stopwords]  # remove stopwords
     text = ' '.join(text_token_list)
-
-    # Do NER and keep enteties as ABC_XYZ
-    doc = nlp()
-    text =  text + ' ' + ' '.join(['_'.join(l.text.split()) for l in doc.ents])
-
     text = re.sub(r'\b[0-9_]+\b\W*', '', text) # Remove just the numbers
     return text
 
@@ -327,7 +322,7 @@ def train():
             combined_df = combined_df.dropna()
 
             print(f'Filtering by place: {place}')
-            sentinel = set(places_sentinail[place])
+            sentinel = places_sentinail[place]
             combined_place_df = filter_df(combined_df, 'text', place, sentinel)
 
             time_slices = combined_place_df.groupby('week').size()
