@@ -1,4 +1,4 @@
-
+import datetime
 """
 Based on #https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341
 
@@ -160,7 +160,7 @@ global_events = [
      'event': 'President Donald Trump suggested exploring disinfectants as a possible treatment for COVID-19 infections',
      'relevency': []},
     {'date': '4/25/20', 'event': 'The Indian government allowed a limited reopening', 'relevency': ['Maharashtra', 'Delhi']},
-    {'date': '5/1/20', 'event': 'India extended its nationwide lockdown for another two weeks',
+    {'date': '5/1/20', 'event': 'India extended its nationwide lockdown \nfor another two weeks',
      'relevency': ['Maharashtra', 'Delhi']},
     {'date': '5/4/20', 'event': 'Around 4 million Italians returned to work', 'relevency': ['Italy']},
     {'date': '5/6/20', 'event': 'European Commission forecast suggest 7.5 percent contraction in economy',
@@ -196,8 +196,18 @@ global_events = [
     {'date': '5/11/20', 'event': 'Phase 1 De-escalation start', 'relevency': ["Spain"]},
     {'date': '4/6/20', 'event': 'The doubling rate had slowed \nto six days from three days',
      'relevency': ['Maharashtra', 'Delhi']},
-    {'date': '5/30/20', 'event': 'Lockdown extended till 30 June in containment zones', 'relevency': ['Maharashtra', 'Delhi']}
+    {'date': '5/30/20', 'event': 'Lockdown extended till 30 June in \ncontainment zones', 'relevency': ['Maharashtra', 'Delhi']}
 ]
+
+
+def get_start_end_dates(year, week):
+    d = datetime.date(year, 1, 1)
+    if (d.weekday() <= 3):
+        d = d - datetime.timedelta(d.weekday())
+    else:
+        d = d + datetime.timedelta(7 - d.weekday())
+    dlt = datetime.timedelta(days=(week - 1) * 7)
+    return [d + dlt, d + dlt + datetime.timedelta(days=6)]
 
 def get_event(date, place):
     for event in global_events:
@@ -220,3 +230,15 @@ def get_events_between(from_date, to_date, place):
             events.append(res)
     return events
 
+def get_events_by_week_no(weeks, place):
+    result = []
+    for week_no in weeks:
+        [start,end] = get_start_end_dates(2020,week_no)
+        sd = start.strftime("%m/%d/%y")
+        ed = end.strftime("%m/%d/%y")
+        events = get_events_between(sd,ed,place)
+        elt = {}
+        elt['wno'] = week_no
+        elt['events'] = events
+        result.append(elt)
+    return result
