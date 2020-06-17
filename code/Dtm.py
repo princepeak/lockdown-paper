@@ -175,6 +175,7 @@ class Dtm(DtmModel):
         ax.set_ylabel('Probability')
         ax.set_title(f'Term probabilities over time in topic {topic} for {topic_area} in {place}')
         ax.legend(loc='best', framealpha=0.2)
+        plt.xticks(self.time_slice_labels.tolist())
         plt.tight_layout()
 
         if save:
