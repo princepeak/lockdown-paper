@@ -87,14 +87,14 @@ def get_range():
     start = datetime.datetime.strptime("2020-01-22", "%Y-%m-%d")
     end = datetime.datetime.strptime("2020-06-01", "%Y-%m-%d")
     date_of_interest = [start + datetime.timedelta(days=x) for x in range(0, (end - start).days)]
-    places_of_interest = ['Illinois', 'Italy', 'Spain']#['India', 'New York', 'New Jersey', 'Illinois', 'Italy', 'Spain']
+    places_of_interest = ['New Jersey', 'Illinois', 'Italy', 'Spain']#['India', 'New York', 'New Jersey', 'Illinois', 'Italy', 'Spain']
     places_sentinail = {'India':['India', 'Delhi', 'New Delhi', 'Mumbai', 'Bombay', 'Bengaluru', 'Bangalore', 'Calcutta', 'Kolkata', 'Kerala', 'Chennai', 'Hydrabad'],
                         'New York':['New York', 'New York City', 'NY', 'N. Y.'],
                         'New Jersey':['New Jersey', 'NJ'],
                         'Illinois':['Illinois', 'Chicago', 'Aurora', 'Rockford', 'Joliet', 'Naperville', 'Springfield', 'Elgin', 'Peoria'],
                         'Italy':['Italy', 'Rome', 'Venice', 'Milan'],
                         'Spain':['Spain', 'Madrid', 'Barcelona', 'Valencia']}
-    topics_of_interest = ['quarantine']#['socialdistancing', 'covid19', 'quarantine']
+    topics_of_interest = ['covid19']#['socialdistancing', 'covid19', 'quarantine']
 
     return [weeks_of_interst, date_of_interest, places_of_interest, topics_of_interest, places_sentinail]
 
