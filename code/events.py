@@ -143,7 +143,7 @@ global_events = [
     {'date': '3/29/20', 'event': 'The city of Wuhan, China, reopened subways', 'relevency': []},
     {'date': '3/30/20', 'event': 'Moscow announced a lockdown', 'relevency': []},
     {'date': '3/30/20', 'event': 'Italy extends lockdown', 'relevency': ['Italy']},
-    {'date': '4/7/20', 'event': 'New York saw its largest single-day increase in deaths', 'relevency': ['New York']},
+    {'date': '4/7/20', 'event': 'New York saw its largest single-day \nincrease in deaths', 'relevency': ['New York']},
     {'date': '4/9/20', 'event': 'Second coronavirus vaccine trial began in the U.S.', 'relevency': []},
     {'date': '4/9/20', 'event': 'Spain extended state of emergency measures until April 26.', 'relevency': ['Spain']},
     {'date': '4/11/20', 'event': 'US becomes the worst-hit\n country in the world',
