@@ -9,3 +9,4 @@
 1. Twitter data - LDA
 2. Write paper
 
+https://ourworldindata.org/grapher/covid-stringency-index
