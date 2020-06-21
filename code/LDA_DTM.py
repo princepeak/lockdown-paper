@@ -12,11 +12,17 @@ from scipy.sparse import save_npz, load_npz
 import spacy
 import en_core_web_lg
 from Dtm import Dtm
+from sys import platform
 
 nlp = en_core_web_lg.load()
 nlp.create_pipe('ner')
 HOME_DIR = str(Path(__file__).resolve().parents[1])
-MODEL_PATH = os.path.join(HOME_DIR, 'bin', 'dtm')
+
+
+if platform == "linux" or platform == "linux2":
+    MODEL_PATH = os.path.join(HOME_DIR, 'bin', 'linux', 'dtm')
+elif platform == "darwin":
+    MODEL_PATH = os.path.join(HOME_DIR, 'bin', 'darwin', 'dtm')
 
 
 def bow(text):

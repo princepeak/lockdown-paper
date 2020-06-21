@@ -35,8 +35,10 @@ def main():
         lockdown_date_index = metadata['dates'].index(lockdown_date)
         end_date_index = len(metadata['dates'])
 
-        trend_analysis(file1, 'other', name, metric[0], metadata['dates'])
-        trend_analysis(file2, 'other', name, f'{metric[1]} cases', metadata['dates'])
+        events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name)
+
+        trend_analysis(file1, 'other', name, metric[0], metadata['dates'], events=events)
+        trend_analysis(file2, 'other', name, f'{metric[1]} cases', metadata['dates'], events=events)
 
         score_mrsc(file1, file2,
                    'Province_State',
@@ -46,7 +48,7 @@ def main():
                    metric[0], 'other',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
-                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
+                   events=events)
 
         score_mrsc(file2, file1,
                    'Province_State',
@@ -56,7 +58,7 @@ def main():
                    metric[1], 'other',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
-                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name))
+                   events=events)
         time.sleep(5)
 
 if __name__ == "__main__":

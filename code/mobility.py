@@ -32,7 +32,7 @@ def plot_mobility_trend(df, title, ylabel="% Chnage from baseline", xlabel=None,
 
 
 def main():
-    df = pd.read_csv('../data/mobility/applemobilitytrends-2020-06-07.csv')
+    df = pd.read_csv('../data/mobility/applemobilitytrends-2020-06-19.csv')
     df_walking = df[df['transportation_type']=='walking']
     df_driving = df[df['transportation_type'] == 'driving']
     df_transit = df[df['transportation_type'] == 'transit']
@@ -44,7 +44,19 @@ def main():
     df_transit = df_transit.drop(
         columns=['transportation_type', 'geo_type', 'alternative_name', 'sub-region', 'country'])
 
-    places_of_interest = ['New York City', 'New Jersey', 'Illinois', 'Italy', 'Spain', 'Mumbai']
+    places_of_interest = ['New York City',
+                          'New Jersey',
+                          'Illinois',
+                          'Italy',
+                          'Spain',
+                          'Mumbai',
+                          "France",
+                          "Germany",
+                          "Sweden",
+                          "United Kingdom",
+                          "Belgium",
+                          "Netherlands",
+                          "Brazil"]
 
     for place in places_of_interest:
         df_walking_place = df_walking[df_walking['region']==place]

@@ -14,6 +14,33 @@ Y.~Liu, A.~A. Gayle, A.~Wilder-Smith, J.~Rocklöv,
   {\path{doi:10.1093/jtm/taaa021}}.
 \newline\urlprefix\url{https://doi.org/10.1093/jtm/taaa021}
 
+\bibitem{GN2020}
+G.~Viceconte, N.~Petrosillo,
+  \href{https://pubmed.ncbi.nlm.nih.gov/32201554}{Covid-19 r0: Magic number or
+  conundrum?}, Infectious disease reports 12~(1) (2020) 8516--8516.
+\newline\urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/32201554}
+
+\bibitem{BPH2020}
+A.~Banerjee, L.~Pasea, S.~Harris, A.~Gonzalez-Izquierdo, A.~Torralbo,
+  L.~Shallcross, M.~Noursadeghi, D.~Pillay, N.~Sebire, C.~Holmes, C.~Pagel,
+  W.~K. Wong, C.~Langenberg, B.~Williams, S.~Denaxas, H.~Hemingway, Estimating
+  excess 1-year mortality associated with the covid-19 pandemic according to
+  underlying conditions and age: a population-based cohort study, The Lancet
+  395~(10238) (2020) 1715--1725.
+
+\bibitem{RIS2020}
+A.~Rismanbaf, Potential treatments for covid-19; a narrative literature review,
+  Archives of academic emergency medicine 8~(1) (2020) e29--e29.
+
+\bibitem{PSL2020}
+S.~Price, S.~Singh, S.~Ledot, P.~Bianchi, M.~Hind, G.~Tavazzi, P.~Vranckx,
+  \href{https://doi.org/10.1177/2048872620924613}{Respiratory management in
+  severe acute respiratory syndrome coronavirus 2 infection}, European Heart
+  Journal: Acute Cardiovascular Care 9~(3) (2020) 229--238.
+\newblock \href {http://dx.doi.org/10.1177/2048872620924613}
+  {\path{doi:10.1177/2048872620924613}}.
+\newline\urlprefix\url{https://doi.org/10.1177/2048872620924613}
+
 \bibitem{ap08746}
 A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
   comparative case studies: Estimating the effect of california’s tobacco

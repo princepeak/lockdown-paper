@@ -44,8 +44,10 @@ def main():
         lockdown_date_index = metadata['dates'].index(lockdown_date)
         end_date_index = len(metadata['dates'])
 
-        trend_analysis(file1, 'in', name, metric[0], metadata['dates'])
-        trend_analysis(file2, 'in', name, metric[1], metadata['dates'])
+        events = get_events_between(metadata['dates'][0], metadata['dates'][-1], name)
+
+        trend_analysis(file1, 'in', name, metric[0], metadata['dates'], events=events)
+        trend_analysis(file2, 'in', name, metric[1], metadata['dates'], events=events)
 
         confirmed_daily = daily_confirmed_df[daily_confirmed_df['Province_State']==name]
         confirmed_daily = confirmed_daily.drop(columns=['Province_State'])
@@ -63,9 +65,7 @@ def main():
                    metric[0], 'in',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
-                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name),
-                   daily_confirmed=confirmed_daily,
-                   daily_deaths=deceased_daily)
+                   events=events)
 
         score_mrsc(file2, file1,
                    'Province_State',
@@ -75,9 +75,7 @@ def main():
                    metric[1], 'in',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
-                   events=get_events_between(metadata['dates'][0], metadata['dates'][-1], name),
-                   daily_confirmed=confirmed_daily,
-                   daily_deaths=deceased_daily)
+                   events=events)
 
         time.sleep(5)
 
