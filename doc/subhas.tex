@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\begin{document}
+		\section{Introduction}
+			\subsection{Related Works}
+		Other modeling approaches. SIR-F, DCM, Agent, Hybrid - not post fact A/B testing tools.
+		
+		\subsection{Tools}
+		As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors) .\par
+		
+		Suppose that observations from $N$ different geographically distinct groups or units are indexed by $i \in [N]$ in $T$ time periods (days) indexed by $j \in [T]$. Let $k \in [K]$ be the metrics of interest (e.g. number of confirmed cases, number of deaths, number of tests conducted, etc.). By $M_{ijk}$ we denote the ground-truth measurement of interest, and by $X_{ijk}$, an observation of this measurement with some noise. Let $1 \leq T_0 \leq T$ be the time instance in which our group of interest experiences an intervention, namely a government response to control the spread (e.g. stay home order, school or business closure, or mass vaccination). Without loss of generality we consider unit $i = 1$ and metric $k = 1$ (say, number of deaths) as our group and metric of interest respectively.
+		
+		Our objective now is to estimate the trajectory of metric of interest $k = 1$  for unit $i = 1$ if no government response to control the spread had occurred. In order to do that we will use the trajectory associated with the donor units ($2 \leq i \leq N$ ), and metrics $k \in [K ]$. In following we assume that $X_{ijk} = M_{ijk} + \epsilon_{ijk}$ where, $\epsilon_{ijk}$ is the observational noise. As described in \cite{AMSS10}
+		
+		\section{The setup}
+		\label{SEC2}
+		Data - Data Source - Dims [infected, fatal, recovered, No of tests] 
+		
+		
+		
+		\section{Results}
+		\label{SEC3}
+		
+		\section{Discussion}
+		\label{SEC4}
+		
+		
+		\section{Concluding Remarks}
+		\label{SEC5}
+		%% References
+		
+		\bibliographystyle{elsarticle-num}
+		\bibliography{lockdown.bib}	
+	\end{document}
