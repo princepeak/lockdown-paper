@@ -50,9 +50,19 @@ A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
   {\path{doi:10.1198/jasa.2009.ap08746}}.
 
 \bibitem{JMLR18}
-M.~Amjad, D.~Shah, D.~Shen,
-  \href{http://jmlr.org/papers/v19/17-777.html}{Robust synthetic control},
-  Journal of Machine Learning Research 19~(22) (2018) 1--51.
-\newline\urlprefix\url{http://jmlr.org/papers/v19/17-777.html}
+M.~Amjad, D.~Shah, D.~Shen, Robust synthetic control, Journal of Machine
+  Learning Research 19~(22) (2018) 1--51.
+
+\bibitem{AMSS19}
+M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
+  \href{https://doi.org/10.1145/3341617.3326152}{Mrsc: Multi-dimensional robust
+  synthetic control}, Proc. ACM Meas. Anal. Comput. Syst. 3~(2).
+\newblock \href {http://dx.doi.org/10.1145/3341617.3326152}
+  {\path{doi:10.1145/3341617.3326152}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
+
+\bibitem{HWP2020}
+T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira, Oxford covid-19
+  government response tracker.
 
 \end{thebibliography}
