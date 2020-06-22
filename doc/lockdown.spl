@@ -1,1 +1,1 @@
-\g@addto@macro\@biboptions{,square,comma}
+\g@addto@macro\@biboptions{,square,comma,numbers}
