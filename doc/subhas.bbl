@@ -1,30 +1,36 @@
-\begin{thebibliography}{1}
-\expandafter\ifx\csname url\endcsname\relax
-  \def\url#1{\texttt{#1}}\fi
-\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-\expandafter\ifx\csname href\endcsname\relax
-  \def\href#1#2{#2} \def\path#1{#1}\fi
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{ap08746}
-A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
-  comparative case studies: Estimating the effect of california’s tobacco
-  control program, Journal of the American Statistical Association 105~(490)
-  (2010) 493--505.
-\newblock \href {http://dx.doi.org/10.1198/jasa.2009.ap08746}
-  {\path{doi:10.1198/jasa.2009.ap08746}}.
+\bibitem[Abadie et~al.(2010)Abadie, Diamond, and Hainmueller]{ap08746}
+A.~Abadie, A.~Diamond, and J.~Hainmueller.
+\newblock Synthetic control methods for comparative case studies: Estimating
+  the effect of california’s tobacco control program.
+\newblock \emph{Journal of the American Statistical Association}, 105\penalty0
+  (490):\penalty0 493--505, 2010.
+\newblock \doi{10.1198/jasa.2009.ap08746}.
 
-\bibitem{JMLR18}
-M.~Amjad, D.~Shah, D.~Shen,
-  \href{http://jmlr.org/papers/v19/17-777.html}{Robust synthetic control},
-  Journal of Machine Learning Research 19~(22) (2018) 1--51.
-\newline\urlprefix\url{http://jmlr.org/papers/v19/17-777.html}
+\bibitem[Amjad et~al.(2018)Amjad, Shah, and Shen]{JMLR18}
+M.~Amjad, D.~Shah, and D.~Shen.
+\newblock Robust synthetic control.
+\newblock \emph{Journal of Machine Learning Research}, 19\penalty0
+  (22):\penalty0 1--51, 2018.
+\newblock URL \url{http://jmlr.org/papers/v19/17-777.html}.
 
-\bibitem{AMSS10}
-M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
-  \href{https://doi.org/10.1145/3341617.3326152}{Mrsc: Multi-dimensional robust
-  synthetic control}, Proc. ACM Meas. Anal. Comput. Syst. 3~(2).
-\newblock \href {http://dx.doi.org/10.1145/3341617.3326152}
-  {\path{doi:10.1145/3341617.3326152}}.
-\newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
+\bibitem[Amjad et~al.(2019)Amjad, Misra, Shah, and Shen]{AMSS19}
+M.~Amjad, V.~Misra, D.~Shah, and D.~Shen.
+\newblock Mrsc: Multi-dimensional robust synthetic control.
+\newblock \emph{Proc. ACM Meas. Anal. Comput. Syst.}, 3\penalty0 (2), 6 2019.
+\newblock \doi{10.1145/3341617.3326152}.
+\newblock URL \url{https://doi.org/10.1145/3341617.3326152}.
+
+\bibitem[Hale et~al.(2020)Hale, Webster, Petherick, Phillips, and
+  Kira]{HWP2020}
+T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, and B.~Kira.
+\newblock Oxford covid-19 government response tracker.
+\newblock 2020.
 
 \end{thebibliography}

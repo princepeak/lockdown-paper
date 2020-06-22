@@ -32,6 +32,12 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 13/06/2020,Andaman and Nicobar Islands,10955,Samples Sent,38,,814,,,,,,,109,,,,,,10306,https://dhs.andaman.gov.in/NewEvents/294.pdf,,,,,,,,
 14/06/2020,Andaman and Nicobar Islands,11356,Samples Sent,38,,1040,,1,Institutional,,,,109,,,,,,10329,https://dhs.andaman.gov.in/NewEvents/295.pdf,,,,,,,,
 15/06/2020,Andaman and Nicobar Islands,11518,Samples Sent,41,,579,,4,Institutional,,,,109,,,,,,10361,https://dhs.andaman.gov.in/NewEvents/296.pdf,,,,,,,,
+16/06/2020,Andaman and Nicobar Islands,11809,Samples Sent,44,,719,,4,Institutional,,,,109,,,,,,10405,https://dhs.andaman.gov.in/NewEvents/297.pdf,,,,,,,,
+17/06/2020,Andaman and Nicobar Islands,12239,Samples Sent,44,,383,,4,Institutional,,,,109,,,,,,10430,https://dhs.andaman.gov.in/NewEvents/298.pdf,,,,,,,,
+18/06/2020,Andaman and Nicobar Islands,12622,Samples Sent,45,,350,,4,Institutional,,,,184,,,,,,10460,https://dhs.andaman.gov.in/NewEvents/299.pdf,,,,,,,,
+19/06/2020,Andaman and Nicobar Islands,12930,Samples Sent,47,,306,,4,Institutional,,,,184,,,,,,10491,https://dhs.andaman.gov.in/NewEvents/300.pdf,,,,,,,,
+20/06/2020,Andaman and Nicobar Islands,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21/06/2020,Andaman and Nicobar Islands,,,,,,,,,,,,,,,,,,,,,,,,,,,
 02/04/2020,Andhra Pradesh,1800,Tested,132,1175,493,,,,,,,23479,2680,330,,,,,https://twitter.com/ArogyaAndhra/status/1245580598938198016?s=20,,,,7.33%,0.03,34,14,52221000
 10/04/2020,Andhra Pradesh,6374,Tested,365,6009,,,,,,,,,,,,,,,http://hmfw.ap.gov.in/covid_dashboard.aspx,,,,5.73%,0.12,122,17,52221000
 11/04/2020,Andhra Pradesh,6958,Tested,381,6577,,,,,,,,,,,,,,,http://hmfw.ap.gov.in/covid_dashboard.aspx,,,,5.48%,0.13,133,18,52221000
@@ -104,6 +110,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Andhra Pradesh,598474,Tested,5555,591403,,,,,,,,,,,,,,,https://twitter.com/ArogyaAndhra/status/1273163879854505985?s=19,,,,,,,,
 18/06/2020,Andhra Pradesh,612397,Tested,5854,604901,,,,,,,,,,,,,,,https://twitter.com/ArogyaAndhra/status/1273517099428634624,,,,,,,,
 19/06/2020,Andhra Pradesh,630006,Tested,6230,622045,,,,,,,,,,,,,,,https://twitter.com/ArogyaAndhra/status/1273901271716515846?s=19,,,,,,,,
+20/06/2020,Andhra Pradesh,652377,Tested,6620,643925,,,,,,,,,,,,,,,https://twitter.com/ArogyaAndhra/status/1274317274170535937?s=19,,,,,,,,
+21/06/2020,Andhra Pradesh,676828,Tested,7059,,,,,,,,,,,,,,,,https://twitter.com/ArogyaAndhra/status/1274605653936373760?s=19,,,,,,,,
+22/06/2020,Andhra Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/04/2020,Arunachal Pradesh,206,Samples Collected,1,185,20,,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1248269356070363136?s=19,,,,0.49%,0.14,137,206,1504000
 14/04/2020,Arunachal Pradesh,280,Samples Collected,1,250,29,,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1249901653634867200,,,,0.36%,0.19,186,280,1504000
 17/04/2020,Arunachal Pradesh,363,Samples Collected,1,338,25,,,,,,,,,,,,,,https://twitter.com/PemaKhanduBJP/status/1251136883045752834,,,,0.28%,0.24,241,363,1504000
@@ -166,7 +175,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Arunachal Pradesh,16630,Samples Collected,103,14698,1792,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/528,,http://covid19.itanagarsmartcity.in/covidstatus.php,,,,,,
 18/06/2020,Arunachal Pradesh,16630,Samples Collected,103,14698,1792,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/560,,http://covid19.itanagarsmartcity.in/covidstatus.php,,,,,,
 19/06/2020,Arunachal Pradesh,18008,Samples Collected,135,14698,1696,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/561,,,,,,,,
-20/06/2020,Arunachal Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Arunachal Pradesh,18521,Samples Collected,135,16827,1520,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/578,,,,,,,,
+21/06/2020,Arunachal Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22/06/2020,Arunachal Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
 02/04/2020,Assam,962,Tested,16,819,,,,,,,,,,,,,,,https://twitter.com/nhm_assam/status/1245742375319691264/photo/1,,,,1.66%,0.03,28,60,34293000
 10/04/2020,Assam,2863,Tested,29,2685,,,,,,,,3212,440,240,,,,9245,https://t.me/indiacovid/2003?single,,,,1.01%,0.08,83,99,34293000
 11/04/2020,Assam,3011,Tested,29,2842,,,,,,,,3212,440,240,,,,9514,https://t.me/indiacovid/2075?single,,,,0.96%,0.09,88,104,34293000
@@ -225,6 +236,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Assam,235214,Tested,4605,,,,31899,Institutional,,,,,,,,,326092,1002005,https://twitter.com/nhm_assam/status/1273299053288120320?s=19,,,,,,,,
 18/06/2020,Assam,246590,Tested,4861,,,,35187,Institutional,,,,,,,,,328637,1009146,https://twitter.com/nhm_assam/status/1273648379608915969?s=19,,,,,,,,
 19/06/2020,Assam,258797,Tested,4904,,,,34736,Institutional,,,,,,,,,330764,1015451,https://twitter.com/nhm_assam/status/1274006092545228802?s=19,,,,,,,,
+20/06/2020,Assam,273047,Tested,5006,,,,35611,Institutional,,,,,,,,,333299,1022475,https://twitter.com/nhm_assam/status/1274390750025994240?s=09,,,,,,,,
+21/06/2020,Assam,,,,,,,,,,,,,,,,,,,,,,,,,,,
 05/04/2020,Bihar,3037,Tested,32,2299,706,,,,,,,,,,,,,,https://twitter.com/sanjayjavin/status/1246667952054665216,,,,1.05%,0.03,25,95,119520000
 08/04/2020,Bihar,4596,Tested,38,,465,,,,,,,,,,,,,,https://twitter.com/sanjayjavin/status/1247762894063677440,,,,0.83%,0.04,38,121,119520000
 09/04/2020,Bihar,4991,Tested,43,,394,,,,,,,,,,,,,,https://twitter.com/BiharHealthDept/status/1248176830856626176/photo/1,,,,0.86%,0.04,42,116,119520000
@@ -299,6 +312,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Bihar,134402,Tested,6889,,,,,,,,,,,,,,,,https://twitter.com/PIB_Patna/status/1273240056443043847,,,,5.13%,1.12,1125,20,119520000
 18/06/2020,Bihar,139584,Tested,6993,,,,,,,,,,,,,,,,https://twitter.com/PIB_Patna/status/1273571500621131776,,,,5.01%,1.17,1168,20,119520000
 19/06/2020,Bihar,145562,Tested,7178,,,,,,,,,,,,,,,,https://twitter.com/PIB_Patna/status/1273937728397172736,,,,4.93%,1.22,1218,20,119520000
+20/06/2020,Bihar,151148,Tested,7380,,,,,,,,,,,,,,,,https://twitter.com/PIB_Patna/status/1274293529502789632,,,,4.88%,1.26,1265,20,119520000
+21/06/2020,Bihar,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22/06/2020,Bihar,,,,,,,,,,,,,,,,,,,,,,,,,,,
 02/04/2020,Chandigarh,124,Tested,18,98,8,,,,,,,,,,,,,,http://chdcovid19.in/,,,,14.52%,0.11,105,7,1179000
 08/04/2020,Chandigarh,184,Tested,18,162,,,,,,,,,,,,,,,http://chdcovid19.in/,,,,9.78%,0.16,156,10,1179000
 10/04/2020,Chandigarh,223,Tested,19,199,4,,,,,,,,,,,,,,http://chdcovid19.in/,,,,8.52%,0.19,189,12,1179000
@@ -370,7 +386,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Chandigarh,6233,Tested,368,5830,33,,,,,,,,,,,,,,https://t.me/indiacovid/7496?single,,,,,,,,
 18/06/2020,Chandigarh,6315,Tested,373,5912,28,,,,,,,,,,,,,,https://t.me/indiacovid/7595?single,,,,,,,,
 19/06/2020,Chandigarh,6438,Tested,375,6032,29,,,,,,,,,,,,,,https://t.me/indiacovid/7683,,,,,,,,
-20/06/2020,Chandigarh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Chandigarh,6578,Tested,390,6162,24,,,,,,,,,,,,,,https://t.me/indiacovid/7820?single,,,,,,,,
+21/06/2020,Chandigarh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22/06/2020,Chandigarh,,,,,,,,,,,,,,,,,,,,,,,,,,,
 02/04/2020,Chhattisgarh,1232,Tested,9,921,302,,,,,,,,,,,,,,http://www.cghealth.nic.in/cghealth17/,,,,0.73%,0.04,43,137,28724000
 10/04/2020,Chhattisgarh,3473,Tested,18,3322,133,,,,,,,,,,,,,,http://cghealth.nic.in/cghealth17/Information/content/CORONA/MediaBulletinHINDI_10042020.pdf,,,,0.52%,0.12,121,193,28724000
 11/04/2020,Chhattisgarh,3858,Tested,18,3503,337,,,,,,,,,,,,,,http://cghealth.nic.in/cghealth17/Information/content/CORONA/RevisedMediaBulletinHINDI_11042020.pdf,,,,0.47%,0.13,134,214,28724000
@@ -437,6 +455,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Chhattisgarh,113613,Tested,1864,,,,,,,,,,,,,,,,https://twitter.com/HealthCgGov/status/1273282032429174784?s=19,,,,,,,,
 18/06/2020,Chhattisgarh,116329,Tested,1946,,,,,,,,,5515,,922,71031,40346,,,https://twitter.com/HealthCgGov/status/1273636411623657472?s=19,,https://twitter.com/TS_SinghDeo/status/1273641682928427009?s=19,,,,,,
 19/06/2020,Chhattisgarh,120523,Tested,2018,115197,3308,,,,,,,5515,,922,67006,39915,,,https://twitter.com/TS_SinghDeo/status/1274014655527088128?s=19,,,,,,,,
+20/06/2020,Chhattisgarh,123983,Tested,2076,,,,,,,,,,,,,,,,https://twitter.com/HealthCgGov/status/1274344377893052416?s=19,,https://twitter.com/HealthCgGov/status/1274344377893052416?s=20,,,,,,
+21/06/2020,Chhattisgarh,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/04/2020,Dadra and Nagar Haveli and Daman and Diu,80,Tested,0,80,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1247952828519178241,,https://twitter.com/DnhPublicity/status/1248162771897692160,,0.00%,0.08,83,,959000
 10/04/2020,Dadra and Nagar Haveli and Daman and Diu,130,Tested,0,130,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1248309707397156864,,,,0.00%,0.14,136,777,959000
 11/04/2020,Dadra and Nagar Haveli and Daman and Diu,211,Tested,0,211,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1249023214333743104,,,,0.00%,0.22,220,,959000
@@ -486,8 +506,11 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 10/06/2020,Dadra and Nagar Haveli and Daman and Diu,17179,Tested,27,16552,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1270767797304508421/photo/1,,,,0.16%,17.91,17913,636,959000
 13/06/2020,Dadra and Nagar Haveli and Daman and Diu,17649,Tested,28,17021,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1271829539824398336,,,,,,,,
 14/06/2020,Dadra and Nagar Haveli and Daman and Diu,18445,Tested,31,17813,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1272191063860494336,,,,,,,,
-16/06/2020,Dadra and Nagar Haveli and Daman and Diu,19090,Tested,54,18443,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1272953162333212673?s=19,,,,,,,,
-19/06/2020,Dadra and Nagar Haveli and Daman and Diu,20149,,74,19488,,,,,,,,,,,,,,,https://twitter.com/DnhPublicity/status/1274038004546367490?s=20,,,,,,,,
+15/06/2020,Dadra and Nagar Haveli and Daman and Diu,23835,Samples Collected,38,23072,705,,738,Facility,,,,,,,,,,,https://dddcovid19.in/uploads/report/BulletinDNHDD15062020.pdf,,,,,,,,
+16/06/2020,Dadra and Nagar Haveli and Daman and Diu,24492,Samples Collected,51,23695,722,,792,Facility,,,,,,,,,,,https://dddcovid19.in/uploads/report/BulletinDNHDD16062020.pdf,,,,,,,,
+17/06/2020,Dadra and Nagar Haveli and Daman and Diu,25575,Samples Collected,58,24650,847,,663,Facility,,,,,,,,,,,https://dddcovid19.in/uploads/report/BulletinDNHDD17062020.pdf,,,,,,,,
+18/06/2020,Dadra and Nagar Haveli and Daman and Diu,26752,Samples Collected,69,25461,1202,,593,Facility,,,,,,,,,,,https://dddcovid19.in/uploads/report/BulletinDNHDD18062020.pdf,,,,,,,,
+19/06/2020,Dadra and Nagar Haveli and Daman and Diu,,,,,,,,,,,,,,,,,,,,,,,,,,,
 01/04/2020,Delhi,2621,Tested,,,2621,,,,,,,,,,,,,,http://health.delhigovt.nic.in/wps/wcm/connect/068e55804dc3527fb23cf7982ee7a5c7/HB01A.pdf?MOD=AJPERES&lmod=908572962&CACHEID=068e55804dc3527fb23cf7982ee7a5c7,,,,0.00%,0.13,132,,19814000
 07/04/2020,Delhi,9041,Tested,576,7308,1157,,3120,Institutional,,,,,,,,,,,http://health.delhigovt.nic.in/wps/wcm/connect/ed4d3d804dd60b488b60ff982ee7a5c7/HB07A.pdf?MOD=AJPERES&lmod=1435478287&CACHEID=ed4d3d804dd60b488b60ff982ee7a5c7,,,,6.37%,0.46,456,16,19814000
 09/04/2020,Delhi,9968,Tested,720,8643,605,,,,,,,,,,,,,,http://health.delhigovt.nic.in/wps/wcm/connect/doit_health/Health/Home/Covid19/Health+Bulletin,,http://health.delhigovt.nic.in/wps/wcm/connect/22522a804ddd430195f5f7d194e333e1/HB09A.pdf,,7.22%,0.50,503,14,19814000
@@ -562,7 +585,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Delhi,312576,Tested,47102,,,,,,,850,214,,,,,,,,https://delhifightscorona.in/wp-content/themes/gocoronago/health-bulletin-pdfs/06-17.pdf,,,,,,,,
 18/06/2020,Delhi,321302,Tested,49979,,,,,,,,,,,,,,,,https://t.me/indiacovid/7657,,,,,,,,
 19/06/2020,Delhi,334376,Tested,53116,,,,,,,,,,,,,,,,https://twitter.com/CMODelhi/status/1274041280650072064?s=19,,,,,,,,
-20/06/2020,Delhi,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Delhi,351909,Tested,56746,,,,,,,,,,,,,,,,https://twitter.com/CMODelhi/status/1274398460578394112?s=19,,,,,,,,
 02/04/2020,Goa,220,Samples Sent,5,197,18,,,,,,,,,,,,,,https://www.goa.gov.in/wp-content/uploads/2020/04/Media-Bulletin-02.04.2020.pdf,,,,2.27%,0.14,143,44,1540000
 09/04/2020,Goa,344,Samples Sent,7,,,,,,,,,,,,,,,,https://twitter.com/dip_goa/status/1248237654258352129?s=09,,,,2.03%,0.22,223,49,1540000
 10/04/2020,Goa,354,Samples Sent,7,,,,,,,,,,,,,,,,https://twitter.com/DHS_Goa/status/1248609175241764872/photo/1,,,,1.98%,0.23,230,51,1540000
@@ -630,7 +653,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Goa,45685,Samples Sent,656,,,,9765,Facility,,,,,,,,,,,https://twitter.com/DHS_Goa/status/1273250203986874369?s=19,,,,,,,,
 18/06/2020,Goa,46996,Samples Sent,705,,,,9789,Facility,,,,,,,,,,,https://twitter.com/DHS_Goa/status/1273615580721864705?s=19,,,,,,,,
 19/06/2020,Goa,49718,Samples Sent,725,,,,10220,Facility,,,,,,,,,,,https://twitter.com/DHS_Goa/status/1273983965011955712?s=19,,,,,,,,
-20/06/2020,Goa,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Goa,51404,Samples Sent,754,,,,10258,Facility,,,,,,,,,,,https://twitter.com/DHS_Goa/status/1274343982882074624?s=19,,,,,,,,
 08/04/2020,Gujarat,4224,Tested,186,3905,133,,12299,All Included,,,,,,1761,,,,,https://t.me/indiacovid/1850?single,,,,4.40%,0.06,62,23,67936000
 10/04/2020,Gujarat,7718,Tested,378,7237,103,,,All Included,,,,,,,,,,,https://t.me/indiacovid/1994?single,,,,4.90%,0.11,114,20,67936000
 11/04/2020,Gujarat,9763,Tested,468,8888,407,,12042,All Included,,,,,,,,,,,https://gujcovid19.gujarat.gov.in/,,,,4.79%,0.14,144,21,67936000
@@ -703,7 +726,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Gujarat,303671,Tested,25148,,,,218142,All Included,,,,,,,,,,,https://twitter.com/PIBAhmedabad/status/1273266494865055745?s=20,,,,,,,,
 18/06/2020,Gujarat,308744,Tested,25658,,,,210803,All Included,,,,,,,,,,,https://gujcovid19.gujarat.gov.in/uploads/pressbrief1806182020093653514.pdf,,https://t.me/indiacovid/7614?single,,,,,,
 19/06/2020,Gujarat,314301,Tested,26198,,,,217590,All Included,,,,,,,,,,,https://gujcovid19.gujarat.gov.in/uploads/pressbrief1906192020085114768.pdf,,https://t.me/indiacovid/7702?single,,,,,,
-20/06/2020,Gujarat,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Gujarat,319414,Tested,26737,,,,219911,All Included,,,,,,,,,,,https://t.me/indiacovid/7802?single,,,,,,,,
 03/04/2020,Haryana,1325,Samples Sent,44,938,343,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/BULLETIN%20EVENING03042020.pdf,,,,3.32%,0.05,46,30,28672000
 07/04/2020,Haryana,2520,Samples Sent,141,1821,558,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/bulletin%2008042020Morning.pdf,,,,5.60%,0.09,88,18,28672000
 08/04/2020,Haryana,2650,Samples Sent,153,1885,612,,,,,,,8649,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/bulletin%2008042020%20evening.pdf,,,,5.77%,0.09,92,17,28672000
@@ -772,14 +795,14 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 10/06/2020,Haryana,158470,Samples Sent,5438,147453,5579,,,,,,13,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Media%20Bulleitin%20Evening%2010-06-20%20Evening.pdf,,,,,,,,
 11/06/2020,Haryana,162967,Samples Sent,5968,151060,5939,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%2011-06-20%20evening.pdf,,,,,,,,
 12/06/2020,Haryana,167501,Samples Sent,6334,155395,5772,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2012-06-2020%20Evening.pdf,,,,,,,,
-13/06/2020,Haryana,171560,Samples Sent,6749,159333,5478,,,,,,,,,,,,,,,,,,,,,,
+13/06/2020,Haryana,171560,Samples Sent,6749,159333,5478,,,,,,,,,,,,,,https://t.me/indiacovid/7174?single,,,,,,,,
 14/06/2020,Haryana,185722,Samples Sent,7208,172678,5836,,,,,,14,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2014-06-2020%20Evening.pdf,,,,,,,,
 15/06/2020,Haryana,189914,Samples Sent,7722,176741,5478,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2015-06-2020%20Evening.pdf,,,,,,,,
 16/06/2020,Haryana,193421,Samples Sent,8272,180051,5098,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2016-06-20%20Evening.pdf,,,,,,,,
 17/06/2020,Haryana,197703,Samples Sent,8832,183395,5476,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Bulletin%20of%20COVID%2019%20as%20on%2017-06-20%20Evening.pdf,,,,,,,,
 18/06/2020,Haryana,202808,Samples Sent,9218,187303,6287,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2018-06-20%20Evening.pdf,,,,,,,,
 19/06/2020,Haryana,207675,Samples Sent,9743,192082,5850,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2019-06-20%20Evening.pdf,,,,,,,,
-20/06/2020,Haryana,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Haryana,212430,Samples Sent,10223,196836,5371,,,,,,,,,,,,,,http://www.nhmharyana.gov.in/WriteReadData/userfiles/file/CoronaVirus/Daily%20Bulletin%20of%20COVID%2019%20as%20on%2020-06-20%20Evening.pdf,,,,,,,,
 10/04/2020,Himachal Pradesh,900,Tested,30,870,,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1248648731374714880,,,,3.33%,0.12,123,30,7300000
 11/04/2020,Himachal Pradesh,900,Tested,30,870,0,,,,,,,,,,,,,,http://www.nrhmhp.gov.in/,,,,3.33%,0.12,123,30,7300000
 12/04/2020,Himachal Pradesh,1113,Tested,32,944,137,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1249299563308974085?s=09,,,,2.88%,0.15,152,35,7300000
@@ -851,7 +874,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Himachal Pradesh,57479,Tested,585,56861,33,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1273281503095517184?s=09,,,,,,,,
 18/06/2020,Himachal Pradesh,59214,Tested,595,58063,556,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1273647252578267137?s=19,,,,,,,,
 19/06/2020,Himachal Pradesh,60814,Tested,627,59675,512,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1274009859927625728?s=09,,,,,,,,
-20/06/2020,Himachal Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Himachal Pradesh,62580,Tested,656,61662,302,,,,,,,,,,,,,,https://twitter.com/nhm_hp/status/1274375486689271808?s=09,,,,,,,,
 05/04/2020,Jammu and Kashmir,1551,Reports Received,106,1429,16,,,,,,,,,,,,,,https://twitter.com/diprjk/status/1246764514135040000,,,,6.83%,0.12,117,15,13203000
 10/04/2020,Jammu and Kashmir,2961,Reports Received,207,2754,,,415,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1248598584380887042/photo/1,,,,6.99%,0.22,224,14,13203000
 11/04/2020,Jammu and Kashmir,3206,Reports Received,224,2982,,,422,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1248973710284820486?s=19,,,,6.99%,0.24,243,14,13203000
@@ -924,7 +947,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Jammu and Kashmir,282268,Reports Received,5406,276862,,,28,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1273260497169559554?s=19,,,,,,,,
 18/06/2020,Jammu and Kashmir,289027,Reports Received,5555,283472,,,29,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1273641365155401729?s=19,,,,,,,,
 19/06/2020,Jammu and Kashmir,295202,Reports Received,5680,289522,,,31,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1273996726945189889?s=09,,,,,,,,
-20/06/2020,Jammu and Kashmir,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Jammu and Kashmir,301209,Reports Received,5834,295375,,,29,Hospital,,,,,,,,,,,https://twitter.com/diprjk/status/1274343876380127234?s=19,,,,,,,,
 10/04/2020,Jharkhand,1340,Tested,14,1326,,,15714,Centre,,,,2891,239,,,,,,https://twitter.com/BannaGupta76/status/1248679134676443136,,,,1.04%,0.04,36,96,37403000
 11/04/2020,Jharkhand,1546,Tested,17,1529,366,,15534,Centre,,,,2891,239,,,,,,https://twitter.com/BannaGupta76/status/1249017689827205121?s=20,,,,1.10%,0.04,41,91,37403000
 12/04/2020,Jharkhand,1683,Tested,17,1666,434,,,,,,,2891,239,,,,,,https://twitter.com/RanchiPIB/status/1249357914571038724,,,,1.01%,0.04,45,99,37403000
@@ -994,7 +1017,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Jharkhand,113004,Tested,1895,111109,,,41991,Centre,,,,,,,,,,,https://twitter.com/ANI/status/1273295598456696833?s=19,,,,,,,,
 18/06/2020,Jharkhand,115186,Tested,1919,113267,,,40236,Centre,,,,,,,,,,,https://twitter.com/FOBGumla/status/1273645365518991367?s=19,,,,,,,,
 19/06/2020,Jharkhand,117569,Tested,1961,115608,,,40981,Centre,,,,,,,,,,,https://mobile.twitter.com/FOBGumla/status/1274012860163584002,,,,,,,,
-20/06/2020,Jharkhand,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Jharkhand,120892,Tested,2024,117722,,,38881,Centre,,,,,,,,,,,https://twitter.com/FOBGumla/status/1274397139943059459?s=19,,,,,,,,
 03/04/2020,Karnataka,4587,Tested,128,4281,178,,,,,,,,,,,,,17321,https://karunadu.karnataka.gov.in/hfw/kannada/nCovDocs/03-04-2020(English).pdf,,,,2.79%,0.07,70,36,65798000
 07/04/2020,Karnataka,6580,Tested,175,5942,,,,,,,,1540,250,130,,,,12502,https://karunadu.karnataka.gov.in/hfw/kannada/nCovDocs/07-04-2020(English).pdf,,,,2.66%,0.10,100,38,65798000
 08/04/2020,Karnataka,6967,Tested,181,6473,,,,,,,,,,,,,,9937,https://karunadu.karnataka.gov.in/hfw/kannada/nCovDocs/08-04-2020(English).pdf,,,,2.60%,0.11,106,38,65798000
@@ -1049,28 +1072,28 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 27/05/2020,Karnataka,241608,Tested,2418,235876,,,,,,,,,,,,,,5506,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/27.05.2020%20EMB%20English.pdf,,https://t.me/indiacovid/5637,,1.00%,3.67,3672,100,65798000
 28/05/2020,Karnataka,252078,Tested,2533,246115,,,,,,,,,,,,,,4704,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/28.05.2020%20EMB%20English.pdf,,https://t.me/indiacovid/5732,,1.00%,3.83,3831,100,65798000
 29/05/2020,Karnataka,264489,Tested,2781,258130,,,,,,,,,,,,,,4688,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/29.05.2020%20EMB%20English.pdf,,https://t.me/indiacovid/5822,,1.05%,4.02,4020,95,65798000
-30/05/2020,Karnataka,280217,Tested,2922,273404,,,,,,,,,,,,,,4982,https://twitter.com/DHFWKA/status/1266700497798430722?s=19,,,,,,,,
-31/05/2020,Karnataka,293575,Tested,3221,286245,,,,,,,,,,,,,,4736,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/31.05.2020%20EMB%20English.pdf,,,,,,,,
-01/06/2020,Karnataka,304816,Tested,3408,297052,,,,,,,,,,,,,,4348,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/01-06-2020%20EMB%20English.pdf,,,,,,,,
-02/06/2020,Karnataka,319628,Tested,3796,310967,,,,,,,,,,,,,,4081,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/02-06-2020%20EMB%20Kannada.pdf,,,,,,,,
-03/06/2020,Karnataka,334825,Tested,4063,325686,,,,,,,,,,,,,,3406,https://t.me/Karnataka_KoViD19_Broadcast/3790,,,,,,,,
-04/06/2020,Karnataka,347093,Tested,4320,337154,,,,,,,,,,,,,,4015,https://t.me/Karnataka_KoViD19_Broadcast/3812,,,,,,,,
-05/06/2020,Karnataka,360720,Tested,4835,349951,,,,,,,,,,,,,,4309,https://t.me/Karnataka_KoViD19_Broadcast/3840,,,,,,,,
-06/06/2020,Karnataka,372582,Tested,5213,361382,,,,,,,,,,,,,,4327,https://t.me/Karnataka_KoViD19_Broadcast/3864,,,,,,,,
-07/06/2020,Karnataka,384442,Tested,5452,372399,,,,,,,,,,,,,,4453,https://t.me/Karnataka_KoViD19_Broadcast/3889,,,,,,,,
-08/06/2020,Karnataka,393221,Tested,5760,380630,,,,,,,,,,,,,,4286,https://t.me/Karnataka_KoViD19_Broadcast/3903,,,,,,,,
-09/06/2020,Karnataka,400257,Tested,5921,387027,,,,,,,,,,,,,,4243,https://t.me/Karnataka_KoViD19_Broadcast/3936,,,,,,,,
-10/06/2020,Karnataka,408506,Tested,6041,394603,,,,,,,,,,,,,,4505,https://t.me/Karnataka_KoViD19_Broadcast/3953,,,,,,,,
-11/06/2020,Karnataka,416506,Tested,6245,402105,,,,,,,,,,,,,,3009,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/11-06-2020%20HMB%20English.pdf,,,,,,,,
-12/06/2020,Karnataka,426341,Tested,6516,411244,,,,,,,,196112,2075,999,,,,1846,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/12-06-2020%20HMB%20English.pdf,,https://t.me/Covid19india_Auxiliary_Test_Data/491,,,,,,
-13/06/2020,Karnataka,436518,Tested,6824,420773,,,,,,,,,,,,,,2325,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/13-06-2020%20HMB%20English.pdf,,,,,,,,
-14/06/2020,Karnataka,443969,Tested,7000,427608,,,,,,,,,,,,,,3577,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/14-06-2020%20HMB%20English.pdf,,,,,,,,
-15/06/2020,Karnataka,449331,Tested,7213,432346,,,,,,,,,,,,,,4316,https://t.me/Karnataka_KoViD19_Broadcast/4068,,,,,,,,
-16/06/2020,Karnataka,457267,Tested,7530,439654,,,,,,,,,,,,,,4593,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/16-06-2020%20HMB%20English.pdf,,,,,,,,
-17/06/2020,Karnataka,464798,Tested,7734,446448,,,,,,,,,,,,,,4529,https://t.me/Karnataka_KoViD19_Broadcast/4123,,,,,,,,
-18/06/2020,Karnataka,473507,Tested,7944,454476,,,,,,,,,,,,,,4331,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/18-06-2020%20HMB%20English.pdf,,,,,,,,
-19/06/2020,Karnataka,484060,Tested,8281,464338,,,,,,,,,,,,,,3488,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/19-06-2020%20HMB%20English.pdf,,,,,,,,
-20/06/2020,Karnataka,,,,,,,,,,,,,,,,,,,,,,,,,,,
+30/05/2020,Karnataka,280217,Tested,2922,273404,,,,,,,,,,,,,,4982,https://twitter.com/DHFWKA/status/1266700497798430722?s=19,,,,1.04%,4.26,4259,96,65798000
+31/05/2020,Karnataka,293575,Tested,3221,286245,,,,,,,,,,,,,,4736,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/31.05.2020%20EMB%20English.pdf,,,,1.10%,4.46,4462,91,65798000
+01/06/2020,Karnataka,304816,Tested,3408,297052,,,,,,,,,,,,,,4348,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/01-06-2020%20EMB%20English.pdf,,,,1.12%,4.63,4633,89,65798000
+02/06/2020,Karnataka,319628,Tested,3796,310967,,,,,,,,,,,,,,4081,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/02-06-2020%20EMB%20Kannada.pdf,,,,1.19%,4.86,4858,84,65798000
+03/06/2020,Karnataka,334825,Tested,4063,325686,,,,,,,,,,,,,,3406,https://t.me/Karnataka_KoViD19_Broadcast/3790,,,,1.21%,5.09,5089,82,65798000
+04/06/2020,Karnataka,347093,Tested,4320,337154,,,,,,,,,,,,,,4015,https://t.me/Karnataka_KoViD19_Broadcast/3812,,,,1.24%,5.28,5275,80,65798000
+05/06/2020,Karnataka,360720,Tested,4835,349951,,,,,,,,,,,,,,4309,https://t.me/Karnataka_KoViD19_Broadcast/3840,,,,1.34%,5.48,5482,75,65798000
+06/06/2020,Karnataka,372582,Tested,5213,361382,,,,,,,,,,,,,,4327,https://t.me/Karnataka_KoViD19_Broadcast/3864,,,,1.40%,5.66,5663,71,65798000
+07/06/2020,Karnataka,384442,Tested,5452,372399,,,,,,,,,,,,,,4453,https://t.me/Karnataka_KoViD19_Broadcast/3889,,,,1.42%,5.84,5843,71,65798000
+08/06/2020,Karnataka,393221,Tested,5760,380630,,,,,,,,,,,,,,4286,https://t.me/Karnataka_KoViD19_Broadcast/3903,,,,1.46%,5.98,5976,68,65798000
+09/06/2020,Karnataka,400257,Tested,5921,387027,,,,,,,,,,,,,,4243,https://t.me/Karnataka_KoViD19_Broadcast/3936,,,,1.48%,6.08,6083,68,65798000
+10/06/2020,Karnataka,408506,Tested,6041,394603,,,,,,,,,,,,,,4505,https://t.me/Karnataka_KoViD19_Broadcast/3953,,,,1.48%,6.21,6208,68,65798000
+11/06/2020,Karnataka,416506,Tested,6245,402105,,,,,,,,,,,,,,3009,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/11-06-2020%20HMB%20English.pdf,,,,1.50%,6.33,6330,67,65798000
+12/06/2020,Karnataka,426341,Tested,6516,411244,,,,,,,,196112,2075,999,,,,1846,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/12-06-2020%20HMB%20English.pdf,,https://t.me/Covid19india_Auxiliary_Test_Data/491,,1.53%,6.48,6480,65,65798000
+13/06/2020,Karnataka,436518,Tested,6824,420773,,,,,,,,,,,,,,2325,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/13-06-2020%20HMB%20English.pdf,,,,1.56%,6.63,6634,64,65798000
+14/06/2020,Karnataka,443969,Tested,7000,427608,,,,,,,,,,,,,,3577,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/14-06-2020%20HMB%20English.pdf,,,,1.58%,6.75,6747,63,65798000
+15/06/2020,Karnataka,449331,Tested,7213,432346,,,,,,,,,,,,,,4316,https://t.me/Karnataka_KoViD19_Broadcast/4068,,,,1.61%,6.83,6829,62,65798000
+16/06/2020,Karnataka,457267,Tested,7530,439654,,,,,,,,,,,,,,4593,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/16-06-2020%20HMB%20English.pdf,,,,1.65%,6.95,6950,61,65798000
+17/06/2020,Karnataka,464798,Tested,7734,446448,,,,,,,,,,,,,,4529,https://t.me/Karnataka_KoViD19_Broadcast/4123,,,,1.66%,7.06,7064,60,65798000
+18/06/2020,Karnataka,473507,Tested,7944,454476,,,,,,,,,,,,,,4331,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/18-06-2020%20HMB%20English.pdf,,,,1.68%,7.20,7196,60,65798000
+19/06/2020,Karnataka,484060,Tested,8281,464338,,,,,,,,,,,,,,3488,https://covid19.karnataka.gov.in/storage/pdf-files/Media-Bulletin/19-06-2020%20HMB%20English.pdf,,,,1.71%,7.36,7357,58,65798000
+20/06/2020,Karnataka,493893,Tested,8697,473357,,,,,,,,,,,,,,4233,https://t.me/indiacovid/7792,,,,1.76%,7.51,7506,57,65798000
 01/04/2020,Kerala,7965,Samples Sent,265,7256,444,,622,Hospital,,,,,,,,,,,https://dashboard.kerala.gov.in/testing-view-public.php,,https://dashboard.kerala.gov.in/quarantine-view-public.php,,3.33%,0.23,227,30,35125000
 02/04/2020,Kerala,8456,Samples Sent,286,7622,548,,643,Hospital,,,,,,,,,,,https://dashboard.kerala.gov.in/testing-view-public.php,,https://dashboard.kerala.gov.in/quarantine-view-public.php,,3.38%,0.24,241,30,35125000
 03/04/2020,Kerala,9139,Samples Sent,295,8126,718,,706,Hospital,,,,,,,,,,,https://dashboard.kerala.gov.in/,,https://dashboard.kerala.gov.in/quarantine-view-public.php,,3.23%,0.26,260,31,35125000
@@ -1151,6 +1174,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Kerala,161829,Samples Sent,2698,,3019,,1989,Hospital,,,,,,,,,,,https://dhs.kerala.gov.in/wp-content/uploads/2020/06/5.Bulletin-HFWD-English-June-17.pdf,,https://t.me/Covid19india_Auxiliary_Test_Data/514?single,,1.67%,4.61,4607,60,35125000
 18/06/2020,Kerala,169035,Samples Sent,2795,,3194,,1967,Hospital,,,,,,,,,,,https://dhs.kerala.gov.in/wp-content/uploads/2020/06/Bulletin-HFWD-English-June-18.pdf,,https://t.me/Covid19india_Auxiliary_Test_Data/537?single,,1.65%,4.81,4812,60,35125000
 19/06/2020,Kerala,173729,Samples Sent,2913,,3186,,1914,Hospital,,,,,,,,,,,https://dhs.kerala.gov.in/wp-content/uploads/2020/06/Bulletin-HFWD-English-June-19.pdf,,,,1.68%,4.95,4946,60,35125000
+20/06/2020,Kerala,178559,Samples Sent,3040,,3193,,2036,Hospital,,,,,,,,,,,https://dhs.kerala.gov.in/wp-content/uploads/2020/06/Bulletin-HFWD-English-June-20.pdf,,,,,,,,
 13/04/2020,Ladakh,618,Samples Collected,17,,,,,,,,,,,,,,,,http://newsonair.com/News?title=Ladakh-well-ahead-of-all-states-and-UTs-in-testing-suspects-for-COVID-19&id=385511,,,,2.75%,2.11,2109,36,293000
 14/04/2020,Ladakh,760,Samples Collected,17,615,69,,,,,,,,,,,,,,https://twitter.com/DIPR_Leh/status/1250016972072292353?s=09,,,,2.24%,2.59,2594,45,293000
 15/04/2020,Ladakh,820,Samples Collected,18,657,86,,154,Facility,,,,,,,,,,,https://twitter.com/ladags/status/1250457259299110914?s=19,,,,2.20%,2.80,2799,46,293000
@@ -1188,7 +1212,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 16/06/2020,Ladakh,11537,Samples Collected,649,9660,983,,488,Facility,,,,,,,,,,,https://twitter.com/DIPR_Leh/status/1272866815090155521?s=19,,,,,,,,
 17/06/2020,Ladakh,11626,Samples Collected,687,9833,856,,488,Facility,,,,,,,,,,,https://m.facebook.com/photo.php?fbid=189849289139315&id=114874993303412&set=pcb.189849505805960&source=48,,,,,,,,
 18/06/2020,Ladakh,12082,Samples Collected,687,9901,1244,,544,Facility,,,,,,,,,,,https://twitter.com/DIPR_Leh/status/1273577182011375616?s=19,,,,,,,,
-19/06/2020,Ladakh,12516,Samples Collected,744,10091,1221,,544,Facility,,,,103,,,,,,,https://www.facebook.com/114874993303412/photos/pcb.190452935745617/190452859078958/?type=3&__tn__=HH-R&eid=ARCDxFLy7dg0oHzi72lALMTGiXNaqdh3H13MqsVTznzPgbx-dbHpkZmo_4Hgb9u23ROPLwFhcSolghal&__xts__%5B0%5D=68.ARD0CE3zBWm7URTOzsIPVIUUCecaYkj20HRZR79s_dP5goqiEn4qcfwWaXFQ5S1Xi0eIK_XLTxWO3-uoEh1I11o98HAmjQeCTQVxkydziXxnuS4zd_sPdPrskaoL88npy5urzPlp_wDC-uk0un6koYEeT6h-pbA_Bv1RnITrG_ZAKHC7jpNOPfua5TDI1pqCXrRyZEmZ-m-rQcyX8ogCzt6dLxFiky6feQWKE5pUAXN8cxR5OV8Oq2kL9u0bIBlo1x-JZSinUxfzuqGgS3z_10Rii8JXcsKyN737n5JxRpd8i53IHd-4ZHYfsni3N6wW9Y6_Q3GU8HGrWcmrnMxC5ag,,,,,,,,
+19/06/2020,Ladakh,12516,Samples Collected,744,10091,1221,,544,Facility,,,,190,,,,,,,https://www.facebook.com/114874993303412/photos/pcb.190452935745617/190452859078958/?type=3&__tn__=HH-R&eid=ARCDxFLy7dg0oHzi72lALMTGiXNaqdh3H13MqsVTznzPgbx-dbHpkZmo_4Hgb9u23ROPLwFhcSolghal&__xts__%5B0%5D=68.ARD0CE3zBWm7URTOzsIPVIUUCecaYkj20HRZR79s_dP5goqiEn4qcfwWaXFQ5S1Xi0eIK_XLTxWO3-uoEh1I11o98HAmjQeCTQVxkydziXxnuS4zd_sPdPrskaoL88npy5urzPlp_wDC-uk0un6koYEeT6h-pbA_Bv1RnITrG_ZAKHC7jpNOPfua5TDI1pqCXrRyZEmZ-m-rQcyX8ogCzt6dLxFiky6feQWKE5pUAXN8cxR5OV8Oq2kL9u0bIBlo1x-JZSinUxfzuqGgS3z_10Rii8JXcsKyN737n5JxRpd8i53IHd-4ZHYfsni3N6wW9Y6_Q3GU8HGrWcmrnMxC5ag,,,,,,,,
+20/06/2020,Ladakh,12629,Samples Collected,836,10307,1228,,544,Facility,,,,190,,,,,,,https://m.facebook.com/story.php?story_fbid=190751362382441&id=114874993303412,,,,,,,,
+21/06/2020,Ladakh,,,,,,,,,,,,,,,,,,,,,,,,,,,
 05/04/2020,Madhya Pradesh,2812,Samples Collected,193,1954,665,,,,,,,,,,,,,,https://twitter.com/JansamparkMP/status/1246841187073273857,,,,6.86%,0.03,34,15,82232000
 07/04/2020,Madhya Pradesh,3770,Tested,290,3125,355,,,,,,,9492,1598,993,,,,,https://twitter.com/JansamparkMP/status/1247554866043473920,,,,7.69%,0.05,46,13,82232000
 08/04/2020,Madhya Pradesh,4056,Tested,341,3443,272,,,,,,,,,,,,,,https://twitter.com/JansamparkMP/status/1247907281703862272/photo/2,,,,8.41%,0.05,49,12,82232000
@@ -1264,7 +1290,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Madhya Pradesh,271205,Reports Received,11244,253474,,,,,,,,,,,,,,,https://twitter.com/healthminmp/status/1273277117657042944?s=19,,,,,,,,
 18/06/2020,Madhya Pradesh,277451,Reports Received,11426,260395,,,,,,,,,,,,,,,https://twitter.com/healthminmp/status/1273607077764587526?s=19,,,,,,,,
 19/06/2020,Madhya Pradesh,282674,Reports Received,11582,267247,,,,,,,,,,,,,,,https://twitter.com/healthminmp/status/1273981302497107968?s=19,,,,,,,,
-20/06/2020,Madhya Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Madhya Pradesh,290831,Reports Received,11724,273628,,,,,,,,,,,,,,,https://twitter.com/healthminmp/status/1274325279947649030?s=19,,,,,,,,
 05/04/2020,Maharashtra,16008,Tested,,14837,,,,,,,,,,,,,,,,,,,0.00%,0.13,131,,122153000
 06/04/2020,Maharashtra,17563,Tested,868,15808,,,,,,,,,,,,,,,https://www.cnbctv18.com/healthcare/maharashtra-covid-19-tally-mounts-to-868-with-7-fresh-deaths-5634351.htm,,,,4.94%,0.14,144,20,122153000
 07/04/2020,Maharashtra,20877,Tested,1018,19290,569,,,,,,,,,,,,,,https://arogya.maharashtra.gov.in/pdf/covidepressnote07.pdf,,,,4.88%,0.17,171,21,122153000
@@ -1340,7 +1366,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 18/06/2020,Maharashtra,719637,Tested,123794,595843,,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1273498671577837573?s=19,,https://t.co/JRec66xoGN?amp=1,,,,,,
 19/06/2020,Maharashtra,737597,Tested,120504,609968,,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1273865085169987585?s=19,,,,,,,,
 20/06/2020,Maharashtra,756809,Tested,124331,624869,,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1274212618413080579?s=19,,,,,,,,
-21/06/2020,Maharashtra,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21/06/2020,Maharashtra,775958,Tested,128205,639731,,,,,,,,,,,,,,,https://twitter.com/Maha_MEDD/status/1274578476377321473?s=19,,,,,,,,
 14/04/2020,Manipur,276,Reports Received,2,,,321,109,Government,212,,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/03/PHOTO-2020-04-14-21-19-48.jpg,,,,0.72%,0.09,89,138,3103000
 17/04/2020,Manipur,311,Reports Received,2,,,359,126,Government,233,,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/03/170420_status.jpg,,,,0.64%,0.10,100,156,3103000
 24/04/2020,Manipur,402,Reports Received,2,,,391,80,Government,311,,,,,,,,,,http://nrhmmanipur.org/wp-content/uploads/2020/05/status_240420.jpg,,,,0.50%,0.13,130,201,3103000
@@ -1378,6 +1404,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Manipur,29865,Reports Received,552,,,14600,5870,Government,8730,,,,,,,,,17645,https://twitter.com/DiprManipur/status/1273296346057850880?s=19,,,,,,,,
 18/06/2020,Manipur,30476,Reports Received,606,,,14718,5590,Government,9128,,,,,,,,,17680,https://twitter.com/DiprManipur/status/1273611027746156544?s=19,,,,,,,,
 19/06/2020,Manipur,32093,Reports Received,681,,,14796,5438,Government,9358,,,,,,,,,17717,https://twitter.com/DiprManipur/status/1273981216706854912?s=19,,,,,,,,
+20/06/2020,Manipur,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21/06/2020,Manipur,,,,,,,,,,,,,,,,,,,,,,,,,,,
 16/04/2020,Meghalaya,552,Tested,7,299,246,,,,,,,,,,,,,,https://t.me/indiacovid/2463,,,,1.27%,0.17,171,79,3224000
 17/04/2020,Meghalaya,617,Tested,9,541,,,,,,,,,,,,,,,http://meghalaya.gov.in/megcms/sites/default/files/press_release/CM%20Media%20Brief_0.pdf,,,,1.46%,0.19,191,69,3224000
 18/04/2020,Meghalaya,738,Tested,11,667,60,,,,,,,,,,,,,,http://meghalayaonline.gov.in/covid/login.htm#,,,,1.49%,0.23,229,67,3224000
@@ -1431,7 +1459,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Meghalaya,14316,Tested,43,,,,,,,,,,29,20,220421,206086,,,https://t.me/Covid19india_Auxiliary_Test_Data/523,,https://corona.meghalayagov.in/,,,,,,
 18/06/2020,Meghalaya,14647,Tested,43,,,,,,,,,,29,20,220421,206086,,,https://t.me/Covid19india_Auxiliary_Test_Data/532,,https://corona.meghalayagov.in/,,,,,,
 19/06/2020,Meghalaya,15104,Tested,43,,,,,,,,,,29,20,256379,206086,,,https://t.me/Covid19india_Auxiliary_Test_Data/552,,,,,,,,
-20/06/2020,Meghalaya,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Meghalaya,15346,Tested,43,,,,,,,,,,29,20,256379,206086,,,https://t.me/Covid19india_Auxiliary_Test_Data/568,,,,,,,,
 06/04/2020,Mizoram,58,Samples Collected,1,0,0,,,,,,,,,,,,,,https://health.mizoram.gov.in/post/covid-19-bulletin-date-642020,,,,1.72%,0.05,49,58,1192000
 07/04/2020,Mizoram,58,Samples Collected,1,0,0,,,,,,,,,,,,,,https://health.mizoram.gov.in/post/covid-19-bulletin-date-742020,,,,1.72%,0.05,49,58,1192000
 08/04/2020,Mizoram,74,Samples Collected,1,,0,,,,,,,,,,,,,,https://health.mizoram.gov.in/post/covid-19-bulletin-date-842020,,,,1.35%,0.06,62,74,1192000
@@ -1501,7 +1529,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Mizoram,6035,Samples Collected,121,,,,,,,,,,,,,,,,https://dipr.mizoram.gov.in/post/status-of-state-surveillance-of-covid-19-time-1662020-500pm-1762020-500-pm,,,,,,,,
 18/06/2020,Mizoram,6661,Samples Collected,130,,,,,,,,,,,,,,,,https://health.mizoram.gov.in/post/covid-bulletin-180620,,,,,,,,
 19/06/2020,Mizoram,7496,Samples Collected,130,,,,,,,,,,,,,,,,https://dipr.mizoram.gov.in/post/status-of-state-surveillance-of-covid-19-time-1862020-500pm-1962020-500-pm,,,,,,,,
-20/06/2020,Mizoram,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Mizoram,8284,Samples Collected,140,,,,,,,,,,,,,,,,https://dipr.mizoram.gov.in/post/status-of-state-surveillance-of-covid-19-time-1962020-500pm-2062020-500-pm,,,,,,,,
 06/04/2020,Nagaland,60,Samples Sent,0,47,13,,,,,,,489,,70,,,,,http://morungexpress.com/nagaland-covid-19-update-2,,,,0.00%,0.03,28,,2150000
 10/04/2020,Nagaland,70,Samples Sent,0,69,1,,20,Facility,,,,,,,,,,,http://morungexpress.com/nagaland-covid-19-update-4,,,,0.00%,0.03,33,,2150000
 11/04/2020,Nagaland,70,Samples Sent,0,70,,,22,Facility,,,,,,,,,,,http://morungexpress.com/nagaland-covid-19-update-5,,,,0.00%,0.03,33,,2150000
@@ -1574,7 +1602,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Nagaland,8387,Samples Sent,193,,,,,,,,,385,68,39,33190,10756,10756,6090,https://twitter.com/pangnyu/status/1273206973086027776?s=20,,https://twitter.com/pangnyu/status/1273093434748870660?s=20,,,,,,
 18/06/2020,Nagaland,9039,Samples Sent,193,7567,1228,,,,,,,385,68,39,33190,10756,10756,6090,https://twitter.com/MyGovNagaland/status/1273608335099490304?s=20,,https://covid19.nagaland.gov.in/health-main,,,,,,
 19/06/2020,Nagaland,10102,Samples Sent,198,8213,1637,,,,,,,385,68,39,33190,10756,,,https://twitter.com/MyGovNagaland/status/1273987190159142913?s=09,,https://covid19.nagaland.gov.in/health-main,,,,,,
-20/06/2020,Nagaland,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Nagaland,9128,Samples Sent,201, ,,,6742,Facility,,,,,,,,,,,https://twitter.com/MyGovNagaland/status/1274329669039296512?s=19,,,,,,,,
 03/04/2020,Odisha,1395,Tested,20,1108,267,,,,,,,,,,,,,,https://twitter.com/HFWOdisha/status/1246135145230303232,,,,1.43%,0.03,32,70,43671000
 07/04/2020,Odisha,2441,Tested,42,,,,,,,,,,,,,,,,https://twitter.com/HFWOdisha/status/1247579939206909953,,,,1.72%,0.06,56,58,43671000
 08/04/2020,Odisha,2441,Tested,42,2399,,,,,,,,,,,,,,,https://health.odisha.gov.in/,,,,1.72%,0.06,56,58,43671000
@@ -1651,7 +1679,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 18/06/2020,Odisha,212224,Tested,4512,,,,,,,,,,346,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/527?single,,https://statedashboard.odisha.gov.in/,,,,,,
 19/06/2020,Odisha,216607,Tested,4677,,,,,,,,,,342,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/546?single,,https://statedashboard.odisha.gov.in/,,,,,,
 20/06/2020,Odisha,219774,Tested,4856,,,,,,,,,,342,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/564?single,,https://statedashboard.odisha.gov.in/,,,,,,
-21/06/2020,Odisha,,,,,,,,,,,,,,,,,,,,,,,,,,,
+21/06/2020,Odisha,224402,Tested,5160,,,,,,,,,,342,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/580?single,,https://statedashboard.odisha.gov.in/,,,,,,
 18/04/2020,Puducherry,1207,Samples Sent,7,1159,41,,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,,0.58%,0.80,803,172,1504000
 19/04/2020,Puducherry,1245,Samples Sent,7,1214,24,,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,,0.56%,0.83,828,178,1504000
 20/04/2020,Puducherry,1272,Samples Sent,7,1232,33,,,,,,,,,,,,,,https://covid19dashboard.py.gov.in/,,,,0.55%,0.85,846,182,1504000
@@ -1715,7 +1743,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Puducherry,11356,Samples Sent,257,10920,179,,3856,Hospital,,,,,,,,,,,https://covid19dashboard.py.gov.in/LabTestReport,,https://covid19dashboard.py.gov.in/QuarantineReport,,,,,,
 18/06/2020,Puducherry,11679,Samples Sent,285,11230,164,,4003,Hospital,,,,,,,,,,,https://covid19dashboard.py.gov.in/LabTestReport,,https://covid19dashboard.py.gov.in/QuarantineReport,,,,,,
 19/06/2020,Puducherry,11992,Samples Sent,301,11486,206,,4087,Hospital,,,,,,,,,,,https://covid19dashboard.py.gov.in/LabTestReport,,https://covid19dashboard.py.gov.in/QuarantineReport,,,,,,
-20/06/2020,Puducherry,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Puducherry,12409,Samples Sent,353,11866,190,,4284,Hospital,,,,,,,,,,,https://covid19dashboard.py.gov.in/LabTestReport,,https://covid19dashboard.py.gov.in/QuarantineReport,,,,,,
 02/04/2020,Punjab,1434,Samples Sent,37,1236,161,,,,,,,,,,,,,,https://twitter.com/kbssidhu1961/status/1245680244658339841/photo/1,,,,2.58%,0.05,48,39,29859000
 08/04/2020,Punjab,2937,Samples Sent,106,2614,217,,,,,,,,,,,,,,https://twitter.com/kbssidhu1961/status/1247878360966901763/photo/1,,,,3.61%,0.10,98,28,29859000
 09/04/2020,Punjab,3192,Samples Sent,130,2777,285,,,,,,,,,,,,,,http://pbhealth.gov.in/Media%20bulletin%20-%2009-04-2020.pdf,,,,4.07%,0.11,107,25,29859000
@@ -1790,7 +1818,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Punjab,208408,Samples Sent,3497,,,,,,,,2,,,,,,,,http://pbhealth.gov.in/Media%20Bulletin%20COVID-19%2017-06-2020.pdf,,,,,,,,
 18/06/2020,Punjab,219528,Samples Sent,3615,,,,,,,,6,,,,,,,,http://pbhealth.gov.in/Media%20Bulletin%20COVID-19%2018-06-2020.pdf,,,,,,,,
 19/06/2020,Punjab,227012,Samples Sent,3832,,,,,,,,4,,,,,,,,https://t.me/indiacovid/7716?single,,,,,,,,
-20/06/2020,Punjab,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Punjab,235700,Samples Sent,3952,,,,,,,,5,,,,,,,,https://t.me/indiacovid/7810?single,,,,,,,,
 05/04/2020,Rajasthan,12279,Reports Received,260,11439,580,,,,,,,,,,,,,,http://www.rajswasthya.nic.in/,,,,2.12%,0.16,159,47,77264000
 07/04/2020,Rajasthan,17638,Reports Received,363,16401,874,,,,,,,,,,,,,,,,,,2.06%,0.23,228,49,77264000
 08/04/2020,Rajasthan,17638,Reports Received,363,16401,874,,,,,,,,,,,,,,http://www.rajswasthya.nic.in/,,,,2.06%,0.23,228,49,77264000
@@ -1866,6 +1894,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Rajasthan,637937,Reports Received,13542,620217,4178,,,,,,,,,,,,,,https://t.me/indiacovid/7536?single,,,,,,,,
 18/06/2020,Rajasthan,654816,Reports Received,13857,636216,4743,,,,,,,,,,,,,,https://t.me/indiacovid/7626,,,,,,,,
 19/06/2020,Rajasthan,667643,Reports Received,14156,650510,2977,,,,,,,,,,,,,,https://t.me/indiacovid/7730,,,,,,,,
+20/06/2020,Rajasthan,683017,Reports Received,14537,664383,4097,,,,,,,,,,,,,,https://t.me/indiacovid/7828,,,,,,,,
+21/06/2020,Rajasthan,,,,,,,,,,,,,,,,,,,,,,,,,,,
 04/05/2020,Sikkim,170,Samples Sent,0,169,1,,,,,,,,,,,,,,https://covid19sikkim.org/,,,,0.00%,0.26,256,,664000
 05/05/2020,Sikkim,181,Samples Sent,0,171,10,,11,,,,,,,,,,,,https://covid19sikkim.org/,,,,0.00%,0.27,273,,664000
 06/05/2020,Sikkim,189,Samples Sent,0,189,0,,,,,,,,,,,,,,https://covid19sikkim.org/,,,,0.00%,0.28,285,,664000
@@ -1908,8 +1938,12 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 14/06/2020,Sikkim,5664,Samples Sent,67,5177,420,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/458,,https://covid19sikkim.org/,,,,,,
 15/06/2020,Sikkim,5762,Samples Sent,68,5521,173,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/488,,https://covid19sikkim.org/,,,,,,
 16/06/2020,Sikkim,6192,Samples Sent,68,5715,409,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/507,,https://covid19sikkim.org/,,,,,,
-17/06/2020,Sikkim,6349,Samples Sent,70,6004,275,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/520,,,,,,,,
-19/06/2020,Sikkim,6882,Samples Sent,70,6500,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/550,,,,,,,,
+17/06/2020,Sikkim,6349,Samples Sent,70,6004,275,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/520,,https://covid19sikkim.org/,,,,,,
+19/06/2020,Sikkim,6882,Samples Sent,70,6500,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/550,,https://covid19sikkim.org/,,,,,,
+20/06/2020,Sikkim,7183,Samples Sent,70,6932,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/574,,https://covid19sikkim.org/,,,,,,
+21/06/2020,Sikkim,9354,Samples Sent,70,8803,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/582,,https://covid19sikkim.org/,,,,,,
+22/06/2020,Sikkim,,,,,,,,,,,,,,,,,,,,,,,,,,,
+23/06/2020,Sikkim,,,,,,,,,,,,,,,,,,,,,,,,,,,
 03/04/2020,Tamil Nadu,3684,Samples Sent,411,2789,484,,,,,,,13323,,3044,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/03/Media-Bulletin-03-04-20-COVID-19-6-PM.pdf,,,,11.16%,0.05,49,9,75695000
 08/04/2020,Tamil Nadu,5305,Samples Sent,690,4414,201,,,,,,,22049,,3371,,,,,https://stopcorona.tn.gov.in/,,,,13.01%,0.07,70,8,75695000
 09/04/2020,Tamil Nadu,7267,Samples Sent,834,5824,485,,213,Government,,,,29074,,3371,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/03/Media-Bulletin09.04.20-5-Pages-English-173-KB.pdf,,,,11.48%,0.10,96,9,75695000
@@ -1984,7 +2018,7 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,Tamil Nadu,773707,Samples Sent,50193,722830,684,,,,,,,,,,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/06/Media-Bulletin-17.06.2020-20-Pages-English-429-KB.pdf,,,,,,,,
 18/06/2020,Tamil Nadu,800443,Samples Sent,52334,747428,681,,,,,,,,,,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/06/Media-Bulletin-18.06.2020-19-Pages-English-425.2-KB.pdf,,,,,,,,
 19/06/2020,Tamil Nadu,827980,Samples Sent,54449,772937,594,,,,,,,,,,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/06/Media-Bulletin-19.06.2020-21-Pages-English-648.5-KB.pdf,,,,,,,,
-20/06/2020,Tamil Nadu,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20/06/2020,Tamil Nadu,861211,Samples Sent,56845,803824,542,,,,,,,,,,,,,,https://stopcorona.tn.gov.in/wp-content/uploads/2020/03/Media-Bulletin-20-06-20-COVID-19-6-PM.pdf,,,,,,,,
 19/04/2020,Telangana,14962,Samples Collected,858,14104,768,,,,,,,,,,,,,,https://t.me/indiacovid/2688?single,,,,5.73%,0.40,402,17,37220000
 28/04/2020,Telangana,19063,Tested,1009,,,,,,,,,,,,,,,,https://www.thehindu.com/news/national/telangana/accuracy-of-tests-more-in-telangana-eatala/article31456895.ece,,,,5.29%,0.51,512,19,37220000
 29/04/2020,Telangana,19278,Tested,1016,,,,,,,,,,,,,,,,http://124.124.103.93/COVID/home.htm,,https://covid19.telangana.gov.in/,,5.27%,0.52,518,19,37220000
@@ -1992,6 +2026,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 16/06/2020,Telangana,44431,Tested,5406,39025,,,,,,,,,,,,,,,https://twitter.com/IPRTelangana/status/1272937297919369216?s=19,,https://t.me/indiacovid/7466?single,,,,,,
 17/06/2020,Telangana,45911,Tested,5675,40236,,,,,,,,,,,,,,,https://twitter.com/Eatala_Rajender/status/1273280512358936578?s=09,,,,,,,,
 19/06/2020,Telangana,50569,Tested,6526,44043,,,,,,,,,,,,,,,https://twitter.com/TelanganaHealth/status/1274009234267443200?s=19,,,,,,,,
+20/06/2020,Telangana,53757,Tested,7072,46685,,,,,,,,,,,,,,,https://twitter.com/Eatala_Rajender/status/1274375645510791170?s=19,,,,,,,,
+21/06/2020,Telangana,,,,,,,,,,,,,,,,,,,,,,,,,,,
 11/04/2020,Tripura,337,Tested,2,335,,,,,,,,,,,,,,,https://m.facebook.com/story.php?story_fbid=2415546905213637&id=632536300181382,,,,0.59%,0.08,84,169,3992000
 15/04/2020,Tripura,738,Tested,2,,,,,,,,,,,,,,,,https://www.facebook.com/bjpbiplab/posts/2424173307684330,,,,0.27%,0.18,185,369,3992000
 16/04/2020,Tripura,762,Tested,2,760,,,,,,,,,,,,,,,https://t.me/indiacovid/2466,,,,0.26%,0.19,191,381,3992000
@@ -2045,8 +2081,9 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 15/06/2020,Tripura,47683,Tested,1084,46599,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/482,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
 16/06/2020,Tripura,49208,Tested,1090,48118,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/505,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
 17/06/2020,Tripura,50268,Tested,1133,49135,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/524,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
-18/06/2020,Tripura,51495,Tested,1154,50341,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/533,,,,,,,,
-19/06/2020,Tripura,52752,Tested,1181,51571,,,,,,,,,,,,,,,,,,,,,,,
+18/06/2020,Tripura,51495,Tested,1154,50341,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/533,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
+19/06/2020,Tripura,52752,Tested,1181,51571,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/557,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
+20/06/2020,Tripura,53905,Tested,1189,52716,,,,,,,,,,,,,,,https://t.me/Covid19india_Auxiliary_Test_Data/576,,https://covid19.tripura.gov.in/Visitor/ViewStatus.aspx,,,,,,
 05/04/2020,Uttar Pradesh,5255,Samples Sent,278,4796,181,,,,,,,,,,,,,,WA circular :/,,,,5.29%,0.02,23,19,224979000
 05/04/2020,Uttar Pradesh,5255,Samples Sent,278,4796,179,,3927,Institutional,,,,,,,,,,,,,,,5.29%,0.02,23,19,224979000
 09/04/2020,Uttar Pradesh,8402,Samples Sent,410,7898,94,,8671,Institutional,,,,,,,,,,,https://t.me/c/1428198946/1789,,,,4.88%,0.04,37,20,224979000
@@ -2120,8 +2157,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 16/06/2020,Uttar Pradesh,480047,Tested,14598,,,,,,,,,,,,,,,,https://twitter.com/UPGovt/status/1272899636836143109?s=19,,,,,,,,
 17/06/2020,Uttar Pradesh,496206,Tested,15181,,,,,,,,,,,,,,,,https://twitter.com/UPGovt/status/1273232273354022912?s=19,,,,,,,,
 18/06/2020,Uttar Pradesh,515280,Tested,15785,,,,,,,,,,,,,,,,https://twitter.com/ANINewsUP/status/1273558369979133953?s=19,,,,,,,,
-19/06/2020,Uttar Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
-20/06/2020,Uttar Pradesh,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19/06/2020,Uttar Pradesh,532505,Tested,16594,,,,,,,,,,,,,,,,https://twitter.com/UPGovt/status/1274008684876623874?s=19,,,,,,,,
+20/06/2020,Uttar Pradesh,542972,Tested,17135,,,,,,,,,,,,,,,,https://twitter.com/UPGovt/status/1274338954783776769?s=19,,https://t.me/indiacovid/7823?single,,,,,,
 02/04/2020,Uttarakhand,678,Samples Sent,7,554,117,,,,,,,,,,,,,,https://www.facebook.com/UKMedicalHealth/photos/a.1666257713623931/2556543367928690/?type=3&theater,,,,1.03%,0.06,61,97,11141000
 07/04/2020,Uttarakhand,1289,Samples Sent,32,1092,165,,,,,,,,,,,,,,,,,,2.48%,0.12,116,40,11141000
 09/04/2020,Uttarakhand,1531,Samples Sent,35,1235,261,,1637,Institutional,,,,,,,,,,,http://health.uk.gov.in/files/Health_Bulletin__Uttarakhand_Novel_Corona_Virus_9_April_2020_8.00PM.pdf,,,,2.29%,0.14,137,44,11141000
@@ -2197,6 +2234,8 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 18/06/2020,Uttarakhand,50796,Samples Sent,2079,42008,4411,,9880,Facility,,,,,,,,,,,https://twitter.com/PIBDehradun/status/1273548516409749504?s=09,,,,4.09%,4.56,4559,24,11141000
 19/06/2020,Uttarakhand,53155,Samples Sent,2127,43438,4463,,9880,Facility,,,,,,,,,,,https://twitter.com/PIBDehradun/status/1273904116058583040/photo/1,,,,4.00%,4.77,4771,25,11141000
 20/06/2020,Uttarakhand,54512,Samples Sent,2278,45131,4308,,10343,Facility,,,,,,,,,,,https://twitter.com/PIBDehradun/status/1274276677158268928/photo/1,,,,,,,,
+21/06/2020,Uttarakhand,55819,Samples Sent,2324,46286,4737,,,,,,,,,,,,,,https://twitter.com/PIBDehradun/status/1274636383479410688?s=09,,,,,,,,
+22/06/2020,Uttarakhand,,,,,,,,,,,,,,,,,,,,,,,,,,,
 01/04/2020,West Bengal,659,Tested,37,568,54,,,,,,,,,,,,,,https://www.wbhealth.gov.in/uploaded_files/corona/Bulletin_West_Bengal_01.04_.2020_.pdf,,,,5.61%,0.01,7,18,96906000
 04/04/2020,West Bengal,1042,Tested,,,,,,,,,,,,,,,,,,,,,0.00%,0.01,11,,96906000
 06/04/2020,West Bengal,1301,Tested,,,,6889,,Institutional,4010,,,,,,,,,21775,https://www.wbhealth.gov.in/uploaded_files/corona/Bulletin_West_Bengal_06.04_.2020(1)_.pdf,,,,0.00%,0.01,13,,96906000
@@ -2273,3 +2312,5 @@ Updated On,State,Total Tested,Tag (Total Tested),Positive,Negative,Unconfirmed,C
 17/06/2020,West Bengal,360976,Tested,12300,,,,11434,Government,84910,,,,948,395,1431262,814040,,,https://www.wbhealth.gov.in/uploaded_files/corona/WB_DHFW_Bulletin_17th_JUNE_REPORT_FINAL.pdf,,,,3.41%,3.73,3725,29,96906000
 18/06/2020,West Bengal,370291,Tested,12735,,,,10110,Government,86512,,,,948,395,1456262,834040,,,https://www.wbhealth.gov.in/uploaded_files/corona/WB_DHFW_Bulletin_18th_JUNE_REPORT_FINAL.pdf,,,,3.44%,3.82,3821,29,96906000
 19/06/2020,West Bengal,380612,Tested,13090,,,,9484,Government,88279,,,,948,395,1486262,849040,,,https://www.wbhealth.gov.in/uploaded_files/corona/WB_DHFW_Bulletin_19th_JUNE_REPORT_FINAL.pdf,,,,3.44%,3.93,3928,29,96906000
+20/06/2020,West Bengal,390942,Tested,13531,,,,9123,Government,89421,,,,948,395,1501262,863040,,,https://www.wbhealth.gov.in/uploaded_files/corona/WB_DHFW_Bulletin_20th_JUNE_REPORT_FINAL.pdf,,https://t.me/indiacovid/7815,,3.46%,4.03,4034,29,96906000
+21/06/2020,West Bengal,,,,,,,,,,,,,,,,,,,,,,,,0.00,0,,96906000

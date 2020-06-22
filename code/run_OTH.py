@@ -1,5 +1,5 @@
 from prepare_data_OTH import update, prepare
-from mrsc_score import score_rsc, score_mrsc
+from mrsc_score import score_rsc, score_mrsc, rankDiagnostic
 from trend_analysis import trend_analysis
 import json
 import time

@@ -1,119 +1,117 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.28)  21 JUN 2020 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  22 JUN 2020 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lockdown.tex
 (./lockdown.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/elsarticle/elsarticle.cls
-Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
-\@bls=\dimen102
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
+\@bls=\dimen134
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen103
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen135
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/pifont.sty
-Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
-LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+\c@tnote=\count175
+\c@fnote=\count176
+\c@cnote=\count177
+\c@ead=\count178
+\c@author=\count179
+\@eadauthor=\toks16
+\c@affn=\count180
+\absbox=\box45
+\elsarticlehighlightsbox=\box46
+\elsarticlegrabsbox=\box47
+\keybox=\box48
+\Columnwidth=\dimen138
+\space@left=\dimen139
+\els@boxa=\box49
+\els@boxb=\box50
+\leftMargin=\dimen140
+\@enLab=\toks17
+\@sep=\skip49
+\@@sep=\skip50
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
-File: upzd.fd 2001/06/04 font definitions for U/pzd.
-)
-LaTeX Font Info:    Try loading font information for U+psy on input line 64.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upsy.fd
-File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
-\c@tnote=\count88
-\c@fnote=\count89
-\c@cnote=\count90
-\c@ead=\count91
-\c@author=\count92
-\@eadauthor=\toks15
-\c@affn=\count93
-\absbox=\box26
-\keybox=\box27
-\Columnwidth=\dimen106
-\space@left=\dimen107
-\els@boxa=\box28
-\els@boxb=\box29
-\leftMargin=\dimen108
-\@enLab=\toks16
-\@sep=\skip43
-\@@sep=\skip44
- (./lockdown.spl) (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.s
-ty
+(./lockdown.spl)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip45
-\bibsep=\skip46
+\bibhang=\skip51
+\bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count94
+\c@NAT@ctr=\count181
 )
 \splwrite=\write3
 \openout3 = `lockdown.spl'.
 
+\appnamewidth=\dimen141
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks17
+\@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks18
-\thm@bodyfont=\toks19
-\thm@headfont=\toks20
-\thm@notefont=\toks21
-\thm@headpunct=\toks22
-\thm@preskip=\skip47
-\thm@postskip=\skip48
-\thm@headsep=\skip49
-\dth@everypar=\toks23
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks24
 LaTeX Info: Redefining \qed on input line 274.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count182
+\l__pdf_internal_box=\box51
 )
 (./lockdown.aux
 
@@ -136,124 +134,85 @@ or select author-year BibTeX style, e.g. plainnat
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen109
-\scratchbox=\box30
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen110
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks25
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+\scratchcounter=\count183
+\scratchdimen=\dimen142
+\scratchbox=\box52
+\nofMPsegments=\count184
+\nofMParguments=\count185
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen143
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 140.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140
+.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 140.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140
+.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[1
 
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-lockdown.bbl
-[3]) [4] (./lockdown.aux) ) 
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./lockdown.bbl [3]) [4] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 2464 strings out of 492649
- 32346 string characters out of 6129621
- 96911 words of memory out of 5000000
- 6302 multiletter control sequences out of 15000+600000
- 12659 words of font info for 49 fonts, out of 8000000 for 9000
+ 2430 strings out of 480608
+ 31279 string characters out of 5903630
+ 267185 words of memory out of 5000000
+ 18317 multiletter control sequences out of 15000+600000
+ 540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,34p,566b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
-0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb>
-Output written on lockdown.pdf (4 pages, 163185 bytes).
+ 38i,7n,38p,566b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb>
+Output written on lockdown.pdf (4 pages, 163366 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

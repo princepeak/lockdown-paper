@@ -27,11 +27,11 @@ plt.rcParams["figure.figsize"] = (12, 6)
 
 def rankDiagnostic(filename_metric, filename_secondary_metric):
     df1 = pd.read_csv(filename_metric)
-    df1 = df1.drop(['id'], axis=1)
+    df1 = df1.drop(['Province_State'], axis=1)
     df1 = df1.fillna(axis=1, method='ffill')
 
     df2 = pd.read_csv(filename_secondary_metric)
-    df2 = df2.drop(['id'], axis=1)
+    df2 = df2.drop(['Province_State'], axis=1)
     df2 = df2.fillna(axis=1, method='ffill')
 
     M1 = np.matrix(df1.values, dtype='float')
@@ -49,27 +49,28 @@ def rankDiagnostic(filename_metric, filename_secondary_metric):
     u, s_, v = np.linalg.svd(M2, full_matrices=False)
     u, sA, v = np.linalg.svd(M, full_matrices=False)
 
-    k = 50
+    k = 20
 
     plt.subplot(3, 1, 1)
-    plt.plot(range(0, k), s[0:k], color='magenta', label=f'metric1 rank {np.linalg.matrix_rank(M1)}')
+    plt.plot(range(0, k), s[0:k], color='magenta', label=f'Number of deceased')
     plt.title('Diagnostic: Rank Preservation Property')
-    plt.xlabel('Singular Value Index (largest to smallest)')
     plt.ylabel('Singular Value')
+    plt.xticks(range(0, k))
     legend = plt.legend(loc='best', shadow=True)
 
     plt.subplot(3, 1, 2)
-    plt.plot(range(0, k), s_[0:k], color='black', label=f'metric2 rank {np.linalg.matrix_rank(M2)}')
-    plt.xlabel('Singular Value Index (largest to smallest)')
+    plt.plot(range(0, k), s_[0:k], color='blue', label=f'Number of confirmed cases')
     plt.ylabel('Singular Value')
+    plt.xticks(range(0, k))
     legend = plt.legend(loc='best', shadow=True)
 
     plt.subplot(3, 1, 3)
-    plt.plot(range(0, k), sA[0:k], color='blue', label=f'Combined rank {np.linalg.matrix_rank(M)}')
-    plt.xlabel('Singular Value Index (largest to smallest)')
+    plt.plot(range(0, k), sA[0:k], color='green', label=f'Combined')
     plt.ylabel('Singular Value')
+    plt.xticks(range(0, k))
     legend = plt.legend(loc='best', shadow=True)
 
+    plt.xlabel('Singular Value Index (largest to smallest)')
     plt.show()
 
 def score_rsc(filename, idColumnName, treatment, start, training_end, test_end, MetricName):
