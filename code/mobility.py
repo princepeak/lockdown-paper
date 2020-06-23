@@ -5,9 +5,9 @@ from matplotlib.pyplot import text
 from events import get_events_between
 
 dpi=300
-plt.style.use('seaborn-pastel')
+#plt.style.use('fivethirtyeight')
 pd.plotting.register_matplotlib_converters()
-plt.style.use("seaborn-ticks")
+plt.style.use("seaborn-whitegrid")
 plt.rcParams["xtick.direction"] = "in"
 plt.rcParams["ytick.direction"] = "in"
 plt.rcParams["font.size"] = 11.0
@@ -32,10 +32,13 @@ def plot_mobility_trend(df, title, ylabel="% Chnage from baseline", xlabel=None,
 
 
 def main():
-    df = pd.read_csv('../data/mobility/applemobilitytrends-2020-06-19.csv')
+    df = pd.read_csv('../data/mobility/applemobilitytrends-2020-06-21.csv')
     df_walking = df[df['transportation_type']=='walking']
     df_driving = df[df['transportation_type'] == 'driving']
     df_transit = df[df['transportation_type'] == 'transit']
+
+    df_fb_mobility = pd.read_csv('../data/fb_movement/movement-range-2020-06-20.txt', delimiter='\t')
+
 
     df_walking = df_walking.drop(
         columns=['transportation_type', 'geo_type', 'alternative_name', 'sub-region', 'country'])
@@ -44,21 +47,17 @@ def main():
     df_transit = df_transit.drop(
         columns=['transportation_type', 'geo_type', 'alternative_name', 'sub-region', 'country'])
 
-    places_of_interest = ['New York City',
-                          'New Jersey',
-                          'Illinois',
-                          'Italy',
+    places_of_interest = ['Italy',
                           'Spain',
-                          'Mumbai',
                           "France",
                           "Germany",
                           "Sweden",
                           "United Kingdom",
                           "Belgium",
-                          "Netherlands",
-                          "Brazil"]
+                          "Netherlands"]
+    places_iso = ['ITA', 'ESP', 'FRA', 'DEU', 'SWE', 'GBR', 'BEL', 'NLD']
 
-    for place in places_of_interest:
+    for place, iso in zip(places_of_interest, places_iso):
         df_walking_place = df_walking[df_walking['region']==place]
         df_driving_place = df_driving[df_driving['region']==place]
         df_transit_place = df_transit[df_transit['region']==place]
@@ -80,9 +79,34 @@ def main():
             plot_dict['Public Transport'] = [a-100 for a in df_transit_place.values.tolist()[0]]
             plot_dict['Dates'] = df_transit_place.columns.tolist()
 
+        df_fb_mobility_place = df_fb_mobility[df_fb_mobility['country']==iso]
+        df_fb_mobility_place['ds'] = pd.to_datetime(df_fb_mobility_place['ds'])
+        df_fb_mobility_place = df_fb_mobility_place.drop(columns=['polygon_source',
+                                                                  'polygon_id',
+                                                                  'polygon_name',
+                                                                  'baseline_name',
+                                                                  'baseline_type'])
+
+        df_fb_mobility_place_no_move = df_fb_mobility_place.groupby('ds').agg(
+            {'all_day_ratio_single_tile_users': 'mean'})
+        df_fb_mobility_place_visited = df_fb_mobility_place.groupby('ds').agg(
+            {'all_day_bing_tiles_visited_relative_change': 'mean'})
+
+        df_fb_mobility_place_no_move.columns = ['Staying put']
+        df_fb_mobility_place_visited.columns = ['Relative change in movement']
+
+        df_fb_mobility_place_no_move['Staying put'] = df_fb_mobility_place_no_move['Staying put'].apply(
+            lambda x: x * 100.0)
+        df_fb_mobility_place_visited['Relative change in movement'] = df_fb_mobility_place_visited['Relative change in movement'].apply(
+            lambda x: x * 100.0)
+
         plot_df = pd.DataFrame(plot_dict)
         plot_df['Dates'] = pd.to_datetime(plot_df['Dates'])
         plot_df = plot_df.set_index('Dates')
+
+        plot_df = pd.merge(plot_df, df_fb_mobility_place_no_move, how='inner', left_index=True, right_index=True)
+        plot_df = pd.merge(plot_df, df_fb_mobility_place_visited, how='inner', left_index=True, right_index=True)
+
         plot_df = plot_df.fillna(method='ffill')
         eplace = place
         if place == 'New York City':
@@ -90,7 +114,7 @@ def main():
         if place == 'Mumbai':
             eplace = 'Maharashtra'
         plot_mobility_trend(plot_df, f'Mobility Trends in {place}',
-                            events=get_events_between('1/13/20', '6/6/20', eplace))
+                            events=None)
 
 if __name__ == "__main__":
     main()

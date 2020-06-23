@@ -57,10 +57,10 @@ def main():
         plot_df = plot_df.set_index('Date')
 
         eplace = place
-        if place == 'United States':
-            eplace = 'New York'
-        if place == 'India':
-            eplace = 'Maharashtra'
+        if place == 'Germany':
+            eplace = 'Italy'
+        if place == 'Sweden':
+            eplace = 'Italy'
 
         plot_stringency_index_trend(plot_df, f'Government Response Stringency Index in {place} ((0 to 100, 100 = strictest))',
                             events=get_events_between('1/13/20', '6/19/20', eplace))

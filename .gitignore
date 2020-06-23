@@ -140,3 +140,4 @@ cython_debug/
 /data/news_intermediate_datafile/
 /data/news_processed/
 /data/news_weekly_datafile/
+/data/fb_movement/

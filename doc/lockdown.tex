@@ -41,7 +41,7 @@
 %% or use the graphicx package for more complicated commands
  \usepackage{graphicx}
 \usepackage{subcaption}
-\graphicspath{ {../img/}{../img/au/} {../img/us/}{../img/in/}{../img/stringency_index/}}
+\graphicspath{ {../img/}{../img/au/} {../img/us/}{../img/in/}{../img/stringency_index/}{../img/mobility/}}
 %% or use the epsfig package if you prefer to use the old commands
 %% \usepackage{epsfig}
 \usepackage{amsmath}
@@ -74,6 +74,8 @@
 %%   compress - compresses without sorting
 %%   longnamesfirst  -  makes first citation full author list
 %%
+
+\usepackage{booktabs}
 \biboptions{square,comma,numbers}
 
 % \biboptions{}
@@ -114,15 +116,17 @@
 		
 		\author[a1]{Subhas Kumar Ghosh\corref{cor1}}
 		\ead{subhas.ghosh@cba.com.au}
-		\author[a2]{Sai Shanmukha Narumanchi}
-		\ead{sai@cs.siu.edu}
-		\author[a3]{Sachchit Ghosh}
+		\author[a2]{Sachchit Ghosh}
 		\ead{sgho2841@uni.sydney.edu.au}
+		\author[a3]{Sai Shanmukha Narumanchi}
+		\ead{sai@cs.siu.edu}
+	
 		
 		\cortext[cor1]{Corresponding author}
 		\address[a1]{Commonwealth Bank of Australia, Sydney, New South Wales, 2000, Australia}
-		\address[a2]{Department of Computer Science, Southern Illinois University, Carbondale, IL 62901, USA.}
-		\address[a3]{The University of Sydney, Camperdown, NSW 2006, Australia}
+		\address[a2]{The University of Sydney, Camperdown, NSW 2006, Australia}
+		\address[a3]{Department of Computer Science, Southern Illinois University, Carbondale, IL 62901, USA.}
+	
 		
 		\begin{abstract}
 			%% Text of abstract
@@ -174,7 +178,7 @@
 	Other modeling approaches. SIR-F, DCM, Agent, Hybrid - not post fact A/B testing tools.
 	
 	\subsection{Tools}
-	As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18, AMSS19}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors). In following we provide a brief overview of Multi-dimensional Robust Synthetic Control following\cite{AMSS19}.\par
+	As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18, AMSS19}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors). In following we provide a brief overview of Multi-dimensional Robust Synthetic Control (m-RSC) following \cite{AMSS19}.\par
 	
 	Suppose that observations from $N$ different geographically distinct groups or units are indexed by $i \in [N]$ in $T$ time periods (days) indexed by $j \in [T]$. Let $k \in [K]$ be the metrics of interest (e.g. number of confirmed cases, number of deaths, number of tests conducted, etc.). By $M_{ijk}$ we denote the ground-truth measurement of interest, and by $X_{ijk}$, an observation of this measurement with some noise. Let $1 \leq T_0 \leq T$ be the time instance in which our group of interest experiences an intervention, namely a government response to control the spread (e.g. stay home order, school or business closure, or mass vaccination). Without loss of generality we consider unit $i = 1$ (say, New York) and metric $k = 1$ (say, number of deaths) as our unit and metric of interest respectively.\par
 	
@@ -205,28 +209,80 @@
 \section{Methods}
 	\label{SEC2}
 	\subsection{Overview}
-	As described in Section \ref{SEC1}, we use Multi-dimensional Robust Synthetic Control to construct a synthetic control for the treatment unit using data from multiple control units or donor group using pre-intervention period data.  The synthetic control is then used for estimating the counterfactual in the post-intervention period. In our setup intervention date is typically the date when a stay-home order or lock-down was declared for the treatment unit.  However, government policy may have been applied over time with different level of stringency measures. 
+	As described in Section \ref{SEC1}, we use m-RSC to construct a synthetic control for the treatment unit using data from multiple control units or donor group using pre-intervention period data.  The synthetic control is then used for estimating the counterfactual in the post-intervention period. In our setup intervention date is typically the date when a stay-home order or lock-down was declared for the treatment unit.  However, government policy may have been applied over time with different level of stringency measures. 
 	
 	To understand this we use stringency and policy indices data from OxCGRT \cite{HWP2020}, which records the strictness of policies that restrict people’s behavior and includes 8 different measures - e.g. school  and workplace closure, cancellation of public events, restrictions on gathering size etc. Figure \ref{fig2}, shows the plot of stringency index, with important events timeline. 
 	
 	\begin{figure}
-		\begin{subfigure}[b]{0.9\textwidth}
-			\includegraphics[width=1\linewidth]{GRSI_ITALY}
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Italy}
 		\end{subfigure}
 		
-		\begin{subfigure}[b]{0.9\textwidth}
-			\includegraphics[width=1\linewidth]{GRSI_INDIA}
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Germany}
 		\end{subfigure}
 		
-			\begin{subfigure}[b]{0.9\textwidth}
-			\includegraphics[width=1\linewidth]{GRSI_US}
+			\begin{subfigure}[b]{\textwidth}
+				\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Sweden}
 		\end{subfigure}
-		\label{fig2} 
-		\caption[Stringency index, with important events timeline]{(a) Italy (b) India (c) United States.}
+
+			\caption[Stringency index, with important events timeline]{Stringency index, with important events timeline (a) Italy (b) Germany (c) Sweden.}
+				\label{fig2} 
 	\end{figure}
 
+    It can be observed that the level of lock-down varies over time and geographic region. We use this information in two different ways. First we choose the maximum level of index, first increased level of restriction index, and 14 days after the maximum level of index as various intervention dates and compare their effects. Second, we combine this information with mobility data to select the control groups for a treatment unit as discussed below.
+    
+    In order to understand the effect of stringency on a treatment unit for a metric, we need to select a donor group where level of stringency was different or adherence to stringency was different. Since, there was a degree of stringency measures and adherence to such measures at different level - under any possible choice of donor group, we acknowledge, that we will be underestimating the counterfactual - i.e. what would have been without any stringency measures. To estimate the degree of adherence to lock-down measures, we use mobility data from Apple, and Facebook. Apple mobility data provides a relative volume of directions requests per region, sub-region or city compared to a baseline volume - i.e. percentage change over time from the baseline including weekly seasonality. Facebook data provides the relative percentage of population that is staying in the same place and also the percentage of population that moved from a region to another.  
+    
+    	\begin{figure}
+    		\centering
+    	\begin{subfigure}[b]{\textwidth}
+    		\centering
+    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Italy}
+    	\end{subfigure}
+    	
+    	\begin{subfigure}[b]{\textwidth}
+    		\centering
+    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Germany}
+    	\end{subfigure}
+    	
+    	\begin{subfigure}[b]{\textwidth}
+    		\centering
+    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Sweden}
+    	\end{subfigure}
+    	
+    	\caption[Mobility Trends]{Mobility Trends in (a) Italy (b) Germany (c) Sweden.}
+    	\label{fig3} 
+    \end{figure}
+    
+    It can be seen from Figure \ref{fig3}, that the adherence  and stringency level do not correspond. For example, in Sweden, with increasing level of government measures between March - April, there has not been any significant change in proportion of people staying put or moving between regions.
+    
+    How are we combining these indexes?
+
 	\subsection{Data Source}
-	
+	We use following three sources of data:
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c c c c||} 
+			\hline
+			Data source & How we use it & Reference & Description\\ [0.5ex] 
+			\hline\hline
+			Daily update from JHU & 6 & \cite{DDG2020} & ... \\ 
+			Daily update from Facebook & 7 & \cite{JM2020} & ... \\
+			Daily update from Apple & 545 & \cite{Apple2020} & ...\\
+			Daily update from OxCGRT & 88 & \cite{HWP2020} & ...\\ [1ex] 
+			\hline
+		\end{tabular}
+		\caption{Data Source}
+		\label{Table1}
+	\end{table}
+	 
+	 
+	 
 	\subsection{Setup}
 
 

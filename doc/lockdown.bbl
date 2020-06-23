@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -62,7 +62,23 @@ M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
 \newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
 
 \bibitem{HWP2020}
-T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira, Variation in
-  government responses to covid-19.
+T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira,
+  \href{https://www.bsg.ox.ac.uk/sites/default/files/2020-05/BSG-WP-2020-032-v6.0.pdf}{Variation
+  in government responses to covid-19}.
+\newline\urlprefix\url{https://www.bsg.ox.ac.uk/sites/default/files/2020-05/BSG-WP-2020-032-v6.0.pdf}
+
+\bibitem{DDG2020}
+E.~Dong, H.~Du, L.~Gardner, {{A}n interactive web-based dashboard to track
+  {C}{O}{V}{I}{D}-19 in real time}, Lancet Infect Dis 20~(5) (2020) 533--534.
+
+\bibitem{JM2020}
+K.~Jin, L.~McGorman,
+  \href{https://about.fb.com/news/2020/04/data-for-good/}{Data for good: New
+  tools to help health researchers track and combat {C}{O}{V}{I}{D}-19} (4).
+\newline\urlprefix\url{https://about.fb.com/news/2020/04/data-for-good/}
+
+\bibitem{Apple2020}
+Apple, \href{https://www.apple.com/covid19/mobility/}{Mobility trends reports}.
+\newline\urlprefix\url{https://www.apple.com/covid19/mobility/}
 
 \end{thebibliography}
