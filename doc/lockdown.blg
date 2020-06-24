@@ -4,36 +4,36 @@ The top-level auxiliary file: lockdown.aux
 The style file: elsarticle-num.bst
 Database file #1: lockdown.bib
 Warning--there's a month but no year in JM2020
-You've used 12 entries,
+You've used 13 entries,
             2937 wiz_defined-function locations,
-            769 strings with 7973 characters,
-and the built_in function-call counts, 3704 in all, are:
-= -- 337
-> -- 165
+            774 strings with 8046 characters,
+and the built_in function-call counts, 3880 in all, are:
+= -- 349
+> -- 172
 < -- 0
-+ -- 63
-- -- 51
-* -- 313
-:= -- 554
-add.period$ -- 16
-call.type$ -- 12
-change.case$ -- 12
++ -- 66
+- -- 53
+* -- 317
+:= -- 575
+add.period$ -- 17
+call.type$ -- 13
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 101
-empty$ -- 382
-format.name$ -- 61
-if$ -- 918
+cite$ -- 14
+duplicate$ -- 108
+empty$ -- 407
+format.name$ -- 64
+if$ -- 967
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 13
 missing$ -- 9
-newline$ -- 55
-num.names$ -- 12
-pop$ -- 71
+newline$ -- 58
+num.names$ -- 13
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 201
+skip$ -- 219
 stack$ -- 0
 substring$ -- 170
 swap$ -- 23
@@ -42,7 +42,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 24
-width$ -- 14
-write$ -- 113
+while$ -- 25
+width$ -- 15
+write$ -- 119
 (There was 1 warning)

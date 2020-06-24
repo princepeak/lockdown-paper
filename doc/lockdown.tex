@@ -75,7 +75,10 @@
 %%   longnamesfirst  -  makes first citation full author list
 %%
 
-\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
 \biboptions{square,comma,numbers}
 
 % \biboptions{}
@@ -153,18 +156,18 @@
 	
 	Since the initial outbreak, several different studies have tried to estimate the number of infections \cite{GN2020} that stem from a single infected patient in order to predict the potential for transmission of the COVID-19 virus. In most cases, it was seen that $R_0 > 1$, implying exponential growth through infection of a vulnerable population. Original estimates placed mortality rates for individuals at high risk at  4.46 \% with those suffering from cardiovascular or kidney disease having even greater susceptibility \cite{BPH2020}. 
 	
-	The SARS-CoV-2 virus has no available treatment as the pathways for proliferation and pathogenesis are still unclear \cite{RIS2020}.  Current treatments are based on those effective on strains of the previous SARS coronavirus and MERS coronavirus. The SARS-CoV-2  virus is able to replicate rapidly during the asymptomatic phase and affect the lungs and respiratory tract, resulting in pneumonia, hypoxia, and acute respiratory distress \cite{PSL2020}. Infected patients are directly dependant on external ventilation in most cases. 
+	The SARS-CoV-2 virus has no available treatment as the pathways for proliferation and pathogenesis are still unclear \cite{RIS2020}.  Current treatments are based on those effective on strains of the previous SARS coronavirus and MERS coronavirus. The SARS-CoV-2  virus is able to replicate rapidly during the asymptomatic phase and affect the lungs and respiratory tract, resulting in pneumonia, hypoxia, and acute respiratory distress \cite{PSL2020}. Infected patients are directly dependent on external ventilation in most cases. 
 	
 	
 	With the increasing pressure on the health systems due to reliance on intensive care units or non-invasive ventilation, health strategies like social distancing were implemented. The concern was to ensure the number of infected patients does not exceed the health system’s ability to cope with it. It also focused on increasing the capacities of available health systems at the time.
 	
 	
-	Under the conditions at the time, with a highly pathogenic SARS-CoV-2 that is able to spread asymptomatically during its incubation stage through a vulnerable population, policymakers were to contain the spread of the infection, minimize stress on the health systems and ensure public safety. This was done by issuing orders for widespread lockdown and implementing social distancing measures. All non-essential businesses and services were shut down until further notice. 
+	Under the conditions at the time, with a highly pathogenic SARS-CoV-2 that is able to spread asymptotically during its incubation stage through a vulnerable population, policymakers were to contain the spread of the infection, minimize stress on the health systems and ensure public safety. This was done by issuing orders for widespread lock-down and implementing social distancing measures. All non-essential businesses and services were shut down until further notice. 
 	
 
-	Taking measures to reduce stress on the health sector and diminishing the number of infected patients is important to end the pandemic, and understanding the effectiveness of a lockdown enables the distinction of good safety measures from bad ones. Analyzing a synthetic control allows us to understand whether the decisions made were optimal and resulted in a reduction of burden on the healthcare system, and broke chain of transmission, preventing its spread and reducing the reproductive rate of the virus.
+	Taking measures to reduce stress on the health sector and diminishing the number of infected patients is important to end the pandemic, and understanding the effectiveness of a lock-down enables the distinction of good safety measures from bad ones. Analyzing a synthetic control allows us to understand whether the decisions made were optimal and resulted in a reduction of burden on the healthcare system, and broke chain of transmission, preventing its spread and reducing the reproductive rate of the virus.
 	
-	How can we measure these benefits and compare with economic losses
+	Any optimal policy considers a trade off between the benefit associated with lock-down and cost of reduced aggregate output. Aggregate output decreases as a function of the stringency of the policy, commitment from the government to maintain the level of stringency and adherence of general population. Aggregate output decreases through lower supply of labor, lower consumption and hence through lower investment, which results from investors’ expectation of a lower marginal product of capital. On the other hand benefit associated with lock-down can be seen through number of life potentially saved and in curbing the pandemic early so that economic activity can be restarted early.
 	
 	\subsection{Our contribution}
 	Defining how to measure these benefits.
@@ -211,105 +214,90 @@
 	\subsection{Overview}
 	As described in Section \ref{SEC1}, we use m-RSC to construct a synthetic control for the treatment unit using data from multiple control units or donor group using pre-intervention period data.  The synthetic control is then used for estimating the counterfactual in the post-intervention period. In our setup intervention date is typically the date when a stay-home order or lock-down was declared for the treatment unit.  However, government policy may have been applied over time with different level of stringency measures. 
 	
-	To understand this we use stringency and policy indices data from OxCGRT \cite{HWP2020}, which records the strictness of policies that restrict people’s behavior and includes 8 different measures - e.g. school  and workplace closure, cancellation of public events, restrictions on gathering size etc. Figure \ref{fig2}, shows the plot of stringency index, with important events timeline. 
-	
-	\begin{figure}
-		\centering
-		\begin{subfigure}[b]{\textwidth}
-			\centering
-			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Italy}
-		\end{subfigure}
-		
-		\begin{subfigure}[b]{\textwidth}
-			\centering
-			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Germany}
-		\end{subfigure}
-		
-			\begin{subfigure}[b]{\textwidth}
-				\centering
-			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{GRSI_Sweden}
-		\end{subfigure}
+	To understand this we use stringency and policy indices data from OxCGRT \cite{HWP2020}, which records the strictness of policies that restrict people’s behavior and includes 8 different measures - e.g. school  and workplace closure, cancellation of public events, restrictions on gathering size etc. Figure \ref{fig2}, shows the plot of stringency index, with mobility data. 
 
-			\caption[Stringency index, with important events timeline]{Stringency index, with important events timeline (a) Italy (b) Germany (c) Sweden.}
-				\label{fig2} 
-	\end{figure}
+    
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Italy}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Germany}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Sweden}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Spain}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in France}
+	\end{subfigure}
+	
+	\caption[Mobility Trends]{Stringency index, and Mobility Trends in (a) Italy (b) Germany (c) Sweden (d) Spain (e) France.}
+	\label{fig2} 
+\end{figure}
 
     It can be observed that the level of lock-down varies over time and geographic region. We use this information in two different ways. First we choose the maximum level of index, first increased level of restriction index, and 14 days after the maximum level of index as various intervention dates and compare their effects. Second, we combine this information with mobility data to select the control groups for a treatment unit as discussed below.
     
-    In order to understand the effect of stringency on a treatment unit for a metric, we need to select a donor group where level of stringency was different or adherence to stringency was different. Since, there was a degree of stringency measures and adherence to such measures at different level - under any possible choice of donor group, we acknowledge, that we will be underestimating the counterfactual - i.e. what would have been without any stringency measures. To estimate the degree of adherence to lock-down measures, we use mobility data from Apple, and Facebook. Apple mobility data provides a relative volume of directions requests per region, sub-region or city compared to a baseline volume - i.e. percentage change over time from the baseline including weekly seasonality. Facebook data provides the relative percentage of population that is staying in the same place and also the percentage of population that moved from a region to another.  
+    In order to understand the effect of stringency on a treatment unit for a metric, we need to select a donor group where level of stringency was different or adherence to stringency was different. Since, there was a degree of stringency measures and adherence to such measures at different level - under any possible choice of donor group, we acknowledge, that we will be underestimating the counterfactual - i.e. what would have been without any stringency measures. To estimate the degree of adherence to lock-down measures, we use mobility data from Apple, Google and Facebook. Apple mobility data provides a relative volume of directions requests per region, sub-region or city compared to a baseline volume - i.e. percentage change over time from the baseline including weekly seasonality. Facebook data provides the relative percentage of population that is staying in the same place and also the percentage of population that moved from a region to another.  In Facebook data, to quantify how much people move around measure is derived by counting the number of level-16 Bing tiles (which are approximately 600 meters by 600 meters in area at the equator) they are seen in within a day. Assuming $U_{d,r}$ is the set of eligible users in region $r$ on day $d$, and $tiles(u)$ is the number of tiles visited by a given user $u$ in $U_{d,r}$, total number of tiles visited for that region is given by $totaltiles(U_{d,r}) = \sum_{u \in U_{d,r}} min(tiles(u), 200)$. Change in Movement measure is then the difference between a baseline and value on day $d$ for average number of $totaltiles(U_{d,r})$. Similarly, Stay Put metric is calculated as the percentage of eligible people who are only observed in a single level-16 Bing tile during the course of a day on an average compared to a baseline. Finally, Google Community Mobility Report provides a percent change in visits to places like grocery stores and parks within a geographic area from baseline.
     
-    	\begin{figure}
-    		\centering
-    	\begin{subfigure}[b]{\textwidth}
-    		\centering
-    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Italy}
-    	\end{subfigure}
-    	
-    	\begin{subfigure}[b]{\textwidth}
-    		\centering
-    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Germany}
-    	\end{subfigure}
-    	
-    	\begin{subfigure}[b]{\textwidth}
-    		\centering
-    		\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Mobility Trends in Sweden}
-    	\end{subfigure}
-    	
-    	\caption[Mobility Trends]{Mobility Trends in (a) Italy (b) Germany (c) Sweden.}
-    	\label{fig3} 
-    \end{figure}
+    It can be seen from Figure \ref{fig2}, that the adherence  and stringency level do not correspond. For example, in Sweden, with increasing level of government measures between March - April, there has not been any significant change in proportion of people staying put or moving between regions. Similarly, in other places, it can be observed that while government measures remain at the same level over April, number of people staying put at one place starts declining. 
     
-    It can be seen from Figure \ref{fig3}, that the adherence  and stringency level do not correspond. For example, in Sweden, with increasing level of government measures between March - April, there has not been any significant change in proportion of people staying put or moving between regions.
-    
-    How are we combining these indexes?
+    How are we combining these indexes? How we have selected donor an example here. Method for running the mRSC.
 
 	\subsection{Data Source}
-	We use following three sources of data:
+	We use following three sources of data as described in Table \ref{Table1}:
+	
 	\begin{table}[h!]
 		\centering
-		\begin{tabular}{||c c c c||} 
+		\begin{tabularx}{0.9\textwidth}[t]{p{0.3\textwidth}X}
 			\hline
-			Data source & How we use it & Reference & Description\\ [0.5ex] 
+			\textbf{Data source} &  \textbf{Description}\\ [0.5ex]
 			\hline\hline
-			Daily update from JHU & 6 & \cite{DDG2020} & ... \\ 
-			Daily update from Facebook & 7 & \cite{JM2020} & ... \\
-			Daily update from Apple & 545 & \cite{Apple2020} & ...\\
-			Daily update from OxCGRT & 88 & \cite{HWP2020} & ...\\ [1ex] 
+			Daily update from JHU  \cite{DDG2020}  & We use this data to derive metric for units: i.e. number of confirmed cases and number of deceased for each day and geographic locations.\\ [1ex]
 			\hline
-		\end{tabular}
+			Facebook Movement Range Maps \cite{JM2020} & The relative percentage of population that is staying put and also the percentage of population that moved from a region to another. We use this data in selection of donor units.\\
+			\hline
+			Apple Mobility Trends\cite{Apple2020} & Relative volume of directions requests per region, sub-region or city compared to a baseline volume, categorized by Driving, Walking or Public Transport. We use this data in selection of donor units.\\
+			\hline
+			OxCGRT  \cite{HWP2020} &  Strictness of policies that restrict people’s behavior, 8 measures combined to provide a score between 0 and 100, where 100 being most stringent. We use this data in selection of donor units.\\
+			\hline
+			Google Community Mobility Report \cite{Goog2020} &  Percent change in visits to places like grocery stores and parks within a geographic area. We use this data in selection of donor units.\\ [1ex] 
+			\hline
+		\end{tabularx}
 		\caption{Data Source}
 		\label{Table1}
 	\end{table}
 	 
-	 
-	 
-	\subsection{Setup}
-
-
 \section{Results}
 \label{SEC3}
-	
-	India - 4 stages of lock-down - effect of each stages - results on prediction by Synthetic control
-
-
-	Singapore - recurrence - change in projection on those dates
-	
+	\subsection{United States}
 	US - compare prediction models data vs. Synthetic control projection vs actual by state by start and end of lock-down dates (what are the control group in each cases)
 	
-	AU NZ South K
+	\subsection{Italy}
 	
-	Sweden
+	\subsection{India}
+	India - 4 stages of lock-down - effect of each stages - results on prediction by Synthetic control
 	
-	Measured results. 
+	\subsection{Australia}
+
 	
-	\section{Discussion}
+	\section{Discussion and Concluding Remarks}
 	\label{SEC4}
 	
 	
-	\section{Concluding Remarks}
-	\label{SEC5}
 	%% References
-	
 	\bibliographystyle{elsarticle-num}
 	\bibliography{lockdown.bib}	
 \end{document}

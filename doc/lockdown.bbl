@@ -63,9 +63,9 @@ M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
 
 \bibitem{HWP2020}
 T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira,
-  \href{https://www.bsg.ox.ac.uk/sites/default/files/2020-05/BSG-WP-2020-032-v6.0.pdf}{Variation
-  in government responses to covid-19}.
-\newline\urlprefix\url{https://www.bsg.ox.ac.uk/sites/default/files/2020-05/BSG-WP-2020-032-v6.0.pdf}
+  \href{https://www.bsg.ox.ac.uk/research/publications}{Variation in government
+  responses to covid-19}.
+\newline\urlprefix\url{https://www.bsg.ox.ac.uk/research/publications}
 
 \bibitem{DDG2020}
 E.~Dong, H.~Du, L.~Gardner, {{A}n interactive web-based dashboard to track
@@ -80,5 +80,8 @@ K.~Jin, L.~McGorman,
 \bibitem{Apple2020}
 Apple, \href{https://www.apple.com/covid19/mobility/}{Mobility trends reports}.
 \newline\urlprefix\url{https://www.apple.com/covid19/mobility/}
+
+\bibitem{Goog2020}
+J.~Fitzpatrick, K.~DeSalvo, Helping public health officials combat covid-19.
 
 \end{thebibliography}
