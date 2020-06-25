@@ -295,8 +295,11 @@ def score_mrsc(filename_metric,
         for evt in events:
             ax.axvline(x=evt['date'], linewidth=1, color='lightgrey')
             text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='gray')
+
+        ax.axvline(x=interventionDay, linewidth=1, color='tomato')
+        text(interventionDay, middle, '', rotation=90, verticalalignment='center', fontsize=8)
     else:
-        ax.axvline(x=interventionDay, linewidth=1, color='black')
+        ax.axvline(x=interventionDay, linewidth=1, color='tomato')
         text(interventionDay, middle, interventionDay, rotation=90, verticalalignment='center',fontsize=8)
 
     # X-axis

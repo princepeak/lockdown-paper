@@ -65,7 +65,7 @@ def show_trend(df, country, place, metric, n_changepoints=20, events=None):
     warnings.resetwarnings()
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        df["y"] = np.log10(df["y"]).replace([np.inf, -np.inf], 0)
+        df["y"] = df["y"] #np.log10(df["y"]).replace([np.inf, -np.inf], 0)
     # fbprophet
     model = Prophet(growth="linear", daily_seasonality=False, n_changepoints=n_changepoints)
     model.fit(df)
@@ -75,7 +75,7 @@ def show_trend(df, country, place, metric, n_changepoints=20, events=None):
     c = model.changepoints
     # Create figure
     fig = model.plot(forecast,figsize=(15, 5))
-    _ = add_changepoints_to_plot(fig.gca(), model, forecast)
+    _ = add_changepoints_to_plot(fig.gca(), model, forecast,cp_color='tomato')
 
     ax = plt.gca()
     for i, v in model.changepoints.items():
@@ -89,8 +89,8 @@ def show_trend(df, country, place, metric, n_changepoints=20, events=None):
             text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='gray')
 
     name = f"{place}: "
-    plt.title(f"{name} log10({metric}) over time and chainge points")
-    plt.ylabel(f"log10(the number of {metric})")
+    plt.title(f"{name} {metric} over time and chainge points")
+    plt.ylabel(f"The number of {metric}")
     plt.xlabel("")
     ax.grid(False)
 

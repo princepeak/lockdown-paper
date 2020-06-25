@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  25 JUN 2020 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  25 JUN 2020 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,7 +259,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.65 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -407,40 +407,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []|\OT1/cmr/m/n/12 Google Com-mu-nity
  []
 
-[7] [8] (./lockdown.bbl [9]) [10] (./lockdown.aux) ) 
+[7]
+<../img/us/New York_deaths_trend.pdf, id=320, 1084.05pt x 361.35pt>
+File: ../img/us/New York_deaths_trend.pdf Graphic file (type pdf)
+<use ../img/us/New York_deaths_trend.pdf>
+Package pdftex.def Info: ../img/us/New York_deaths_trend.pdf  used on input lin
+e 293.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/us/New York_deaths.pdf, id=321, 1084.05pt x 361.35pt>
+File: ../img/us/New York_deaths.pdf Graphic file (type pdf)
+<use ../img/us/New York_deaths.pdf>
+Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 298.
+
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/us/New York_confirmed.pdf, id=322, 1084.05pt x 361.35pt>
+File: ../img/us/New York_confirmed.pdf Graphic file (type pdf)
+<use ../img/us/New York_confirmed.pdf>
+Package pdftex.def Info: ../img/us/New York_confirmed.pdf  used on input line 3
+03.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+ [8] (./lockdown.bbl [9 <../img/us/New York_deaths_trend.pdf> <../img/us/New Yo
+rk_deaths.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_deaths.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/us/New York_confirmed.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_confirmed
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [10]) [11] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 5186 strings out of 480608
- 73672 string characters out of 5903630
- 327604 words of memory out of 5000000
- 21016 multiletter control sequences out of 15000+600000
+ 5208 strings out of 480608
+ 74383 string characters out of 5903630
+ 327612 words of memory out of 5000000
+ 21035 multiletter control sequences out of 15000+600000
  540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,12n,46p,1977b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on lockdown.pdf (10 pages, 427967 bytes).
+ 48i,12n,46p,1977b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on lockdown.pdf (11 pages, 543243 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 449 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
