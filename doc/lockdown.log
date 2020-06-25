@@ -1,224 +1,219 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.28)  25 JUN 2020 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  25 JUN 2020 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lockdown.tex
 (./lockdown.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/elsarticle/elsarticle.cls
-Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
-\@bls=\dimen102
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
+\@bls=\dimen134
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen103
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen135
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/pifont.sty
-Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
-LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+\c@tnote=\count175
+\c@fnote=\count176
+\c@cnote=\count177
+\c@ead=\count178
+\c@author=\count179
+\@eadauthor=\toks16
+\c@affn=\count180
+\absbox=\box45
+\elsarticlehighlightsbox=\box46
+\elsarticlegrabsbox=\box47
+\keybox=\box48
+\Columnwidth=\dimen138
+\space@left=\dimen139
+\els@boxa=\box49
+\els@boxb=\box50
+\leftMargin=\dimen140
+\@enLab=\toks17
+\@sep=\skip49
+\@@sep=\skip50
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
-File: upzd.fd 2001/06/04 font definitions for U/pzd.
-)
-LaTeX Font Info:    Try loading font information for U+psy on input line 64.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upsy.fd
-File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
-\c@tnote=\count88
-\c@fnote=\count89
-\c@cnote=\count90
-\c@ead=\count91
-\c@author=\count92
-\@eadauthor=\toks15
-\c@affn=\count93
-\absbox=\box26
-\keybox=\box27
-\Columnwidth=\dimen106
-\space@left=\dimen107
-\els@boxa=\box28
-\els@boxb=\box29
-\leftMargin=\dimen108
-\@enLab=\toks16
-\@sep=\skip43
-\@@sep=\skip44
- (./lockdown.spl) (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.s
-ty
+(./lockdown.spl)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip45
-\bibsep=\skip46
+\bibhang=\skip51
+\bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count94
+\c@NAT@ctr=\count181
 )
 \splwrite=\write3
 \openout3 = `lockdown.spl'.
 
+\appnamewidth=\dimen141
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen109
-\captionmargin@=\dimen110
-\captionwidth=\dimen111
-\caption@tempdima=\dimen112
-\caption@indent=\dimen113
-\caption@parindent=\dimen114
-\caption@hangindent=\dimen115
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen142
+\captionmargin@=\dimen143
+\captionwidth=\dimen144
+\caption@tempdima=\dimen145
+\caption@indent=\dimen146
+\caption@parindent=\dimen147
+\caption@hangindent=\dimen148
+Package caption Info: elsarticle document class detected.
 )
-\c@ContinuedFloat=\count95
+\c@caption@flags=\count182
+\c@continuedfloat=\count183
 )
-\c@subfigure=\count96
-\c@subtable=\count97
+\c@subfigure=\count184
+\c@subtable=\count185
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip47
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen116
+\@emptytoks=\toks18
+\ex@=\dimen149
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen117
+\pmbraise@=\dimen150
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count99
-\leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count101
-\DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen118
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count103
-\c@MaxMatrixCols=\count104
-\dotsspace@=\muskip10
-\c@parentequation=\count105
-\dspbrk@lvl=\count106
-\tag@help=\toks18
-\row@=\count107
-\column@=\count108
-\maxfields@=\count109
-\andhelp@=\toks19
-\eqnshift@=\dimen119
-\alignsep@=\dimen120
-\tagshift@=\dimen121
-\tagwidth@=\dimen122
-\totwidth@=\dimen123
-\lineht@=\dimen124
-\@envbody=\toks20
-\multlinegap=\skip48
-\multlinetaggap=\skip49
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+\inf@bad=\count186
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count187
+\leftroot@=\count188
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count189
+\DOTSCASE@=\count190
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count191
+\c@MaxMatrixCols=\count192
+\dotsspace@=\muskip16
+\c@parentequation=\count193
+\dspbrk@lvl=\count194
+\tag@help=\toks19
+\row@=\count195
+\column@=\count196
+\maxfields@=\count197
+\andhelp@=\toks20
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks21
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip50
-\thm@postskip=\skip51
-\thm@headsep=\skip52
-\dth@everypar=\toks27
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip56
+\thm@postskip=\skip57
+\thm@headsep=\skip58
+\dth@everypar=\toks28
 LaTeX Info: Redefining \qed on input line 274.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
-Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen125
-\ar@mcellbox=\box32
-\extrarowheight=\dimen126
-\NC@list=\toks28
-\extratabsurround=\skip53
-\backup@length=\skip54
-\ar@cellbox=\box33
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box53
+\extrarowheight=\dimen159
+\NC@list=\toks29
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box54
 )
-\everycr=\toks29
-\minrowclearance=\skip55
+\everycr=\toks30
+\minrowclearance=\skip61
 )
-\rownum=\count110
+\rownum=\count198
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -229,268 +224,173 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-\TX@col@width=\dimen127
-\TX@old@table=\dimen128
-\TX@old@col=\dimen129
-\TX@target=\dimen130
-\TX@delta=\dimen131
-\TX@cols=\count111
-\TX@ftn=\toks30
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen160
+\TX@old@table=\dimen161
+\TX@old@col=\dimen162
+\TX@target=\dimen163
+\TX@delta=\dimen164
+\TX@cols=\count199
+\TX@ftn=\toks31
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip56
-\enit@outerparindent=\dimen132
-\enit@toks=\toks31
-\enit@inbox=\box34
-\enitdp@description=\count112
+(/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen165
+\enit@toks=\toks32
+\enit@inbox=\box55
+\enit@count@id=\count266
+\enitdp@description=\count267
 )
-(./lockdown.aux)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count268
+\l__pdf_internal_box=\box56
+)
+(./lockdown.aux
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 \openout1 = `lockdown.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
-
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen133
-\scratchbox=\box35
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen134
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks33
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+\scratchcounter=\count269
+\scratchdimen=\dimen166
+\scratchbox=\box57
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen167
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks34
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-Package natbib Warning: Citation `taaa021' on page 1 undefined on input line 15
-5.
-
-
-Package natbib Warning: Citation `GN2020' on page 1 undefined on input line 157
+LaTeX Font Info:    Trying to load font information for U+msa on input line 148
 .
 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 148
+.
 
-Package natbib Warning: Citation `BPH2020' on page 1 undefined on input line 15
-7.
-
-
-Package natbib Warning: Citation `RIS2020' on page 1 undefined on input line 15
-9.
-
-
-Package natbib Warning: Citation `PSL2020' on page 1 undefined on input line 15
-9.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
 [1
 
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-
-Package natbib Warning: Citation `ap08746' on page 3 undefined on input line 18
-9.
-
-
-Package natbib Warning: Citation `JMLR18' on page 3 undefined on input line 189
-.
-
-
-Package natbib Warning: Citation `AMSS19' on page 3 undefined on input line 189
-.
-
-
-Package natbib Warning: Citation `AMSS19' on page 3 undefined on input line 189
-.
-
-[3]
-
-Package natbib Warning: Citation `AMSS19' on page 4 undefined on input line 193
-.
-
-
-Package natbib Warning: Citation `AMSS19' on page 4 undefined on input line 195
-.
-
-[4]
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4]
 <../img/rd.png, id=30, 1080.4365pt x 629.4717pt>
 File: ../img/rd.png Graphic file (type png)
 <use ../img/rd.png>
 Package pdftex.def Info: ../img/rd.png  used on input line 198.
 (pdftex.def)             Requested size: 390.0pt x 227.21474pt.
  [5 <../img/rd.png>]
-
-Package natbib Warning: Citation `HWP2020' on page 6 undefined on input line 22
-2.
-
-
-! LaTeX Error: File `Mobility Trends in Italy' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.229 ....19\textheight]{Mobility Trends in Italy}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `Mobility Trends in Germany' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 ...9\textheight]{Mobility Trends in Germany}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `Mobility Trends in Sweden' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.239 ...19\textheight]{Mobility Trends in Sweden}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<../img/mobility/Mobility Trends in Italy.pdf, id=40, 1084.05pt x 361.35pt>
+File: ../img/mobility/Mobility Trends in Italy.pdf Graphic file (type pdf)
+<use ../img/mobility/Mobility Trends in Italy.pdf>
+Package pdftex.def Info: ../img/mobility/Mobility Trends in Italy.pdf  used on 
+input line 229.
+(pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
+<../img/mobility/Mobility Trends in Germany.pdf, id=41, 1084.05pt x 361.35pt>
+File: ../img/mobility/Mobility Trends in Germany.pdf Graphic file (type pdf)
+<use ../img/mobility/Mobility Trends in Germany.pdf>
+Package pdftex.def Info: ../img/mobility/Mobility Trends in Germany.pdf  used o
+n input line 234.
+(pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
+<../img/mobility/Mobility Trends in Sweden.pdf, id=42, 1084.05pt x 361.35pt>
+File: ../img/mobility/Mobility Trends in Sweden.pdf Graphic file (type pdf)
+<use ../img/mobility/Mobility Trends in Sweden.pdf>
+Package pdftex.def Info: ../img/mobility/Mobility Trends in Sweden.pdf  used on
+ input line 239.
+(pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
+<../img/mobility/Mobility Trends in Spain.pdf, id=43, 1084.05pt x 361.35pt>
+File: ../img/mobility/Mobility Trends in Spain.pdf Graphic file (type pdf)
+<use ../img/mobility/Mobility Trends in Spain.pdf>
+Package pdftex.def Info: ../img/mobility/Mobility Trends in Spain.pdf  used on 
+input line 244.
+(pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
+<../img/mobility/Mobility Trends in France.pdf, id=44, 1084.05pt x 361.35pt>
+File: ../img/mobility/Mobility Trends in France.pdf Graphic file (type pdf)
+<use ../img/mobility/Mobility Trends in France.pdf>
+Package pdftex.def Info: ../img/mobility/Mobility Trends in France.pdf  used on
+ input line 249.
+(pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 
 
-! LaTeX Error: File `Mobility Trends in Spain' not found.
+LaTeX Warning: Float too large for page by 10.57689pt on input line 254.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 ....19\textheight]{Mobility Trends in Spain}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[6] [7 <../img/mobility/Mobility Trends in Italy.pdf> <../img/mobility/Mobility
+ Trends in Germany.pdf
 
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
+nds in Germany.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <../img/mobility/Mobility Trends in Sweden.pdf
 
-! LaTeX Error: File `Mobility Trends in France' not found.
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
+nds in Sweden.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <../img/mobility/Mobility Trends in Spain.pdf
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.249 ...19\textheight]{Mobility Trends in France}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
+nds in Spain.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+> <../img/mobility/Mobility Trends in France.pdf
 
-
-LaTeX Warning: Float too large for page by 1746.83313pt on input line 254.
-
-[6] [7]
-
-Package natbib Warning: Citation `DDG2020' on page 8 undefined on input line 28
-3.
-
-
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
+nds in France.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
 []|\OT1/cmr/m/n/12 Daily up-date from
  []
-
-
-Package natbib Warning: Citation `JM2020' on page 8 undefined on input line 283
-.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
@@ -498,21 +398,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
  []
 
 
-Package natbib Warning: Citation `Apple2020' on page 8 undefined on input line 
-283.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
 []|\OT1/cmr/m/n/12 Apple Mo-bil-ity
  []
-
-
-Package natbib Warning: Citation `HWP2020' on page 8 undefined on input line 28
-3.
-
-
-Package natbib Warning: Citation `Goog2020' on page 8 undefined on input line 2
-83.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
@@ -522,262 +410,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.298 ...ht=0.2\textheight]{New York_deaths_trend}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+<../img/us/New York_deaths_trend.pdf, id=320, 1084.05pt x 361.35pt>
+File: ../img/us/New York_deaths_trend.pdf Graphic file (type pdf)
+<use ../img/us/New York_deaths_trend.pdf>
+Package pdftex.def Info: ../img/us/New York_deaths_trend.pdf  used on input lin
+e 298.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/us/New York_deaths.pdf, id=321, 1084.05pt x 361.35pt>
+File: ../img/us/New York_deaths.pdf Graphic file (type pdf)
+<use ../img/us/New York_deaths.pdf>
+Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 303.
 
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/us/New York_confirmed.pdf, id=322, 1084.05pt x 361.35pt>
+File: ../img/us/New York_confirmed.pdf Graphic file (type pdf)
+<use ../img/us/New York_confirmed.pdf>
+Package pdftex.def Info: ../img/us/New York_confirmed.pdf  used on input line 3
+08.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+[8] [9 <../img/us/New York_deaths_trend.pdf> <../img/us/New York_deaths.pdf
 
-! LaTeX Error: File `New York_deaths_trend' not found.
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_deaths.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/us/New York_confirmed.pdf
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.298 ...ht=0.2\textheight]{New York_deaths_trend}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.298 ...ht=0.2\textheight]{New York_deaths_trend}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (10882.10312pt too wide) in paragraph at lines 298--299
- []\OT1/cmr/m/n/12 York$[]\OML/cmm/m/it/12 eaths[]rend:pdfYork[]eaths[]rend:pdf
-York[]eaths[]rend:pdfYork[]eaths[]rend:pdfYork[]eaths[]rend:pdfYork[]eaths[]ren
-d:pdfYork[]eaths[]rend:pdfYork[]eaths[]rend:pngYork[]eaths[]rend:pngYork[]eaths
-[]rend:pngYork[]eaths[]rend:pngYork[]eaths[]rend:pngYork[]eaths[]rend:pngYork[]
-eaths[]rend:pngYork[]eaths[]rend:jpgYork[]eaths[]rend:jpgYork[]eaths[]rend:jpgY
-ork[]eaths[]rend:jpgYork[]eaths[]rend:jpgYork[]eaths[]rend:jpgYork[]eaths[]rend
-:jpgYork[]eaths[]rend:mpsYork[]eaths[]rend:mpsYork[]eaths[]rend:mpsYork[]eaths[
-]rend:mpsYork[]eaths[]rend:mpsYork[]eaths[]rend:mpsYork[]eaths[]rend:mpsYork[]e
-aths[]rend:jpegYork[]eaths[]rend:jpegYork[]eaths[]rend:jpegYork[]eaths[]rend:jp
-egYork[]eaths[]rend:jpegYork[]eaths[]rend:jpegYork[]eaths[]rend:jpegYork[]eaths
-[]rend:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jbig\OT1/cmr/m/n
-/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 Y
-ork[]eaths[]rend:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jbig\O
-T1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jbig\OT1/cmr/m/n/12 2\OML/cmm
-/m/it/12 York[]eaths[]rend:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]r
-end:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jb\OT1/cmr/m/n/12 2\O
-ML/cmm/m/it/12 York[]eaths[]rend:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eath
-s[]rend:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:jb\OT1/cmr/m/n/12
- 2\OML/cmm/m/it/12 York[]eaths[]rend:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]
-eaths[]rend:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:PDFYork[]eath
-s[]rend:PDFYork[]eaths[]rend:PDFYork[]eaths[]rend:PDFYork[]eaths[]rend:PDFYork[
-]eaths[]rend:PDFYork[]eaths[]rend:PDFYork[]eaths[]rend:PNGYork[]eaths[]rend:PNG
-York[]eaths[]rend:PNGYork[]eaths[]rend:PNGYork[]eaths[]rend:PNGYork[]eaths[]ren
-d:PNGYork[]eaths[]rend:PNGYork[]eaths[]rend:JPGYork[]eaths[]rend:JPGYork[]eaths
-[]rend:JPGYork[]eaths[]rend:JPGYork[]eaths[]rend:JPGYork[]eaths[]rend:JPGYork[]
-eaths[]rend:JPGYork[]eaths[]rend:JPEGYork[]eaths[]rend:JPEGYork[]eaths[]rend:JP
-EGYork[]eaths[]rend:JPEGYork[]eaths[]rend:JPEGYork[]eaths[]rend:JPEGYork[]eaths
-[]rend:JPEGYork[]eaths[]rend:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[
-]rend:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:JBIG\OT1/cmr/m/n/
-12 2\OML/cmm/m/it/12 York[]eaths[]rend:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 Yo
-rk[]eaths[]rend:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:JBIG\OT
-1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:JBIG\OT1/cmr/m/n/12 2\OML/cmm/
-m/it/12 York[]eaths[]rend:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend
-:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:JB\OT1/cmr/m/n/12 2\OML/
-cmm/m/it/12 York[]eaths[]rend:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]
-rend:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths[]rend:JB\OT1/cmr/m/n/12 2\
-OML/cmm/m/it/12 York[]eaths[]rend:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eat
-hs[]rend:epsYork[]eaths[]rend:epsYork[]eaths[]rend:epsYork[]eaths[]rend:epsYork
-[]eaths[]rend:epsYork[]eaths[]rend:epsYork[]eaths[]rend:eps$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.303 ...h,height=0.2\textheight]{New York_deaths}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: File `New York_deaths' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.303 ...h,height=0.2\textheight]{New York_deaths}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.303 ...h,height=0.2\textheight]{New York_deaths}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (8162.00946pt too wide) in paragraph at lines 303--304
- []\OT1/cmr/m/n/12 York$[]\OML/cmm/m/it/12 eaths:pdfYork[]eaths:pdfYork[]eaths:
-pdfYork[]eaths:pdfYork[]eaths:pdfYork[]eaths:pdfYork[]eaths:pdfYork[]eaths:pngY
-ork[]eaths:pngYork[]eaths:pngYork[]eaths:pngYork[]eaths:pngYork[]eaths:pngYork[
-]eaths:pngYork[]eaths:jpgYork[]eaths:jpgYork[]eaths:jpgYork[]eaths:jpgYork[]eat
-hs:jpgYork[]eaths:jpgYork[]eaths:jpgYork[]eaths:mpsYork[]eaths:mpsYork[]eaths:m
-psYork[]eaths:mpsYork[]eaths:mpsYork[]eaths:mpsYork[]eaths:mpsYork[]eaths:jpegY
-ork[]eaths:jpegYork[]eaths:jpegYork[]eaths:jpegYork[]eaths:jpegYork[]eaths:jpeg
-York[]eaths:jpegYork[]eaths:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:j
-big\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jbig\OT1/cmr/m/n/12 2\OML/cmm/
-m/it/12 York[]eaths:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jbig\OT1/
-cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 
-York[]eaths:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jb\OT1/cmr/m/n/12
- 2\OML/cmm/m/it/12 York[]eaths:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:
-jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jb\OT1/cmr/m/n/12 2\OML/cmm/m/i
-t/12 York[]eaths:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:jb\OT1/cmr/m/n
-/12 2\OML/cmm/m/it/12 York[]eaths:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eat
-hs:PDFYork[]eaths:PDFYork[]eaths:PDFYork[]eaths:PDFYork[]eaths:PDFYork[]eaths:P
-DFYork[]eaths:PDFYork[]eaths:PNGYork[]eaths:PNGYork[]eaths:PNGYork[]eaths:PNGYo
-rk[]eaths:PNGYork[]eaths:PNGYork[]eaths:PNGYork[]eaths:JPGYork[]eaths:JPGYork[]
-eaths:JPGYork[]eaths:JPGYork[]eaths:JPGYork[]eaths:JPGYork[]eaths:JPGYork[]eath
-s:JPEGYork[]eaths:JPEGYork[]eaths:JPEGYork[]eaths:JPEGYork[]eaths:JPEGYork[]eat
-hs:JPEGYork[]eaths:JPEGYork[]eaths:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]
-eaths:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JBIG\OT1/cmr/m/n/12 2\O
-ML/cmm/m/it/12 York[]eaths:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB
-IG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m
-/it/12 York[]eaths:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB\OT1/cmr
-/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[
-]eaths:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB\OT1/cmr/m/n/12 2\OML/
-cmm/m/it/12 York[]eaths:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB\OT1/
-cmr/m/n/12 2\OML/cmm/m/it/12 York[]eaths:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 Yo
-rk[]eaths:epsYork[]eaths:epsYork[]eaths:epsYork[]eaths:epsYork[]eaths:epsYork[]
-eaths:epsYork[]eaths:eps$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.308 ...eight=0.2\textheight]{New York_confirmed}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: File `New York_confirmed' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.308 ...eight=0.2\textheight]{New York_confirmed}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.308 ...eight=0.2\textheight]{New York_confirmed}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (10351.97809pt too wide) in paragraph at lines 308--309
- []\OT1/cmr/m/n/12 York$[]\OML/cmm/m/it/12 onfirmed:pdfYork[]onfirmed:pdfYork[]
-onfirmed:pdfYork[]onfirmed:pdfYork[]onfirmed:pdfYork[]onfirmed:pdfYork[]onfirme
-d:pdfYork[]onfirmed:pngYork[]onfirmed:pngYork[]onfirmed:pngYork[]onfirmed:pngYo
-rk[]onfirmed:pngYork[]onfirmed:pngYork[]onfirmed:pngYork[]onfirmed:jpgYork[]onf
-irmed:jpgYork[]onfirmed:jpgYork[]onfirmed:jpgYork[]onfirmed:jpgYork[]onfirmed:j
-pgYork[]onfirmed:jpgYork[]onfirmed:mpsYork[]onfirmed:mpsYork[]onfirmed:mpsYork[
-]onfirmed:mpsYork[]onfirmed:mpsYork[]onfirmed:mpsYork[]onfirmed:mpsYork[]onfirm
-ed:jpegYork[]onfirmed:jpegYork[]onfirmed:jpegYork[]onfirmed:jpegYork[]onfirmed:
-jpegYork[]onfirmed:jpegYork[]onfirmed:jpegYork[]onfirmed:jbig\OT1/cmr/m/n/12 2\
-OML/cmm/m/it/12 York[]onfirmed:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfi
-rmed:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:jbig\OT1/cmr/m/n/12 2
-\OML/cmm/m/it/12 York[]onfirmed:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onf
-irmed:jbig\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:jbig\OT1/cmr/m/n/12 
-2\OML/cmm/m/it/12 York[]onfirmed:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfi
-rmed:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:jb\OT1/cmr/m/n/12 2\OML
-/cmm/m/it/12 York[]onfirmed:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:
-jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:jb\OT1/cmr/m/n/12 2\OML/cmm/
-m/it/12 York[]onfirmed:jb\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:PDFYo
-rk[]onfirmed:PDFYork[]onfirmed:PDFYork[]onfirmed:PDFYork[]onfirmed:PDFYork[]onf
-irmed:PDFYork[]onfirmed:PDFYork[]onfirmed:PNGYork[]onfirmed:PNGYork[]onfirmed:P
-NGYork[]onfirmed:PNGYork[]onfirmed:PNGYork[]onfirmed:PNGYork[]onfirmed:PNGYork[
-]onfirmed:JPGYork[]onfirmed:JPGYork[]onfirmed:JPGYork[]onfirmed:JPGYork[]onfirm
-ed:JPGYork[]onfirmed:JPGYork[]onfirmed:JPGYork[]onfirmed:JPEGYork[]onfirmed:JPE
-GYork[]onfirmed:JPEGYork[]onfirmed:JPEGYork[]onfirmed:JPEGYork[]onfirmed:JPEGYo
-rk[]onfirmed:JPEGYork[]onfirmed:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onf
-irmed:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:JBIG\OT1/cmr/m/n/12 
-2\OML/cmm/m/it/12 York[]onfirmed:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]on
-firmed:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:JBIG\OT1/cmr/m/n/12
- 2\OML/cmm/m/it/12 York[]onfirmed:JBIG\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]o
-nfirmed:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:JB\OT1/cmr/m/n/12 2\
-OML/cmm/m/it/12 York[]onfirmed:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirm
-ed:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:JB\OT1/cmr/m/n/12 2\OML/c
-mm/m/it/12 York[]onfirmed:JB\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:JB
-\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 York[]onfirmed:epsYork[]onfirmed:epsYork[]onf
-irmed:epsYork[]onfirmed:epsYork[]onfirmed:epsYork[]onfirmed:epsYork[]onfirmed:e
-ps$ 
- []
-
-[8]
-No file lockdown.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-[9] [10] (./lockdown.aux) ) 
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_confirmed
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (./lockdown.bbl [10] [11]) [12] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 5024 strings out of 492649
- 70777 string characters out of 6129621
- 167483 words of memory out of 5000000
- 8810 multiletter control sequences out of 15000+600000
- 12490 words of font info for 48 fonts, out of 8000000 for 9000
+ 5208 strings out of 480608
+ 74383 string characters out of 5903630
+ 326614 words of memory out of 5000000
+ 21035 multiletter control sequences out of 15000+600000
+ 540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,1977b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-
-Output written on lockdown.pdf (10 pages, 323689 bytes).
+ 48i,12n,46p,1977b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on lockdown.pdf (12 pages, 545047 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 452 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
