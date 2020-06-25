@@ -41,6 +41,46 @@ S.~Price, S.~Singh, S.~Ledot, P.~Bianchi, M.~Hind, G.~Tavazzi, P.~Vranckx,
   {\path{doi:10.1177/2048872620924613}}.
 \newline\urlprefix\url{https://doi.org/10.1177/2048872620924613}
 
+\bibitem{Koh2020}
+W.~C. Koh, L.~Naing, J.~Wong, Estimating the impact of physical distancing
+  measures in containing covid-19: an empirical analysis, medRxiv\href
+  {http://dx.doi.org/10.1101/2020.06.11.20128074}
+  {\path{doi:10.1101/2020.06.11.20128074}}.
+
+\bibitem{KP2020}
+E.~Kong, D.~Prinz, The impact of shutdown policies on unemployment during a
+  pandemic  24--72\href
+  {http://arxiv.org/abs/https://cepr.org/sites/default/files/news/CovidEconomics17.pdf}
+  {\path{arXiv:https://cepr.org/sites/default/files/news/CovidEconomics17.pdf}}.
+
+\bibitem{Supino2020}
+M.~Supino, A.~d{\textquoteright}Onofrio, F.~Luongo, G.~Occhipinti, A.~Dal~Co,
+  The effects of containment measures in the italian outbreak of covid-19,
+  medRxiv\href {http://dx.doi.org/10.1101/2020.03.25.20042713}
+  {\path{doi:10.1101/2020.03.25.20042713}}.
+
+\bibitem{IVEGA2020}
+D.~Ibarra-Vega, Lockdown, one, two, none, or smart. modeling containing
+  covid-19 infection. a conceptual model, Science of The Total Environment 730
+  (2020) 138917.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.scitotenv.2020.138917}
+  {\path{doi:https://doi.org/10.1016/j.scitotenv.2020.138917}}.
+
+\bibitem{Chinazzi395}
+M.~Chinazzi, J.~T. Davis, M.~Ajelli, C.~Gioannini, M.~Litvinova, S.~Merler,
+  A.~Pastore~y Piontti, K.~Mu, L.~Rossi, K.~Sun, C.~Viboud, X.~Xiong, H.~Yu,
+  M.~E. Halloran, I.~M. Longini, A.~Vespignani,
+  \href{https://science.sciencemag.org/content/368/6489/395}{The effect of
+  travel restrictions on the spread of the 2019 novel coronavirus (covid-19)
+  outbreak}, Science 368~(6489) (2020) 395--400.
+\newblock \href
+  {http://arxiv.org/abs/https://science.sciencemag.org/content/368/6489/395.full.pdf}
+  {\path{arXiv:https://science.sciencemag.org/content/368/6489/395.full.pdf}},
+  \href {http://dx.doi.org/10.1126/science.aba9757}
+  {\path{doi:10.1126/science.aba9757}}.
+\newline\urlprefix\url{https://science.sciencemag.org/content/368/6489/395}
+
 \bibitem{ap08746}
 A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
   comparative case studies: Estimating the effect of california’s tobacco

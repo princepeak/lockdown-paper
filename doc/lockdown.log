@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  25 JUN 2020 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  25 JUN 2020 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,7 +259,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.75 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -329,42 +329,42 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 <../img/rd.png, id=30, 1080.4365pt x 629.4717pt>
 File: ../img/rd.png Graphic file (type png)
 <use ../img/rd.png>
-Package pdftex.def Info: ../img/rd.png  used on input line 198.
+Package pdftex.def Info: ../img/rd.png  used on input line 194.
 (pdftex.def)             Requested size: 390.0pt x 227.21474pt.
  [5 <../img/rd.png>]
 <../img/mobility/Mobility Trends in Italy.pdf, id=40, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Italy.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Italy.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Italy.pdf  used on 
-input line 229.
+input line 225.
 (pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 <../img/mobility/Mobility Trends in Germany.pdf, id=41, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Germany.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Germany.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Germany.pdf  used o
-n input line 234.
+n input line 230.
 (pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 <../img/mobility/Mobility Trends in Sweden.pdf, id=42, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Sweden.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Sweden.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Sweden.pdf  used on
- input line 239.
+ input line 235.
 (pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 <../img/mobility/Mobility Trends in Spain.pdf, id=43, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Spain.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Spain.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Spain.pdf  used on 
-input line 244.
+input line 240.
 (pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 <../img/mobility/Mobility Trends in France.pdf, id=44, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in France.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in France.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in France.pdf  used on
- input line 249.
+ input line 245.
 (pdftex.def)             Requested size: 350.98878pt x 104.21538pt.
 
 
-LaTeX Warning: Float too large for page by 10.57689pt on input line 254.
+LaTeX Warning: Float too large for page by 10.57689pt on input line 250.
 
 [6] [7 <../img/mobility/Mobility Trends in Italy.pdf> <../img/mobility/Mobility
  Trends in Germany.pdf
@@ -388,22 +388,22 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
 nds in France.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/12 Daily up-date from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/12 Facebook Move-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/12 Apple Mo-bil-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/12 Google Com-mu-nity
  []
 
@@ -414,19 +414,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ../img/us/New York_deaths_trend.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths_trend.pdf>
 Package pdftex.def Info: ../img/us/New York_deaths_trend.pdf  used on input lin
-e 298.
+e 294.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 <../img/us/New York_deaths.pdf, id=321, 1084.05pt x 361.35pt>
 File: ../img/us/New York_deaths.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths.pdf>
-Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 303.
+Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 299.
 
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 <../img/us/New York_confirmed.pdf, id=322, 1084.05pt x 361.35pt>
 File: ../img/us/New York_confirmed.pdf Graphic file (type pdf)
 <use ../img/us/New York_confirmed.pdf>
 Package pdftex.def Info: ../img/us/New York_confirmed.pdf  used on input line 3
-08.
+04.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 [8] [9 <../img/us/New York_deaths_trend.pdf> <../img/us/New York_deaths.pdf
 
@@ -436,43 +436,80 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_confirmed
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./lockdown.bbl [10] [11]) [12] (./lockdown.aux) ) 
+>] (./lockdown.bbl [10]
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+[]\OT1/cmr/m/n/12 E. Kong, D. Prinz, The im-pact of shut-down poli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+\OT1/cmr/m/n/12 cies on un-em-ploy-ment dur-ing a pan-demic 24--
+ []
+
+
+Overfull \hbox (12.00278pt too wide) in paragraph at lines 51--55
+\OT1/cmr/m/n/12 72arXiv:https://cepr.org/sites/default/files/news/CovidEconomic
+s17.pdf. 
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 63--69
+[]\OT1/cmr/m/n/12 D. Ibarra-Vega, Lock-down, one, two, none, or smart. mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
+\OT1/cmr/m/n/12 el-ing con-tain-ing covid-19 in-fec-tion. a con-cep-tual model,
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
+\OT1/cmr/m/n/12 Sci-ence of The To-tal En-vi-ron-ment 730 (2020) 138917.
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 71--83
+\OT1/cmr/m/n/12 arXiv:https://science.sciencemag.org/content/368/6489/395.full.
+pdf,
+ []
+
+[12]) [13] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 5208 strings out of 480608
- 74383 string characters out of 5903630
- 326614 words of memory out of 5000000
- 21035 multiletter control sequences out of 15000+600000
+ 5223 strings out of 480608
+ 74632 string characters out of 5903630
+ 325694 words of memory out of 5000000
+ 21050 multiletter control sequences out of 15000+600000
  540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,46p,1977b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on lockdown.pdf (12 pages, 545047 bytes).
+</usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on lockdown.pdf (13 pages, 546850 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 456 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
