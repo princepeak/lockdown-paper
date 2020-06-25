@@ -158,13 +158,10 @@
 	
 	The SARS-CoV-2 virus has no available treatment as the pathways for proliferation and pathogenesis are still unclear \cite{RIS2020}.  Current treatments are based on those effective on strains of the previous SARS coronavirus and MERS coronavirus. The SARS-CoV-2  virus is able to replicate rapidly during the asymptomatic phase and affect the lungs and respiratory tract, resulting in pneumonia, hypoxia, and acute respiratory distress \cite{PSL2020}. Infected patients are directly dependent on external ventilation in most cases. 
 	
-	
 	With the increasing pressure on the health systems due to reliance on intensive care units or non-invasive ventilation, health strategies like social distancing were implemented. The concern was to ensure the number of infected patients does not exceed the health system’s ability to cope with it. It also focused on increasing the capacities of available health systems at the time.
-	
 	
 	Under the conditions at the time, with a highly pathogenic SARS-CoV-2 that is able to spread asymptotically during its incubation stage through a vulnerable population, policymakers were to contain the spread of the infection, minimize stress on the health systems and ensure public safety. This was done by issuing orders for widespread lock-down and implementing social distancing measures. All non-essential businesses and services were shut down until further notice. 
 	
-
 	Taking measures to reduce stress on the health sector and diminishing the number of infected patients is important to end the pandemic, and understanding the effectiveness of a lock-down enables the distinction of good safety measures from bad ones. Analyzing a synthetic control allows us to understand whether the decisions made were optimal and resulted in a reduction of burden on the healthcare system, and broke chain of transmission, preventing its spread and reducing the reproductive rate of the virus.
 	
 	Any optimal policy considers a trade off between the benefit associated with lock-down and cost of reduced aggregate output. Aggregate output decreases as a function of the stringency of the policy, commitment from the government to maintain the level of stringency and adherence of general population. Aggregate output decreases through lower supply of labor, lower consumption and hence through lower investment, which results from investors’ expectation of a lower marginal product of capital. On the other hand benefit associated with lock-down can be seen through number of life potentially saved and in curbing the pandemic early so that economic activity can be restarted early.
@@ -178,7 +175,15 @@
 	Difficulty in assessing: different level of compliance, different cultural practices - hidden variables
 	
 	\subsection{Related Works}
-	Other modeling approaches. SIR-F, DCM, Agent, Hybrid - not post fact A/B testing tools.
+	In (Chian et al., 2020) authors have shown that the reproductive rate of the SARS-CoV-2 had significantly decreased after government intervention. They show that the spread of disease is confined if measures were brought into effect early. 
+	
+	In (Kong and Prinz, 2020), authors use the differential timing of the introduction of stringency measures and changes in Google search for unemployment claims to establish a framework to estimate how each stringency measures contribute to unemployment. Authors show that early intervention efforts in the form of non-essential business closure have contributed to less than 8.5 percent of unemployment claims.
+	
+	Another facet to measure the success of the lockdown is to observe the effects on the health systems. Late intervention in the case of Italy led to the flooding of hospitals and ICUs due to exponential spread. However, the national lockdown was effective in reducing the proliferation and decreased the stress on the national health system as observed by authors in (Supino et al., 2020). 
+	
+	In their paper (Ibarra-Vega, 2020), the authors extend SIR model to include auxiliary state variables in the form of hospital capacity, contact with an infected person, etc. They have simulated various lockdown scenarios with recommendations. 
+	
+	International travel has also been impacted as a result of efforts to reduce the spread of the coronavirus disease. On the basis of reported cases, models built by (Chinazzi, 2020) show a significant decrease in the number of infections compared to predictions if  no travel bans were adopted as an option.
 	
 	\subsection{Tools}
 	As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18, AMSS19}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors). In following we provide a brief overview of Multi-dimensional Robust Synthetic Control (m-RSC) following \cite{AMSS19}.\par
