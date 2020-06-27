@@ -75,7 +75,7 @@ def show_trend(df, country, place, metric, n_changepoints=2, events=None):
     c = model.changepoints
     # Create figure
     fig = model.plot(forecast,figsize=(15, 5))
-    _ = add_changepoints_to_plot(fig.gca(), model, forecast, cp_color='tomato')
+
 
     ax = plt.gca()
     for i, v in model.changepoints.items():
@@ -88,10 +88,10 @@ def show_trend(df, country, place, metric, n_changepoints=2, events=None):
         for evt in events:
             ax.axvline(x=evt['date'], linewidth=1, color='lightgrey')
             text(evt['date'], middle, f'{evt["date"]}: {evt["event"]}', rotation=90, fontsize=8, color='gray')
-
+    _ = add_changepoints_to_plot(fig.gca(), model, forecast, cp_color='tomato')
     name = f"{place}: "
-    plt.title(f"{name} Cumulative number of {metric} over time and chainge points")
-    plt.ylabel(f"Cumulative number of {metric}")
+    plt.title(f"{name} Daily number of {metric} over time and chainge points")
+    plt.ylabel(f"Daily number of {metric}")
     plt.xlabel("")
     ax.xaxis.set_major_formatter(DateFormatter('%b,%Y'))
     ax.grid(False)

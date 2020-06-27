@@ -47,7 +47,7 @@ def get_resultant_DF(df, columns):
                             'UN' : 'Unassigned'})
     df = df.drop(
         columns=['Status', 'Date']).transpose()
-    df = df.cumsum(axis=1)
+    #df = df.cumsum(axis=1)
     df.insert(loc=0, column='Province_State',
                         value=df.index)
     df.columns = columns

@@ -274,10 +274,10 @@ def score_mrsc(filename_metric,
     fig, ax = plt.subplots(figsize=(15, 5))
 
     ax.plot(daysToPlot, np.append(trainMasterDF1[treatment], testDF1[treatment], axis=0), color='firebrick', linewidth=2, alpha=0.7, #marker='.',
-             label=f'Observations (Cumulative number of {MetricName})')
+             label=f'Observations (Daily number of {MetricName})')
 
     ax.plot(daysToPlot, np.append(denoisedDF[treatment][start:training_end], predictions[0], axis=0), color='sandybrown', linewidth=2, alpha=0.7, #marker='v',
-            label=f'Predictions (Cumulative number of {MetricName})')
+            label=f'Predictions (Daily number of {MetricName})')
 
     if daily_confirmed:
         ax.plot(daysToPlot, daily_confirmed,
@@ -312,9 +312,9 @@ def score_mrsc(filename_metric,
 
     # Labels
     ax.set_xlabel('Date')
-    ax.set_ylabel(f'Cumulative number of {MetricName}')
+    ax.set_ylabel(f'Daily number of {MetricName}')
     ax.legend(loc='best', framealpha=0.2)
-    plt.title(f"{treatment}: Cumulative number of {MetricName}, Actual and Counterfactual")
+    plt.title(f"{treatment}: Daily number of {MetricName}, Actual and Counterfactual")
     # Use tight layout
     fig.tight_layout()
 

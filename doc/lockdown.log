@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  27 JUN 2020 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  28 JUN 2020 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,7 +259,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.85 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -305,13 +305,13 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 148
+LaTeX Font Info:    Trying to load font information for U+msa on input line 147
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 148
+LaTeX Font Info:    Trying to load font information for U+msb on input line 147
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -325,45 +325,45 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4]
-<../img/rd.png, id=29, 1080.4365pt x 629.4717pt>
+[2] [3] [4] [5]
+<../img/rd.png, id=32, 1080.4365pt x 629.4717pt>
 File: ../img/rd.png Graphic file (type png)
 <use ../img/rd.png>
-Package pdftex.def Info: ../img/rd.png  used on input line 193.
+Package pdftex.def Info: ../img/rd.png  used on input line 195.
 (pdftex.def)             Requested size: 390.0pt x 227.21474pt.
- [5]
+ [6 <../img/rd.png>]
 <../img/mobility/Mobility Trends in Italy.pdf, id=39, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Italy.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Italy.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Italy.pdf  used on 
-input line 224.
+input line 226.
 (pdftex.def)             Requested size: 327.59946pt x 98.7237pt.
 <../img/mobility/Mobility Trends in Germany.pdf, id=40, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Germany.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Germany.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Germany.pdf  used o
-n input line 229.
+n input line 231.
 (pdftex.def)             Requested size: 327.59946pt x 98.7237pt.
 <../img/mobility/Mobility Trends in Sweden.pdf, id=41, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Sweden.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Sweden.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Sweden.pdf  used on
- input line 234.
+ input line 236.
 (pdftex.def)             Requested size: 327.59946pt x 98.7237pt.
 <../img/mobility/Mobility Trends in Spain.pdf, id=42, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in Spain.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in Spain.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in Spain.pdf  used on 
-input line 239.
+input line 241.
 (pdftex.def)             Requested size: 327.59946pt x 98.7237pt.
 <../img/mobility/Mobility Trends in France.pdf, id=43, 1084.05pt x 361.35pt>
 File: ../img/mobility/Mobility Trends in France.pdf Graphic file (type pdf)
 <use ../img/mobility/Mobility Trends in France.pdf>
 Package pdftex.def Info: ../img/mobility/Mobility Trends in France.pdf  used on
- input line 244.
+ input line 246.
 (pdftex.def)             Requested size: 327.59946pt x 98.7237pt.
- [6 <../img/rd.png>] [7 <../img/mobility/Mobility Trends in Italy.pdf> <../img/
-mobility/Mobility Trends in Germany.pdf
+ [7] [8 <../img/mobility/Mobility Trends in Italy.pdf> <../img/mobility/Mobilit
+y Trends in Germany.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
 nds in Germany.pdf): PDF inclusion: multiple pdfs with page group included in a
@@ -383,83 +383,83 @@ ingle page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
 nds in France.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
->] [8]
-<../img/score_death.pdf, id=323, 1264.725pt x 505.89pt>
+>] [9]
+<../img/score_death.pdf, id=326, 1264.725pt x 505.89pt>
 File: ../img/score_death.pdf Graphic file (type pdf)
 <use ../img/score_death.pdf>
-Package pdftex.def Info: ../img/score_death.pdf  used on input line 263.
+Package pdftex.def Info: ../img/score_death.pdf  used on input line 265.
 (pdftex.def)             Requested size: 350.99762pt x 140.3977pt.
-<../img/score_confirmed.pdf, id=324, 1264.725pt x 505.89pt>
+<../img/score_confirmed.pdf, id=327, 1264.725pt x 505.89pt>
 File: ../img/score_confirmed.pdf Graphic file (type pdf)
 <use ../img/score_confirmed.pdf>
-Package pdftex.def Info: ../img/score_confirmed.pdf  used on input line 268.
+Package pdftex.def Info: ../img/score_confirmed.pdf  used on input line 270.
 (pdftex.def)             Requested size: 350.99762pt x 140.3977pt.
-<../img/mape_us.pdf, id=325, 1084.05pt x 361.35pt>
+<../img/mape_us.pdf, id=328, 1084.05pt x 361.35pt>
 File: ../img/mape_us.pdf Graphic file (type pdf)
 <use ../img/mape_us.pdf>
-Package pdftex.def Info: ../img/mape_us.pdf  used on input line 277.
+Package pdftex.def Info: ../img/mape_us.pdf  used on input line 279.
 (pdftex.def)             Requested size: 350.99762pt x 116.99626pt.
- [9 <../img/score_death.pdf> <../img/score_confirmed.pdf
+ [10 <../img/score_death.pdf> <../img/score_confirmed.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/score_confirmed.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/12 Daily up-date from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/12 Facebook Move-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/12 Apple Mo-bil-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/12 Google Com-mu-nity
  []
 
-<../img/us/New York_deaths_trend.pdf, id=428, 1084.05pt x 361.35pt>
+<../img/us/New York_deaths_trend.pdf, id=431, 1084.05pt x 361.35pt>
 File: ../img/us/New York_deaths_trend.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths_trend.pdf>
 Package pdftex.def Info: ../img/us/New York_deaths_trend.pdf  used on input lin
-e 320.
+e 322.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/us/New York_deaths.pdf, id=429, 1084.05pt x 361.35pt>
+<../img/us/New York_deaths.pdf, id=432, 1084.05pt x 361.35pt>
 File: ../img/us/New York_deaths.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths.pdf>
-Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 325.
+Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 327.
 
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/us/New York_confirmed cases.pdf, id=430, 1084.05pt x 361.35pt>
+<../img/us/New York_confirmed cases.pdf, id=433, 1084.05pt x 361.35pt>
 File: ../img/us/New York_confirmed cases.pdf Graphic file (type pdf)
 <use ../img/us/New York_confirmed cases.pdf>
 Package pdftex.def Info: ../img/us/New York_confirmed cases.pdf  used on input 
-line 330.
+line 332.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_deaths_trend.pdf, id=431, 1084.05pt x 361.35pt>
+<../img/other/Italy_deaths_trend.pdf, id=434, 1084.05pt x 361.35pt>
 File: ../img/other/Italy_deaths_trend.pdf Graphic file (type pdf)
 <use ../img/other/Italy_deaths_trend.pdf>
 Package pdftex.def Info: ../img/other/Italy_deaths_trend.pdf  used on input lin
-e 344.
+e 346.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_deaths.pdf, id=432, 1084.05pt x 361.35pt>
+<../img/other/Italy_deaths.pdf, id=435, 1084.05pt x 361.35pt>
 File: ../img/other/Italy_deaths.pdf Graphic file (type pdf)
 <use ../img/other/Italy_deaths.pdf>
-Package pdftex.def Info: ../img/other/Italy_deaths.pdf  used on input line 349.
+Package pdftex.def Info: ../img/other/Italy_deaths.pdf  used on input line 351.
 
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_confirmed cases.pdf, id=433, 1084.05pt x 361.35pt>
+<../img/other/Italy_confirmed cases.pdf, id=436, 1084.05pt x 361.35pt>
 File: ../img/other/Italy_confirmed cases.pdf Graphic file (type pdf)
 <use ../img/other/Italy_confirmed cases.pdf>
 Package pdftex.def Info: ../img/other/Italy_confirmed cases.pdf  used on input 
-line 354.
+line 356.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-[10 <../img/mape_us.pdf>] [11] [12 <../img/us/New York_deaths_trend.pdf> <../im
+[11 <../img/mape_us.pdf>] [12] [13 <../img/us/New York_deaths_trend.pdf> <../im
 g/us/New York_deaths.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_deaths.pd
@@ -469,25 +469,72 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_confirmed
  cases.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
+>] [14 <../img/other/Italy_deaths_trend.pdf> <../img/other/Italy_deaths.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_deaths.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/other/Italy_confirmed cases.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_confirmed
+ cases.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
 >]
-<../img/in/Delhi_deaths_trend.pdf, id=503, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_deaths_trend.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_deaths_trend.pdf>
-Package pdftex.def Info: ../img/in/Delhi_deaths_trend.pdf  used on input line 3
-66.
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/in/Delhi_deaths.pdf, id=504, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_deaths.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_deaths.pdf>
-Package pdftex.def Info: ../img/in/Delhi_deaths.pdf  used on input line 371.
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/in/Delhi_confirmed cases.pdf, id=505, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed cases.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed cases.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed cases.pdf  used on input lin
-e 376.
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
- (./lockdown.bbl
+<../img/in/Delhi_confirmed_trend.pdf, id=548, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed_trend.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed_trend.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed_trend.pdf  used on input lin
+e 372.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L1.pdf, id=549, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L1.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L1.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L1.pdf  used on input 
+line 377.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L2.pdf, id=550, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L2.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L2.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L2.pdf  used on input 
+line 382.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L3.pdf, id=551, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L3.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L3.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3.pdf  used on input 
+line 387.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L3-CUM.pdf, id=552, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L3-CUM.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L3-CUM.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3-CUM.pdf  used on in
+put line 392.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+
+
+LaTeX Warning: Float too large for page by 7.11847pt on input line 397.
+
+(./lockdown.bbl [15] [16 <../img/in/Delhi_confirmed_trend.pdf> <../img/in/Delhi
+_confirmed cases-L1.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
+ses-L1.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../img/in/Delhi_confirmed cases-L2.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
+ses-L2.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../img/in/Delhi_confirmed cases-L3.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
+ses-L3.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../img/in/Delhi_confirmed cases-L3-CUM.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
+ses-L3-CUM.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 []\OT1/cmr/m/n/12 E. Kong, D. Prinz, The im-pact of shut-down poli-
  []
@@ -503,25 +550,7 @@ Overfull \hbox (12.00278pt too wide) in paragraph at lines 51--55
 s17.pdf. 
  []
 
-[13] [14 <../img/other/Italy_deaths_trend.pdf> <../img/other/Italy_deaths.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_deaths.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
-> <../img/other/Italy_confirmed cases.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_confirmed
- cases.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->] [15 <../img/in/Delhi_deaths_trend.pdf> <../img/in/Delhi_deaths.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_deaths.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <../img/in/Delhi_confirmed cases.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
-ses.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
->]
 Underfull \hbox (badness 4441) in paragraph at lines 63--69
 []\OT1/cmr/m/n/12 D. Ibarra-Vega, Lock-down, one, two, none, or smart. mod-
  []
@@ -543,12 +572,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--83
 pdf,
  []
 
-[16]) [17] (./lockdown.aux) ) 
+[17]) [18] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 5283 strings out of 480608
- 76520 string characters out of 5903630
- 325734 words of memory out of 5000000
- 21108 multiletter control sequences out of 15000+600000
+ 5299 strings out of 480608
+ 77245 string characters out of 5903630
+ 325763 words of memory out of 5000000
+ 21121 multiletter control sequences out of 15000+600000
  540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,46p,1977b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -575,10 +604,10 @@ sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lockdown.pdf (17 pages, 624151 bytes).
+Output written on lockdown.pdf (18 pages, 639440 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
+ 686 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
