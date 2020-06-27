@@ -52,7 +52,7 @@ def prepare(file, place, dates):
     return df
 
 
-def show_trend(df, country, place, metric, n_changepoints=20, events=None):
+def show_trend(df, country, place, metric, n_changepoints=2, events=None):
     """
     Show trend of log10(@variable) using fbprophet package.
     @ncov_df <pd.DataFrame>: the clean data
@@ -69,29 +69,31 @@ def show_trend(df, country, place, metric, n_changepoints=20, events=None):
     # fbprophet
     model = Prophet(growth="linear", daily_seasonality=False, n_changepoints=n_changepoints)
     model.fit(df)
-    future = model.make_future_dataframe(periods=1)
+    future = model.make_future_dataframe(periods=14)
     forecast = model.predict(future)
 
     c = model.changepoints
     # Create figure
     fig = model.plot(forecast,figsize=(15, 5))
-    _ = add_changepoints_to_plot(fig.gca(), model, forecast,cp_color='tomato')
+    _ = add_changepoints_to_plot(fig.gca(), model, forecast, cp_color='tomato')
 
     ax = plt.gca()
     for i, v in model.changepoints.items():
-        text(v, (df["y"].max() - df["y"].min())/2., f'{v.strftime("%Y-%m-%d")}', rotation=90, fontsize=8, color='gray')
+        s = f'{v.month}/{v.day}/{v.year % 100}'
+        text(v, (df["y"].max() - df["y"].min())/2., '', rotation=90, fontsize=8, color='gray')
 
     middle = (df["y"].max() - df["y"].min())/2. - (df["y"].max() - df["y"].min())/4.
     if events:
         #plot events
         for evt in events:
             ax.axvline(x=evt['date'], linewidth=1, color='lightgrey')
-            text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='gray')
+            text(evt['date'], middle, f'{evt["date"]}: {evt["event"]}', rotation=90, fontsize=8, color='gray')
 
     name = f"{place}: "
-    plt.title(f"{name} {metric} over time and chainge points")
-    plt.ylabel(f"The number of {metric}")
+    plt.title(f"{name} Cumulative number of {metric} over time and chainge points")
+    plt.ylabel(f"Cumulative number of {metric}")
     plt.xlabel("")
+    ax.xaxis.set_major_formatter(DateFormatter('%b,%Y'))
     ax.grid(False)
 
     # Use tight layout

@@ -6,20 +6,20 @@ import time
 from events import get_events_between
 
 lockdown_state = [
-    {'name':'Italy','start': '3/9/20', 'end':'', 'control':["France",
+    {'name':'Italy','start': '3/8/20', 'end':'', 'control':["France",
                                                             "Spain",
                                                             "Germany",
                                                             "Sweden",
                                                             "United Kingdom",
                                                             "Belgium",
                                                             "Netherlands"]},
-    {'name':'Spain','start': '3/9/20', 'end':'', 'control':["France",
+    {'name':'Spain','start': '3/8/20', 'end':'', 'control':["France",
                                                             "Italy",
                                                             "Brazil"]}
 ]
 
 def main():
-    update()
+    #update()
     prepare()
     metric = ['deaths', 'confirmed']
     file2 = f'../data/processed/other/{metric[1]}.csv'
@@ -55,7 +55,7 @@ def main():
                    name, 0,
                    lockdown_date_index,
                    end_date_index,
-                   metric[1], 'other',
+                   f'{metric[1]} cases', 'other',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
                    events=events)

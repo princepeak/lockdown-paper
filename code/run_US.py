@@ -7,13 +7,13 @@ from events import get_events_between
 
 # from https://www.businessinsider.com.au/us-map-stay-at-home-orders-lockdowns-2020-3?r=US&IR=T
 lockdown_state = [
-    # {'name':'New Jersey','start': '3/28/20', 'end':'', 'control':['New York',
-    #                                                                    'California',
-    #                                                                    'Illinois',
-    #                                                                    'Massachusetts',
-    #                                                                    'Pennsylvania',
-    #                                                                    'Texas',
-    #                                                                    'Michigan']},
+    {'name':'New Jersey','start': '3/28/20', 'end':'', 'control':['New York',
+                                                                       'California',
+                                                                       'Illinois',
+                                                                       'Massachusetts',
+                                                                       'Pennsylvania',
+                                                                       'Texas',
+                                                                       'Michigan']},
     {'name':'New York','start': '3/22/20', 'end':'5/15/20', 'control':['New Jersey',
                                                                        'California',
                                                                        'Illinois',
@@ -21,9 +21,10 @@ lockdown_state = [
                                                                        'Pennsylvania',
                                                                        'Texas',
                                                                        'Michigan',
-                                                                       'Florida']}#,
-    # {'name':'Illinois', 'start': '3/21/20', 'end':'5/1/20', 'control':None}
+                                                                       'Florida']},
+    {'name':'Illinois', 'start': '3/24/20', 'end':'5/1/20', 'control':None}
 ]
+
 
 def main():
     update()
@@ -61,7 +62,7 @@ def main():
                    name, 0,
                    lockdown_date_index,
                    end_date_index,
-                   metric[1], 'us',
+                   f'{metric[1]} cases', 'us',
                    metadata['dates'], lockdown_date,
                    control_group=state['control'],
                    events=events)

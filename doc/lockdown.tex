@@ -41,7 +41,7 @@
 %% or use the graphicx package for more complicated commands
  \usepackage{graphicx}
 \usepackage{subcaption}
-\graphicspath{ {../img/}{../img/au/} {../img/us/}{../img/in/}{../img/stringency_index/}{../img/mobility/}}
+\graphicspath{ {../img/}{../img/other/} {../img/us/}{../img/in/}{../img/stringency_index/}{../img/mobility/}}
 %% or use the epsfig package if you prefer to use the old commands
 %% \usepackage{epsfig}
 \usepackage{amsmath}
@@ -167,12 +167,11 @@
 	Any optimal policy considers a trade off between the benefit associated with lock-down and cost of reduced aggregate output. Aggregate output decreases as a function of the stringency of the policy, commitment from the government to maintain the level of stringency and adherence of general population. Aggregate output decreases through lower supply of labor, lower consumption and hence through lower investment, which results from investors’ expectation of a lower marginal product of capital. On the other hand benefit associated with lock-down can be seen through number of life potentially saved and in curbing the pandemic early so that economic activity can be restarted early.
 	
 	\subsection{Our contribution}
-	Defining how to measure these benefits.
+	In this work we consider stringency measures adopted by governments across the world and provide a counterfactual assessment of the benefit from those measures in terms of health benefits. In order to estimate the counterfactual metric (say number of deaths), we use a geographic location as a treatment unit (say Italy) and a set of other geographic location as donor group (say Brazil and United States). We take a data driven approach to construct a synthetic control \cite{ap08746, JMLR18, AMSS19} using pre-innervation period data (say from early February, 2020 to March 9, 2020) of the donor units and their linear combination, such that the squared error between the estimated synthetic control  and the treatment unit is minimized by the choice of weight parameters in this pre-innervation time period. Now synthetic control can be extrapolated to estimate the metric. We use Multi-dimensional Robust Synthetic Control (m-RSC) as a tool as described in \cite{AMSS19}. 
 	
-	Tools for measuring them.
+	However, there are few difficulties  in applying the tool as it is.  Firstly, different government adopted level of stringency measure and there were different level of compliance, and commitment. Secondly, there were no `pure` donor group as stringency measures were nearly ubiquitous. So we have used various secondary sources of data to score the level of stringency measures , and level of compliance. This allowed us to determine donor groups relative to a choice of treatment unit.
 	
-	
-	Difficulty in assessing: different level of compliance, different cultural practices - hidden variables
+	Finally, we present our results in three different geographic setup - namely in the State of New York, Italy and Indian capital city of Delhi, and analyze them. 
 	
 	\subsection{Related Works}
 	In \cite{Koh2020}, authors have shown that the reproductive rate of the SARS-CoV-2 had significantly decreased after government intervention. They show that the spread of disease is confined if measures were brought into effect early. In \cite{KP2020}, authors use the differential timing of the introduction of stringency measures and changes in Google search for unemployment claims to establish a framework to estimate how each stringency measures contribute to unemployment. Authors show that early intervention efforts in the form of non-essential business closure have contributed to less than 8.5 percent of unemployment claims.
@@ -182,15 +181,15 @@
 	International travel has also been impacted as a result of efforts to reduce the spread of the coronavirus disease. On the basis of reported cases, models built by \cite{Chinazzi395} show a significant decrease in the number of infections compared to predictions if no travel bans were adopted as an option. Their modeling results indicate that travel restriction must be combined with a transmission within the community to curb the spread.
 	
 	\subsection{Tools}
-	As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18, AMSS19}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors). In following we provide a brief overview of Multi-dimensional Robust Synthetic Control (m-RSC) following \cite{AMSS19}.\par
+	As stated above, our objective is to study the effects of government response at an aggregate level in terms of life saved, and limiting the number of cases that requires hospitalization. Such interventions can effectively be studied at a comparative level. In other words, if we have data for the evolution of aggregate outcomes, e.g. number of confirmed cases and deaths, when policy is applied in a group under study versus when the same policy is not applied in a control group. However, government policies were applied at different level across a geographic region.  We do not have a mechanism to conduct a randomized trial. Hence, we consider constructing synthetic control method\cite{ap08746, JMLR18, AMSS19}. In a synthetic control set up, where observational data is available for different groups, we can construct a synthetic or virtual control group by combining measurements from alternatives (or donors). In following we provide a brief overview of m-RSC following \cite{AMSS19}.\par
 	
-	Suppose that observations from $N$ different geographically distinct groups or units are indexed by $i \in [N]$ in $T$ time periods (days) indexed by $j \in [T]$. Let $k \in [K]$ be the metrics of interest (e.g. number of confirmed cases, number of deaths, number of tests conducted, etc.). By $M_{ijk}$ we denote the ground-truth measurement of interest, and by $X_{ijk}$, an observation of this measurement with some noise. Let $1 \leq T_0 \leq T$ be the time instance in which our group of interest experiences an intervention, namely a government response to control the spread (e.g. stay home order, school or business closure, or mass vaccination). Without loss of generality we consider unit $i = 1$ (say, New York) and metric $k = 1$ (say, number of deaths) as our unit and metric of interest respectively.\par
+	Suppose that observations from $N$ different geographically distinct groups or units are indexed by $i \in [N]$ in $T$ time periods (days) indexed by $j \in [T]$. Let $k \in [K]$ be the metrics of interest (e.g. number of confirmed cases, number of deceased, number of tests conducted, etc.). By $M_{ijk}$ we denote the ground-truth measurement of interest, and by $X_{ijk}$, an observation of this measurement with some noise. Let $1 \leq T_0 \leq T$ be the time instance in which our group of interest experiences an intervention, namely a government response to control the spread (e.g. stay home order, school or business closure, or mass vaccination). Without loss of generality we consider unit $i = 1$ (say, New York) and metric $k = 1$ (say, number of deaths) as our unit and metric of interest respectively.\par
 	
 	Our objective now is to estimate the trajectory of metric of interest $k = 1$  for unit $i = 1$ if no government response to control the spread had occurred. In order to do that we will use the trajectory associated with the donor units ($2 \leq i \leq N$ ), and metrics $k \in [K ]$. In following we make two assumptions: (1) for all $2 \leq i \leq N$, $k \in [K]$ and $j \in [T]$, we have  $X_{ijk} = M_{ijk} + \epsilon_{ijk}$ where, $\epsilon_{ijk}$ is the observational noise, and (2) Same model is obeyed by $i=1$ in pre--intervention period, i.e. for all $j \in [T_0]$ and $k \in [K]$ we have $X_{1jk} = M_{1jk} + \epsilon_{1jk}$. As described by authors in \cite{AMSS19}, in following we also assume that for unit $i=1$, we only observe the measurement $X_{1jk}$ for pre-intervention period, i.e. for all $j \in [T_0]$ and $k \in [K]$. Our objective is to compute a counterfactual sequence of observation $M_{1jk}$ for the time period $j \in [T]$, and $k \in [K]$, and in specific for $T_0 \leq j \leq T$, and $k = 1$, using synthetic version of unit $i=1$.\par
 	
 	Define $\mathcal{M} = [M_{ijk}] \in \mathbb{R}^{N \times T \times K}$. $\mathcal{M}$ is assumed to have a few well behaved properties as required by the algorithm, namely, it must be approximately low-rank and boundedness of $\left|M_{ijk}\right|$ (for details see \cite{AMSS19}). To check whether our model assumption holds in practice, we consider $N=185, T=150, K=2$, with $185$ countries as units. We consider number of confirmed cases and number of deceased as two metrics over $150$ days between January 22, 2020 and June 20, 2020. For assumption to hold, data matrix corresponding to number of confirmed cases and number of deceased and their combination should be approximated by a low-rank matrix. 
 	
-	\begin{figure}[ht]
+	\begin{figure}
 		\includegraphics[width=\textwidth]{rd}
 		\caption{The Singular Value spectrum for all countries (of dimensions $185 \times 150$, showing top 20 singular values, in descending order.} 
 		\label{fig1} 
@@ -222,27 +221,27 @@
 	\centering
 	\begin{subfigure}[b]{\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Italy}
+		\includegraphics[width=0.84\linewidth,height=0.18\textheight]{Mobility Trends in Italy}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Germany}
+		\includegraphics[width=0.84\linewidth,height=0.18\textheight]{Mobility Trends in Germany}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Sweden}
+		\includegraphics[width=0.84\linewidth,height=0.18\textheight]{Mobility Trends in Sweden}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in Spain}
+		\includegraphics[width=0.84\linewidth,height=0.18\textheight]{Mobility Trends in Spain}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth,height=0.19\textheight]{Mobility Trends in France}
+		\includegraphics[width=0.84\linewidth,height=0.18\textheight]{Mobility Trends in France}
 	\end{subfigure}
 	
 	\caption[Mobility Trends]{Stringency index, and Mobility Trends in (a) Italy (b) Germany (c) Sweden (d) Spain (e) France.}
@@ -255,12 +254,39 @@
     
     It can be seen from Figure \ref{fig2}, that the adherence  and stringency level do not correspond. For example, in Sweden, with increasing level of government measures between March - April, there has not been any significant change in proportion of people staying put or moving between regions. Similarly, in other places, it can be observed that while government measures remain at the same level over April, number of people staying put at one place starts declining. 
     
-    How are we combining these indexes? How we have selected donor an example here. Method for running the mRSC.
+    Selecting donor group: We combine metrics that allow the spread of the virus and similarly combine those that reduces the possibility by taking average of them and come with a single adherence score. For unit $i \in [N]$, $\forall j \neq i : j \in [N]$, $j$ is a donor unit if adherence score, stringency Index of $j$ is less than $i$ and corresponding metric is higher (i.e. total number of deaths till date, or total number of confirmed cases till date, respectively). Figure \ref{fig3} shows this relation in graphical form for a selected set of countries. As per Figure \ref{fig3}, United States, Brazil and United Kingdom are in the donor group when we compute counterfactual estimate for Italy and metric under consideration is total number of confirmed cases till date. 
+    
+    \begin{figure}
+    	\centering
+    	\begin{subfigure}[b]{\textwidth}
+    		\centering
+    		\includegraphics[width=0.9\linewidth]{score_death}
+    	\end{subfigure}
+    	
+    	\begin{subfigure}[b]{\textwidth}
+    		\centering
+    		\includegraphics[width=0.9\linewidth]{score_confirmed}
+    	\end{subfigure}
+    	
+    	\caption[Mobility Trends]{Adherence score vs. Stringency index where size of each circle is determined by (a) total number of deaths till date (b) total number of confirmed cases till date.}
+    	\label{fig3} 
+    \end{figure}
 
-	\subsection{Data Source}
-	We use following three sources of data as described in Table \ref{Table1}:
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{mape_us}
+	\caption{MAPE} 
+	\label{fig4} 
+	\end{figure}
+
+	Statistical Performance Evaluation: in Figure \ref{fig4} we present the distribution of Mean and Median absolute percentage error statistic for the runs-forecasts from m-RSC algorithm with changing forecast horizon. We consider every Mondays between March 1, 2020 to June 21, 2020, both included to forecast the number of deaths at the end of the day on June 26, 2020 for all states in United States, and compare with actual data. For every state, donor group is selected using the method described above. 
 	
-	\begin{table}[h!]
+    It can be seen from Figure \ref{fig4}, that both Mean and Median absolute percentage error statistic are larger, when larger forecast horizon has been considered, and that is to be expected. Both MAPE and MdAPE converge to a less than 20 percent when horizon is about a week. MAPE being very large from MdAPE clearly indicates a right skew in the predicted values. This exactly corresponds to the places where exponential growth of the pandemic can be observed by March 22, 2020. The counterfactual prediction for June 26, 2020 on March 22, 2020 for these few places are several times higher as as expected, while, stricter stringency measures were being implemented in United States around those dates.
+    
+	\subsection{Data Source}
+	We use following five sources of data as described in Table \ref{Table1}:
+	
+	\begin{table}
 		\centering
 		\begin{tabularx}{0.9\textwidth}[t]{p{0.3\textwidth}X}
 			\hline
@@ -283,9 +309,9 @@
 	 
 \section{Results}
 \label{SEC3}
-In this section we present three examples of the application of m-RSC to derive the counterfactual estimates of possible number of deaths under the changed conditions like delaying or starting the stringency measures at earlier date. We consider three different units of treatments, namely: City of New York, Italy and Indian city of Mumbai. In some sense these place have also been termed as regional epicenter of  the epidemic.
+In this section we present three examples of the application of m-RSC to derive the counterfactual estimates of possible number of deaths under the changed conditions like delaying or starting the stringency measures at earlier date. We consider three different units of treatments, namely: State of New York, Italy and Indian city of Delhi. In some sense these place have also been termed as regional epicenters of the epidemic.
 
-	\subsection{City of New York}
+	\subsection{State of New York}
 	
 		\begin{figure}
 			\centering
@@ -301,20 +327,58 @@ In this section we present three examples of the application of m-RSC to derive 
 
 			\begin{subfigure}[b]{\textwidth}
 				\centering
-				\includegraphics[width=0.9\linewidth,height=0.2\textheight]{New York_confirmed}
+				\includegraphics[width=0.9\linewidth,height=0.2\textheight]{New York_confirmed cases}
 			\end{subfigure}
 
-			\caption[New York]{New York in (a) Trend (b) Counterfactual.}
-			\label{fig3} 
+			\caption[New York]{New York State: (a) Actual number of deaths with linear trend line and points where trend changed (b) Actual number of deaths with counterfactual prediction estimated by m-RSC with actual lock-down date as intervention point (c) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC.}
+			\label{fig5} 
 		\end{figure}
+	
 	
 	\subsection{Italy}
 	
-	\subsection{India}
-	India - 4 stages of lock-down - effect of each stages - results on prediction by Synthetic control
-	
-	\subsection{Australia}
+		\begin{figure}
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Italy_deaths_trend}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Italy_deaths}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Italy_confirmed cases}
+		\end{subfigure}
+		
+		\caption[Italy]{Italy: (a) Actual number of deaths with linear trend line and points where trend changed (b) Actual number of deaths with counterfactual prediction estimated by m-RSC with actual lock-down date as intervention point (c) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC.}
+		\label{fig6} 
+	\end{figure}
 
+	\subsection{India}
+	\begin{figure}
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Delhi_deaths_trend}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Delhi_deaths}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth,height=0.2\textheight]{Delhi_confirmed cases}
+		\end{subfigure}
+		
+		\caption[Delhi]{Delhi, India: (a) Actual number of deaths with linear trend line and points where trend changed (b) Actual number of deaths with counterfactual prediction estimated by m-RSC with actual lock-down date as intervention point (c) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC.}
+		\label{fig7} 
+	\end{figure}
 	
 	\section{Discussion and Concluding Remarks}
 	\label{SEC4}

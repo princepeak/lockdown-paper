@@ -43,7 +43,8 @@ def main():
                           "United Kingdom",
                           "Belgium",
                           "Netherlands",
-                          "Brazil"]
+                          "Brazil",
+                          'Philippines']
 
     for place in places_of_interest:
         df_place = df[df['Entity'] == place]

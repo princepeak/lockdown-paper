@@ -188,7 +188,7 @@ def score_mrsc(filename_metric,
     training_end = training_end
     test_end = test_end
 
-    singvals = 15
+    singvals = 5
     p = 1.0
 
     trainingDays = []
@@ -294,7 +294,7 @@ def score_mrsc(filename_metric,
         #plot events
         for evt in events:
             ax.axvline(x=evt['date'], linewidth=1, color='lightgrey')
-            text(evt['date'], middle, evt['event'], rotation=90, fontsize=8, color='gray')
+            text(evt['date'], middle, f'{evt["date"]}: {evt["event"]}', rotation=90, fontsize=8, color='gray')
 
         ax.axvline(x=interventionDay, linewidth=1, color='tomato')
         text(interventionDay, middle, '', rotation=90, verticalalignment='center', fontsize=8)
@@ -303,7 +303,7 @@ def score_mrsc(filename_metric,
         text(interventionDay, middle, interventionDay, rotation=90, verticalalignment='center',fontsize=8)
 
     # X-axis
-    ax.xaxis.set_major_formatter(DateFormatter('%m-%d'))
+    ax.xaxis.set_major_formatter(DateFormatter('%b,%Y'))
     ax.set_xlim(days[0], days[-1])
 
     # Y-axis
@@ -314,9 +314,114 @@ def score_mrsc(filename_metric,
     ax.set_xlabel('Date')
     ax.set_ylabel(f'Cumulative number of {MetricName}')
     ax.legend(loc='best', framealpha=0.2)
-
+    plt.title(f"{treatment}: Cumulative number of {MetricName}, Actual and Counterfactual")
     # Use tight layout
     fig.tight_layout()
 
     plt.savefig(f'../img/{country}/{treatment}_{MetricName}.pdf',dpi=600)
     plt.clf()
+
+def score_mrsc_wp(filename_metric,
+               filename_secondary_metric,
+               idColumnName,
+               treatment,
+               start,
+               training_end,
+               test_end,
+               control_group=None):
+    df1 = pd.read_csv(filename_metric)
+
+    df2 = pd.read_csv(filename_secondary_metric)
+
+    allColumns = df1.columns.values
+    country_list = list(np.unique(df1[idColumnName]))
+    #days = np.delete(allColumns, [0])
+
+    treatment = treatment
+
+    country_list.remove(treatment)
+    if not control_group:
+        control_group = country_list
+
+    start = start
+    training_end = training_end
+    test_end = test_end
+
+    singvals = 5
+    p = 1.0
+
+    trainingDays = []
+    for i in range(start, training_end, 1):
+        trainingDays.append(str(i))
+
+    testDays = []
+    for i in range(training_end, test_end, 1):
+        testDays.append(str(i))
+
+    trainDataMasterDict1 = {}
+    trainDataDict1 = {}
+    testDataDict1 = {}
+
+    trainDataMasterDict2 = {}
+    trainDataDict2 = {}
+    testDataDict2 = {}
+
+
+    for key in control_group:
+        series1 = df1[df1[idColumnName] == key]
+        trainDataMasterDict1.update({key: series1[trainingDays].values[0]})
+
+        # randomly hide training data
+        (trainData1, pObservation1) = tsUtils.randomlyHideValues(copy.deepcopy(trainDataMasterDict1[key]), p)
+        trainDataDict1.update({key: trainData1})
+        testDataDict1.update({key: series1[testDays].values[0]})
+
+        series2 = df2[df2[idColumnName] == key]
+        trainDataMasterDict2.update({key: series2[trainingDays].values[0]})
+
+        # randomly hide training data
+        (trainData2, pObservation2) = tsUtils.randomlyHideValues(copy.deepcopy(trainDataMasterDict2[key]), p)
+        trainDataDict2.update({key: trainData2})
+        testDataDict2.update({key: series2[testDays].values[0]})
+
+    series = df1[df1[idColumnName] == treatment]
+    trainDataMasterDict1.update({treatment: series[trainingDays].values[0]})
+    trainDataDict1.update({treatment: series[trainingDays].values[0]})
+    testDataDict1.update({treatment: series[testDays].values[0]})
+
+    trainMasterDF1 = pd.DataFrame(data=trainDataMasterDict1)
+    trainDF1 = pd.DataFrame(data=trainDataDict1)
+    testDF1 = pd.DataFrame(data=testDataDict1)
+
+    #-------
+    series = df2[df2[idColumnName] == treatment]
+    trainDataMasterDict2.update({treatment: series[trainingDays].values[0]})
+    trainDataDict2.update({treatment: series[trainingDays].values[0]})
+    testDataDict2.update({treatment: series[testDays].values[0]})
+
+    trainMasterDF2 = pd.DataFrame(data=trainDataMasterDict2)
+    trainDF2 = pd.DataFrame(data=trainDataDict2)
+    testDF2 = pd.DataFrame(data=testDataDict2)
+
+    relative_weights = [1.0, 1.0]
+
+    # instantiate the model
+    mrscModel = MultiRobustSyntheticControl(2, relative_weights, treatment, singvals, len(trainDF1),
+                                            probObservation=1.0, svdMethod='numpy', modelType='svd',
+                                            otherSeriesKeysArray=control_group)
+
+    # fit the model
+    mrscModel.fit([trainDF1, trainDF2])
+
+    # save the denoised training data
+    denoisedDF = mrscModel.model.denoisedDF()
+
+    # predict - all at once
+    predictions = mrscModel.predict([testDF1,testDF2])
+
+    final_deaths_predicted = abs(math.floor(max(predictions[0])))
+    final_cases_predicted = abs(math.floor(max(predictions[1])))
+
+    final_deaths_actual = int(max(testDF1[treatment].values.tolist()))
+    final_cases_actual = int(max(testDF2[treatment].values.tolist()))
+    return [final_deaths_actual,final_deaths_predicted,final_cases_actual,final_cases_predicted]

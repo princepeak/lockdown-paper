@@ -23,19 +23,15 @@ Oxford: 0-100
 
 def score(apple_walking, apple_transit,
           goog_retail, goog_transit, goog_workplaces, goog_residential,
-          fb_stay, fb_move,
-          oxford_stringency):
+          fb_stay, fb_move):
     apple = (apple_walking + apple_transit)/2.0
     google = (goog_retail + goog_transit + goog_workplaces)/3.0
     bad = (apple + google + fb_move)/3.0
-    good = (fb_stay + goog_residential + oxford_stringency)/3.0
+    good = (fb_stay + goog_residential)/2.0
     res = (-bad+good)
     return res
 
 def main():
-    #Country codes
-    country_codes = pd.read_csv('../data/country_codes/codes.csv')
-
     # Apple
     df = pd.read_csv('../data/mobility/applemobilitytrends-2020-06-21.csv')
 
@@ -60,6 +56,11 @@ def main():
     df_transit = df_transit.drop(
         columns=['transportation_type', 'geo_type', 'alternative_name', 'sub-region', 'country'])
 
+    place_apple = df['region'].unique().tolist()
+    place_facebook = df_fb_mobility['country'].unique().tolist()
+    place_google = df_google_mobility['country_region'].unique().tolist()
+    place_oxford = df_stringency['Entity'].unique().tolist()
+
     places_of_interest = ['Italy',
                           'Spain',
                           "France",
@@ -67,10 +68,20 @@ def main():
                           "Sweden",
                           "United Kingdom",
                           "Belgium",
-                          "Netherlands", "United States", "Australia"]
-    places_iso = ['ITA', 'ESP', 'FRA', 'DEU', 'SWE', 'GBR', 'BEL', 'NLD', 'USA', 'AUS']
+                          "Netherlands",
+                          "United States",
+                          "Australia",
+                          'Denmark',
+                          'Japan',
+                          'Brazil',
+                          'Philippines',
+                          'New Zealand']
+    places_iso = ['ITA', 'ESP', 'FRA', 'DEU', 'SWE', 'GBR', 'BEL', 'NLD', 'USA', 'AUS', 'DNK', 'JPN', 'BRA', 'PHL', 'NZL']
+    death_sizes = [34678, 28330, 29752, 9012, 5230, 43230, 9726, 6100, 126785, 104, 603, 968, 55054, 1212, 22]
+    confirmed_sizes = [239706, 294566, 161348, 193785, 63890, 307980, 61007, 49914, 2504676, 7595, 12636, 18110, 1233147, 33069, 1520]
 
-    place_dict = {}
+    calculated_score = []
+    stringency_score = []
     for place, iso in zip(places_of_interest, places_iso):
 
         #Apple
@@ -149,20 +160,43 @@ def main():
         plot_df['score'] = plot_df.apply(lambda x: score(x['Walking'], x['Public Transport'],
                                                          x['Retail & Recreation'], x['Transit Stations'], x['Workplaces'],
                                                          x['Residential'],x['Staying put'],
-                                                         x['Relative change in movement'],
-                                                         x['Government Response Stringency Index ((0 to 100, 100 = strictest))']), axis=1)
+                                                         x['Relative change in movement']), axis=1)
         plot_df = plot_df.drop(columns=['Walking','Driving','Public Transport',
                                         'Retail & Recreation','Grocery & pharmacy',
                                         'Parks', 'Transit Stations', 'Workplaces',
-                                        'Residential', 'Staying put', 'Relative change in movement',
-                                        'Government Response Stringency Index ((0 to 100, 100 = strictest))'])
+                                        'Residential', 'Staying put', 'Relative change in movement'])
 
 
 
-        place_dict[place] = plot_df.agg({'score': 'mean'})
-    print(place_dict)
+        calculated_score.append(plot_df.agg({'score': 'mean'}).tolist()[0])
+        stringency_score.append(plot_df.agg({'Government Response Stringency Index ((0 to 100, 100 = strictest))': 'mean'}).tolist()[0])
+    df = pd.DataFrame({'Adherence Score' : calculated_score,
+                       'Government Response Stringency Index ((0 to 100, 100 = strictest))': stringency_score,
+                       'Place': places_of_interest,
+                       'Number of Deceased':death_sizes,
+                       'Number of Confirmed Cases':confirmed_sizes})
 
-
+    sns.set(rc={'figure.figsize': (25, 10)})
+    sns.set_style("whitegrid")
+    g = sns.relplot(x="Adherence Score",
+                y="Government Response Stringency Index ((0 to 100, 100 = strictest))",
+                hue="Place",
+                size="Number of Deceased",
+                sizes=(min(death_sizes)/5., max(death_sizes)/5.),
+                alpha=.7,
+                palette="Paired",
+                data=df,
+                height=7, aspect=2.5, legend=False)
+    ax = g.axes[0, 0]
+    ax.set_ylabel('Mean Stringency Index')
+    for idx, row in df.iterrows():
+        x = row['Adherence Score']
+        y = row['Government Response Stringency Index ((0 to 100, 100 = strictest))']
+        text = row['Place']
+        ax.text(x, y, text, fontsize=14, rotation=30.)
+    plt.tight_layout()
+    plt.savefig(f'../img/score_death.pdf', dpi=600)
+    plt.clf()
 
 if __name__ == "__main__":
     main()
