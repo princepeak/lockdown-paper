@@ -191,11 +191,12 @@
 	
 	Define $\mathcal{M} = [M_{ijk}] \in \mathbb{R}^{N \times T \times K}$. $\mathcal{M}$ is assumed to have a few well behaved properties as required by the algorithm, namely, (1) $\mathcal{M} $ must be approximately low-rank and (2) every element $\left|M_{ijk}\right|$ shall have boundedness property (for details see \cite{AMSS19}). To check whether our model assumption holds in practice, we consider $N=185, T=150, K=2$, with $185$ countries as units. We consider number of confirmed cases and number of deceased as two metrics over $150$ days between January 22, 2020 and June 20, 2020. For assumption to hold, data matrix corresponding to number of confirmed cases and number of deceased and their combination should be approximated by a low-rank matrix. 
 	
-	\begin{figure}
-		\includegraphics[width=\textwidth]{rd}
+	\begin{figure*}
+		\centering
+		\includegraphics[width=0.8\textwidth]{rd}
 		\caption{The Singular Value spectrum for all countries (of dimensions $185 \times 150$, showing top 20 singular values, in descending order.} 
 		\label{fig1} 
-	\end{figure}
+	\end{figure*}
 	
 	As shown in Figure \ref{fig1}, the spectrum of the top 20 singular values (sorted in descending order) for each matrix. The plots clearly support the implications that most of the spectrum is concentrated within the top 5 principal components. The same conclusion holds true when units are states of The United States, and when we consider only countries in The  European Union.\par
 	
@@ -219,7 +220,7 @@
 	To understand this we use stringency and policy indices data from OxCGRT \cite{HWP2020}, which records the strictness of policies that restrict people’s behavior and includes 8 different measures - e.g. school  and workplace closure, cancellation of public events, restrictions on gathering size etc. Figure \ref{fig2}, shows the plot of stringency index, with mobility data. 
 
     
-\begin{figure}
+\begin{figure*}
 	\centering
 	\begin{subfigure}[b]{\textwidth}
 		\centering
@@ -248,7 +249,7 @@
 	
 	\caption[Mobility Trends]{Stringency index, and Mobility Trends in (a) Italy (b) Germany (c) Sweden (d) Spain (e) France.}
 	\label{fig2} 
-\end{figure}
+\end{figure*}
 
     It can be observed that the level of lock-down varies over time and geographic region. We use this information in two different ways. First we choose the maximum level of index, first increased level of restriction index, and 14 days after the maximum level of index as various intervention dates and compare their effects. Second, we combine this information with mobility data to select the control groups for a treatment unit as discussed below.
     
@@ -258,37 +259,35 @@
     
     Selecting donor group: We combine metrics that allow the spread of the virus and similarly combine those that reduces the possibility of spread. We combine them by taking average define a single adherence score. For unit $i \in [N]$, $\forall j \neq i : j \in [N]$, $j$ is a donor unit if adherence score, and stringency Index of $j$ is less than $i$. Figure \ref{fig3} shows this relation in graphical form for a selected set of countries. As per Figure \ref{fig3}, United States, Brazil and United Kingdom are in the donor group when we compute counterfactual estimate for Italy. 
     
-    \begin{figure}
+    \begin{figure*}
     	\centering
     	\begin{subfigure}[b]{\textwidth}
     		\centering
-    		\includegraphics[width=0.9\linewidth]{score_death}
+    		\includegraphics[width=0.7\linewidth]{score_death}
     	\end{subfigure}
     	
     	\begin{subfigure}[b]{\textwidth}
     		\centering
-    		\includegraphics[width=0.9\linewidth]{score_confirmed}
+    		\includegraphics[width=0.7\linewidth]{score_confirmed}
     	\end{subfigure}
     	
     	\caption[Mobility Trends]{Adherence score vs. Stringency index where size of each circle is determined by (a) total number of deaths till date (b) total number of confirmed cases till date.}
     	\label{fig3} 
-    \end{figure}
-
-	\begin{figure}
-	\centering
-	\includegraphics[width=0.9\textwidth]{mape_us}
-	\caption{MAPE} 
-	\label{fig4} 
-	\end{figure}
+    \end{figure*}
 
 	Statistical Performance Evaluation: in Figure \ref{fig4} we present the distribution of Mean and Median absolute percentage error statistic for the runs-forecasts from m-RSC algorithm with changing forecast horizon. We consider every Mondays between March 1, 2020 to June 21, 2020, both included to forecast the number of deaths at the end of the day on June 26, 2020 for all states in United States, and compare with actual data. For every state, donor group is selected using the method described above. 
-	
+		\begin{figure*}
+		\centering
+		\includegraphics[width=0.7\textwidth]{mape_us}
+		\caption{MAPE} 
+		\label{fig4} 
+	\end{figure*}
     It can be seen from Figure \ref{fig4}, that both Mean and Median absolute percentage error statistic are larger, when larger forecast horizon has been considered, and that is to be expected. Both MAPE and MdAPE converge to a less than 20 percent when horizon is about a week. MAPE being very large from MdAPE clearly indicates a right skew in the predicted values. This exactly corresponds to the places where exponential growth of the pandemic can be observed by March 22, 2020. The counterfactual prediction for June 26, 2020 on March 22, 2020 for these few places are several times higher as as expected, while, stricter stringency measures were being implemented in The United States around those dates.
     
 	\subsection{Data Source}
 	We use following five sources of data as described in Table \ref{Table1}:
 	
-	\begin{table}
+	\begin{table*}
 		\centering
 		\begin{tabularx}{0.9\textwidth}[t]{p{0.3\textwidth}X}
 			\hline
@@ -307,7 +306,7 @@
 		\end{tabularx}
 		\caption{Data Source}
 		\label{Table1}
-	\end{table}
+	\end{table*}
 	 
 \section{Results}
 \label{SEC4}
@@ -316,7 +315,7 @@ In this section we present three examples of the application of m-RSC to derive 
 	\subsection{State of New York}
 	New York has the highest number of confirmed cases in the United States. First case in New York was reported on 1st March, 2020 and New York went into a stricter lock-down on March 22nd, 2020. We estimate counterfactual considering this as date of intervention. We select among other states from US as donor group using the methods described above. This includes New Jersey, California, Illinois, and Florida among other states. By counterfactual estimate, the number of deaths in New York could have been 6 times higher, and number of confirmed cases could have been 5 times higher.
 	
-		\begin{figure}
+		\begin{figure*}
 			\centering
 			\begin{subfigure}[b]{\textwidth}
 				\centering
@@ -335,13 +334,13 @@ In this section we present three examples of the application of m-RSC to derive 
 
 			\caption[New York]{New York State: (a) Actual number of deaths with linear trend line and points where trend changed (b) Actual number of deaths with counterfactual prediction estimated by m-RSC with actual lock-down date as intervention point (c) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC.}
 			\label{fig5} 
-		\end{figure}
+		\end{figure*}
 	
 	
 	\subsection{Italy}
 	 Italy was put under lock-down between 8th March, 2020 - 4th May, 2020. We considered most European countries to model the donor group and selected based on criteria defined above. Based on our simulation, we observe that with lock-down measures  has been largely successful in Italy. Without such measures, the number of confirmed case could have been 8 times higher and number of deaths could have been 3 times higher by 26th of June, 2020.
 	 
-		\begin{figure}
+		\begin{figure*}
 		\centering
 		\begin{subfigure}[b]{\textwidth}
 			\centering
@@ -360,14 +359,14 @@ In this section we present three examples of the application of m-RSC to derive 
 		
 		\caption[Italy]{Italy: (a) Actual number of deaths with linear trend line and points where trend changed (b) Actual number of deaths with counterfactual prediction estimated by m-RSC with actual lock-down date as intervention point (c) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC.}
 		\label{fig6} 
-	\end{figure}
+	\end{figure*}
 
 	\subsection{Delhi, India}
 	India had one of the most strict stay home order across the country in first phase of the lock-down between 25 March 2020 – 14 April 2020 (21 days), where an entire population of 1.3 billion people was put under restricted movement. Overall the lock-down had multiple phases, second phase was from 15th of April 2020 to 3rd of May 2020, and third phase was 4th of May to 17th of May, 2020. We present the counterfactual for each of these dates. However, in this case we consider both the daily number of confirmed cases as well as the cumulative number of confirmed cases for phase three of the lock-down. We limit the donor group as all others states of India.
 	
 	Figure \ref{fig7} shows that counterfactual converges closely with the actual at third phase of the lock-down.  It should be noted that there are a few discrepancies in reporting. First, there is a weekly seasonality - possibly due to a lesser number of reports over the weekends. Second due to a revised higher number of reports on certain dates (high peak).
 	
-	\begin{figure}
+	\begin{figure*}
 		\centering
 		\begin{subfigure}[b]{\textwidth}
 			\centering
@@ -396,7 +395,7 @@ In this section we present three examples of the application of m-RSC to derive 
 		
 		\caption[Delhi]{Delhi, India: (a) Actual number of confirmed cases with  trend line and points where trend changed (b) Actual number of confirmed cases with counterfactual prediction estimated by m-RSC with First lock-down date as intervention point (c) On Second lock-down date (d) On third  lock-down date}
 		\label{fig7} 
-	\end{figure}
+	\end{figure*}
 	
 	Linear trend-line fit shows two change points in the growth of number of cases - indicating that the exponential phase came at much later date and growth of the epidemic was under effective control in the earlier stages. Since, the stay-home order was applicable across all states and adherence was almost uniform -  trajectory of actual and counterfactual remains nearly same.
 	
