@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  28 JUN 2020 09:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  28 JUN 2020 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,7 +259,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.87 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -427,37 +427,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--307
 File: ../img/us/New York_deaths_trend.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths_trend.pdf>
 Package pdftex.def Info: ../img/us/New York_deaths_trend.pdf  used on input lin
-e 322.
+e 323.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 <../img/us/New York_deaths.pdf, id=432, 1084.05pt x 361.35pt>
 File: ../img/us/New York_deaths.pdf Graphic file (type pdf)
 <use ../img/us/New York_deaths.pdf>
-Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 327.
+Package pdftex.def Info: ../img/us/New York_deaths.pdf  used on input line 328.
 
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 <../img/us/New York_confirmed cases.pdf, id=433, 1084.05pt x 361.35pt>
 File: ../img/us/New York_confirmed cases.pdf Graphic file (type pdf)
 <use ../img/us/New York_confirmed cases.pdf>
 Package pdftex.def Info: ../img/us/New York_confirmed cases.pdf  used on input 
-line 332.
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_deaths_trend.pdf, id=434, 1084.05pt x 361.35pt>
-File: ../img/other/Italy_deaths_trend.pdf Graphic file (type pdf)
-<use ../img/other/Italy_deaths_trend.pdf>
-Package pdftex.def Info: ../img/other/Italy_deaths_trend.pdf  used on input lin
-e 346.
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_deaths.pdf, id=435, 1084.05pt x 361.35pt>
-File: ../img/other/Italy_deaths.pdf Graphic file (type pdf)
-<use ../img/other/Italy_deaths.pdf>
-Package pdftex.def Info: ../img/other/Italy_deaths.pdf  used on input line 351.
-
-(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
-<../img/other/Italy_confirmed cases.pdf, id=436, 1084.05pt x 361.35pt>
-File: ../img/other/Italy_confirmed cases.pdf Graphic file (type pdf)
-<use ../img/other/Italy_confirmed cases.pdf>
-Package pdftex.def Info: ../img/other/Italy_confirmed cases.pdf  used on input 
-line 356.
+line 333.
 (pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
 [11 <../img/mape_us.pdf>] [12] [13 <../img/us/New York_deaths_trend.pdf> <../im
 g/us/New York_deaths.pdf
@@ -469,7 +451,60 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/us/New York_confirmed
  cases.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] [14 <../img/other/Italy_deaths_trend.pdf> <../img/other/Italy_deaths.pdf
+>]
+<../img/other/Italy_deaths_trend.pdf, id=504, 1084.05pt x 361.35pt>
+File: ../img/other/Italy_deaths_trend.pdf Graphic file (type pdf)
+<use ../img/other/Italy_deaths_trend.pdf>
+Package pdftex.def Info: ../img/other/Italy_deaths_trend.pdf  used on input lin
+e 348.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/other/Italy_deaths.pdf, id=505, 1084.05pt x 361.35pt>
+File: ../img/other/Italy_deaths.pdf Graphic file (type pdf)
+<use ../img/other/Italy_deaths.pdf>
+Package pdftex.def Info: ../img/other/Italy_deaths.pdf  used on input line 353.
+
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/other/Italy_confirmed cases.pdf, id=506, 1084.05pt x 361.35pt>
+File: ../img/other/Italy_confirmed cases.pdf Graphic file (type pdf)
+<use ../img/other/Italy_confirmed cases.pdf>
+Package pdftex.def Info: ../img/other/Italy_confirmed cases.pdf  used on input 
+line 358.
+(pdftex.def)             Requested size: 350.98878pt x 109.69604pt.
+<../img/in/Delhi_confirmed_trend.pdf, id=507, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed_trend.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed_trend.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed_trend.pdf  used on input lin
+e 374.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L1.pdf, id=508, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L1.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L1.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L1.pdf  used on input 
+line 379.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L2.pdf, id=509, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L2.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L2.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L2.pdf  used on input 
+line 384.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L3.pdf, id=510, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L3.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L3.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3.pdf  used on input 
+line 389.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+<../img/in/Delhi_confirmed cases-L3-CUM.pdf, id=511, 1084.05pt x 361.35pt>
+File: ../img/in/Delhi_confirmed cases-L3-CUM.pdf Graphic file (type pdf)
+<use ../img/in/Delhi_confirmed cases-L3-CUM.pdf>
+Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3-CUM.pdf  used on in
+put line 394.
+(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
+
+
+LaTeX Warning: Float too large for page by 7.11847pt on input line 399.
+
+[14] [15 <../img/other/Italy_deaths_trend.pdf> <../img/other/Italy_deaths.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_deaths.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
@@ -478,43 +513,8 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/other/Italy_confirmed
  cases.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->]
-<../img/in/Delhi_confirmed_trend.pdf, id=548, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed_trend.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed_trend.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed_trend.pdf  used on input lin
-e 372.
-(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
-<../img/in/Delhi_confirmed cases-L1.pdf, id=549, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed cases-L1.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed cases-L1.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L1.pdf  used on input 
-line 377.
-(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
-<../img/in/Delhi_confirmed cases-L2.pdf, id=550, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed cases-L2.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed cases-L2.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L2.pdf  used on input 
-line 382.
-(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
-<../img/in/Delhi_confirmed cases-L3.pdf, id=551, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed cases-L3.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed cases-L3.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3.pdf  used on input 
-line 387.
-(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
-<../img/in/Delhi_confirmed cases-L3-CUM.pdf, id=552, 1084.05pt x 361.35pt>
-File: ../img/in/Delhi_confirmed cases-L3-CUM.pdf Graphic file (type pdf)
-<use ../img/in/Delhi_confirmed cases-L3-CUM.pdf>
-Package pdftex.def Info: ../img/in/Delhi_confirmed cases-L3-CUM.pdf  used on in
-put line 392.
-(pdftex.def)             Requested size: 312.00105pt x 98.7237pt.
-
-
-LaTeX Warning: Float too large for page by 7.11847pt on input line 397.
-
-(./lockdown.bbl [15] [16 <../img/in/Delhi_confirmed_trend.pdf> <../img/in/Delhi
-_confirmed cases-L1.pdf
+>] [16 <../img/in/Delhi_confirmed_trend.pdf> <../img/in/Delhi_confirmed cases-L
+1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
 ses-L1.pdf): PDF inclusion: multiple pdfs with page group included in a single 
@@ -534,80 +534,86 @@ page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/in/Delhi_confirmed ca
 ses-L3-CUM.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+>] (./lockdown.bbl [17]
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 []\OT1/cmr/m/n/12 E. Kong, D. Prinz, The im-pact of shut-down poli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 \OT1/cmr/m/n/12 cies on un-em-ploy-ment dur-ing a pan-demic 24--
  []
 
 
-Overfull \hbox (12.00278pt too wide) in paragraph at lines 51--55
+Overfull \hbox (12.00278pt too wide) in paragraph at lines 71--75
 \OT1/cmr/m/n/12 72arXiv:https://cepr.org/sites/default/files/news/CovidEconomic
 s17.pdf. 
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 63--69
+Underfull \hbox (badness 4441) in paragraph at lines 83--89
 []\OT1/cmr/m/n/12 D. Ibarra-Vega, Lock-down, one, two, none, or smart. mod-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
+Underfull \hbox (badness 10000) in paragraph at lines 83--89
 \OT1/cmr/m/n/12 el-ing con-tain-ing covid-19 in-fec-tion. a con-cep-tual model,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
+Underfull \hbox (badness 10000) in paragraph at lines 83--89
 \OT1/cmr/m/n/12 Sci-ence of The To-tal En-vi-ron-ment 730 (2020) 138917.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--83
+Underfull \hbox (badness 10000) in paragraph at lines 91--103
 \OT1/cmr/m/n/12 arXiv:https://science.sciencemag.org/content/368/6489/395.full.
 pdf,
  []
 
-[17]) [18] (./lockdown.aux) ) 
+[18]
+Underfull \hbox (badness 1558) in paragraph at lines 129--136
+\OT1/cmr/m/n/12 ease dy-nam-ics, Vir-u-lence 4 (4) (2013) 295--306, 23552814[pm
+id].
+ []
+
+) [19] (./lockdown.aux) ) 
 Here is how much of TeX's memory you used:
- 5299 strings out of 480608
- 77245 string characters out of 5903630
- 325763 words of memory out of 5000000
- 21121 multiletter control sequences out of 15000+600000
+ 5302 strings out of 480608
+ 77302 string characters out of 5903630
+ 326779 words of memory out of 5000000
+ 21124 multiletter control sequences out of 15000+600000
  540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,12n,46p,1977b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-s12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lockdown.pdf (18 pages, 639440 bytes).
+ 48i,12n,46p,1977b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on lockdown.pdf (19 pages, 642150 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
+ 690 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

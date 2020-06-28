@@ -41,6 +41,26 @@ S.~Price, S.~Singh, S.~Ledot, P.~Bianchi, M.~Hind, G.~Tavazzi, P.~Vranckx,
   {\path{doi:10.1177/2048872620924613}}.
 \newline\urlprefix\url{https://doi.org/10.1177/2048872620924613}
 
+\bibitem{ap08746}
+A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
+  comparative case studies: Estimating the effect of california’s tobacco
+  control program, Journal of the American Statistical Association 105~(490)
+  (2010) 493--505.
+\newblock \href {http://dx.doi.org/10.1198/jasa.2009.ap08746}
+  {\path{doi:10.1198/jasa.2009.ap08746}}.
+
+\bibitem{JMLR18}
+M.~Amjad, D.~Shah, D.~Shen, Robust synthetic control, Journal of Machine
+  Learning Research 19~(22) (2018) 1--51.
+
+\bibitem{AMSS19}
+M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
+  \href{https://doi.org/10.1145/3341617.3326152}{Mrsc: Multi-dimensional robust
+  synthetic control}, Proc. ACM Meas. Anal. Comput. Syst. 3~(2).
+\newblock \href {http://dx.doi.org/10.1145/3341617.3326152}
+  {\path{doi:10.1145/3341617.3326152}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
+
 \bibitem{Koh2020}
 W.~C. Koh, L.~Naing, J.~Wong, Estimating the impact of physical distancing
   measures in containing covid-19: an empirical analysis, medRxiv\href
@@ -81,26 +101,6 @@ M.~Chinazzi, J.~T. Davis, M.~Ajelli, C.~Gioannini, M.~Litvinova, S.~Merler,
   {\path{doi:10.1126/science.aba9757}}.
 \newline\urlprefix\url{https://science.sciencemag.org/content/368/6489/395}
 
-\bibitem{ap08746}
-A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
-  comparative case studies: Estimating the effect of california’s tobacco
-  control program, Journal of the American Statistical Association 105~(490)
-  (2010) 493--505.
-\newblock \href {http://dx.doi.org/10.1198/jasa.2009.ap08746}
-  {\path{doi:10.1198/jasa.2009.ap08746}}.
-
-\bibitem{JMLR18}
-M.~Amjad, D.~Shah, D.~Shen, Robust synthetic control, Journal of Machine
-  Learning Research 19~(22) (2018) 1--51.
-
-\bibitem{AMSS19}
-M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
-  \href{https://doi.org/10.1145/3341617.3326152}{Mrsc: Multi-dimensional robust
-  synthetic control}, Proc. ACM Meas. Anal. Comput. Syst. 3~(2).
-\newblock \href {http://dx.doi.org/10.1145/3341617.3326152}
-  {\path{doi:10.1145/3341617.3326152}}.
-\newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
-
 \bibitem{HWP2020}
 T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira,
   \href{https://www.bsg.ox.ac.uk/research/publications}{Variation in government
@@ -124,5 +124,14 @@ Apple, \href{https://www.apple.com/covid19/mobility/}{Mobility trends reports}.
 
 \bibitem{Goog2020}
 J.~Fitzpatrick, K.~DeSalvo, Helping public health officials combat covid-19.
+
+\bibitem{Siettos2013}
+C.~I. Siettos, L.~Russo,
+  \href{https://pubmed.ncbi.nlm.nih.gov/23552814}{Mathematical modeling of
+  infectious disease dynamics}, Virulence 4~(4) (2013) 295--306,
+  23552814[pmid].
+\newblock \href {http://dx.doi.org/10.4161/viru.24041}
+  {\path{doi:10.4161/viru.24041}}.
+\newline\urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/23552814}
 
 \end{thebibliography}

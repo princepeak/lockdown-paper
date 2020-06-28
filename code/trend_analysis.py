@@ -52,7 +52,7 @@ def prepare(file, place, dates):
     return df
 
 
-def show_trend(df, country, place, metric, n_changepoints=2, events=None):
+def show_trend(df, country, place, metric, n_changepoints=20, events=None):
     """
     Show trend of log10(@variable) using fbprophet package.
     @ncov_df <pd.DataFrame>: the clean data
@@ -90,8 +90,8 @@ def show_trend(df, country, place, metric, n_changepoints=2, events=None):
             text(evt['date'], middle, f'{evt["date"]}: {evt["event"]}', rotation=90, fontsize=8, color='gray')
     _ = add_changepoints_to_plot(fig.gca(), model, forecast, cp_color='tomato')
     name = f"{place}: "
-    plt.title(f"{name} Daily number of {metric} over time and chainge points")
-    plt.ylabel(f"Daily number of {metric}")
+    plt.title(f"{name} Cumulative number of {metric} over time and chainge points")
+    plt.ylabel(f"Cumulative number of {metric}")
     plt.xlabel("")
     ax.xaxis.set_major_formatter(DateFormatter('%b,%Y'))
     ax.grid(False)

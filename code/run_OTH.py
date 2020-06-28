@@ -12,14 +12,11 @@ lockdown_state = [
                                                             "Sweden",
                                                             "United Kingdom",
                                                             "Belgium",
-                                                            "Netherlands"]},
-    {'name':'Spain','start': '3/8/20', 'end':'', 'control':["France",
-                                                            "Italy",
-                                                            "Brazil"]}
+                                                            "Netherlands"]}
 ]
 
 def main():
-    #update()
+    update()
     prepare()
     metric = ['deaths', 'confirmed']
     file2 = f'../data/processed/other/{metric[1]}.csv'

@@ -132,7 +132,7 @@
 	
 		
 		\begin{abstract}
-			The ongoing pandemic of coronavirus disease 2019-2020 (COVID-19), caused by Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). A pathogenic virus SARS-CoV-2 is able to spread asymptotically during its incubation stage through a vulnerable population. Given the state of healthcare, policymakers were to contain the spread of infection, minimize stress on the health systems and ensure public safety. Taking measures to reduce stress on the health sector and diminishing the number of infected patients is important to end the pandemic. Most effective tool that was at disposal is to close non-essential business and issue stay home order. In this paper we consider techniques and measure the effectiveness of stringency measures adopted by governments across the world. Analyzing effectiveness of control measures like lock-down allows us to understand whether the decisions made were optimal and resulted in a reduction of burden on the healthcare system. In specific we consider using synthetic control to construct alternative scenarios and understand what would have been the effect on health if a less stringent measures were to adopt. We present analysis for State of New York, United States, Italy and Indian capital city Delhi and show how lock-down measures has helped and what counterfactual scenarios would have been in comparison to the current state of affairs. We show that in New York number of deaths could have been x times higher, and Italy the number of confirmed case could have been x and number of deaths could have been y by 26th of June, 2020.
+			The ongoing pandemic of coronavirus disease 2019-2020 (COVID-19), caused by Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). A pathogenic virus SARS-CoV-2 is able to spread asymptotically during its incubation stage through a vulnerable population. Given the state of healthcare, policymakers were to contain the spread of infection, minimize stress on the health systems and ensure public safety. Taking measures to reduce stress on the health sector and diminishing the number of infected patients is important to end the pandemic. Most effective tool that was at disposal is to close non-essential business and issue stay home order. In this paper we consider techniques and measure the effectiveness of stringency measures adopted by governments across the world. Analyzing effectiveness of control measures like lock-down allows us to understand whether the decisions made were optimal and resulted in a reduction of burden on the healthcare system. In specific we consider using synthetic control to construct alternative scenarios and understand what would have been the effect on health if a less stringent measures were to adopt. We present analysis for State of New York, United States, Italy and Indian capital city Delhi and show how lock-down measures has helped and what counterfactual scenarios would have been in comparison to the current state of affairs. We show that in New York number of deaths could have been 6 times higher, and Italy the number of confirmed case could have been 8 times higher and number of deaths could have been 3 times higher by 26th of June, 2020.
 		\end{abstract}
 		
 		\begin{keyword}
@@ -256,7 +256,7 @@
     
     It can be seen from Figure \ref{fig2}, that the adherence  and stringency level do not correspond. For example, in Sweden, with increasing level of government measures between March - April, there has not been any significant change in proportion of people staying put or moving between regions. Similarly, in other places, it can be observed that while government measures remain at the same level over April, number of people staying put at one place starts declining. 
     
-    Selecting donor group: We combine metrics that allow the spread of the virus and similarly combine those that reduces the possibility by taking average of them and come with a single adherence score. For unit $i \in [N]$, $\forall j \neq i : j \in [N]$, $j$ is a donor unit if adherence score, stringency Index of $j$ is less than $i$ and corresponding metric is higher (i.e. total number of deaths till date, or total number of confirmed cases till date, respectively). Figure \ref{fig3} shows this relation in graphical form for a selected set of countries. As per Figure \ref{fig3}, United States, Brazil and United Kingdom are in the donor group when we compute counterfactual estimate for Italy and metric under consideration is total number of confirmed cases till date. 
+    Selecting donor group: We combine metrics that allow the spread of the virus and similarly combine those that reduces the possibility of spread. We combine them by taking average define a single adherence score. For unit $i \in [N]$, $\forall j \neq i : j \in [N]$, $j$ is a donor unit if adherence score, and stringency Index of $j$ is less than $i$. Figure \ref{fig3} shows this relation in graphical form for a selected set of countries. As per Figure \ref{fig3}, United States, Brazil and United Kingdom are in the donor group when we compute counterfactual estimate for Italy. 
     
     \begin{figure}
     	\centering
@@ -314,6 +314,7 @@
 In this section we present three examples of the application of m-RSC to derive the counterfactual estimates of possible number of deaths under the changed conditions like delaying or starting the stringency measures at earlier date. We consider three different units of treatments, namely: State of New York, Italy and Indian capital city Delhi. In some sense these place have also been termed as regional epicenters of the epidemic.
 
 	\subsection{State of New York}
+	New York has the highest number of confirmed cases in the United States. First case in New York was reported on 1st March, 2020 and New York went into a stricter lock-down on March 22nd, 2020. We estimate counterfactual considering this as date of intervention. We select among other states from US as donor group using the methods described above. This includes New Jersey, California, Illinois, and Florida among other states. By counterfactual estimate, the number of deaths in New York could have been 6 times higher, and number of confirmed cases could have been 5 times higher.
 	
 		\begin{figure}
 			\centering
@@ -338,7 +339,8 @@ In this section we present three examples of the application of m-RSC to derive 
 	
 	
 	\subsection{Italy}
-	
+	 Italy was put under lock-down between 8th March, 2020 - 4th May, 2020. We consider most European to model the donor group and select based on criteria defined above. Base on our simulation, we observe that with lock-down measures  has been largely successful in Italy. Without such measures, the number of confirmed case could have been 8 times higher and number of deaths could have been 3 times higher by 26th of June, 2020.
+	 
 		\begin{figure}
 		\centering
 		\begin{subfigure}[b]{\textwidth}
@@ -400,8 +402,11 @@ In this section we present three examples of the application of m-RSC to derive 
 	
 	\section{Discussion and Concluding Remarks}
 	\label{SEC5}
+	In this work we use Multi-dimensional Robust Synthetic Control to understand the effects of stringency measure on COVID-19 pandemic. We construct the synthetic version of a location as the convex combination of other geographic locations in the donor pool that most closely resembled the treatment unit in terms of pre-intervention using stringency index and mobility information. 	Results has been compared for New York, Italy and Delhi, India with actual metric to that of counterfactual predicted by the algorithm.
 	
+	in order to assess the robustness of the predictor we have computed MAPE and MdAPE measures and shown their convergence to less that 20\% absolute error rate. In future we would like to include  additional predictors like testing data, and virus strain information as they become available. 
 	
+	Another direction of this study is to include parametric epidemic models like SIR-F\cite{Siettos2013}, and compare with m-RSC.
 	%% References
 	\bibliographystyle{elsarticle-num}
 	\bibliography{lockdown.bib}	

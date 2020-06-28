@@ -7,47 +7,53 @@ Repeated entry---line 177 of file lockdown.bib
  : @article {Chinazzi395
  :                      ,
 I'm skipping whatever remains of this entry
+Warning--I'm ignoring Siettos2013's extra "note" field
+--line 237 of file lockdown.bib
+Warning--I'm ignoring Siettos2013's extra "note" field
+--line 238 of file lockdown.bib
+Warning--I'm ignoring Siettos2013's extra "url" field
+--line 242 of file lockdown.bib
 Warning--empty journal in KP2020
 Warning--empty year in KP2020
-You've used 18 entries,
+You've used 19 entries,
             2937 wiz_defined-function locations,
-            812 strings with 9554 characters,
-and the built_in function-call counts, 5453 in all, are:
-= -- 491
-> -- 258
+            827 strings with 9849 characters,
+and the built_in function-call counts, 5818 in all, are:
+= -- 533
+> -- 265
 < -- 0
-+ -- 98
-- -- 80
-* -- 463
-:= -- 807
-add.period$ -- 24
-call.type$ -- 18
-change.case$ -- 18
++ -- 101
+- -- 82
+* -- 499
+:= -- 855
+add.period$ -- 26
+call.type$ -- 19
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 145
-empty$ -- 552
-format.name$ -- 95
-if$ -- 1349
+cite$ -- 21
+duplicate$ -- 156
+empty$ -- 591
+format.name$ -- 98
+if$ -- 1444
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 14
-newline$ -- 76
-num.names$ -- 18
-pop$ -- 107
+int.to.str$ -- 19
+missing$ -- 15
+newline$ -- 81
+num.names$ -- 19
+pop$ -- 111
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 310
+skip$ -- 329
 stack$ -- 0
-substring$ -- 232
-swap$ -- 38
+substring$ -- 255
+swap$ -- 42
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 35
-width$ -- 20
-write$ -- 164
+while$ -- 37
+width$ -- 21
+write$ -- 176
 (There was 1 error message)
