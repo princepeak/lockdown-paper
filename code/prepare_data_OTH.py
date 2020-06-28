@@ -9,6 +9,9 @@ def get_resultant_DF(countryList, df):
         dfList.append(tdf)
     df = pd.concat(dfList)
     df = df.drop(columns=['Province/State', 'Lat', 'Long'])
+    # df = df.set_index('Country/Region')
+    # df = df.rolling(window=2, min_periods=1, axis=1).max()
+    # df = df.reset_index()
     columns = df.columns.tolist()
     dates = columns[1:]
     start = dates[0]
