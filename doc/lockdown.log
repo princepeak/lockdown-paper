@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  28 JUN 2020 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.31)  28 JUN 2020 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,9 +305,14 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+Overfull \hbox (3.12093pt too wide) in paragraph at lines 134--136
+\OT1/cmr/m/n/12 The on-go-ing pan-demic of coro-n-avirus dis-ease 2019-2020 (CO
+VID-19) is caused
+ []
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 147
 .
-
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -383,17 +388,18 @@ ingle page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/mobility/Mobility Tre
 nds in France.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
->] [9]
-<../img/score_death.pdf, id=326, 1264.725pt x 505.89pt>
+>]
+<../img/score_death.pdf, id=323, 1264.725pt x 505.89pt>
 File: ../img/score_death.pdf Graphic file (type pdf)
 <use ../img/score_death.pdf>
 Package pdftex.def Info: ../img/score_death.pdf  used on input line 265.
 (pdftex.def)             Requested size: 350.99762pt x 140.3977pt.
-<../img/score_confirmed.pdf, id=327, 1264.725pt x 505.89pt>
+<../img/score_confirmed.pdf, id=324, 1264.725pt x 505.89pt>
 File: ../img/score_confirmed.pdf Graphic file (type pdf)
 <use ../img/score_confirmed.pdf>
 Package pdftex.def Info: ../img/score_confirmed.pdf  used on input line 270.
 (pdftex.def)             Requested size: 350.99762pt x 140.3977pt.
+ [9]
 <../img/mape_us.pdf, id=328, 1084.05pt x 361.35pt>
 File: ../img/mape_us.pdf Graphic file (type pdf)
 <use ../img/mape_us.pdf>
@@ -582,7 +588,7 @@ id].
 Here is how much of TeX's memory you used:
  5302 strings out of 480608
  77302 string characters out of 5903630
- 326779 words of memory out of 5000000
+ 325779 words of memory out of 5000000
  21124 multiletter control sequences out of 15000+600000
  540667 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -610,7 +616,7 @@ ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lockdown.pdf (19 pages, 642150 bytes).
+Output written on lockdown.pdf (19 pages, 642023 bytes).
 PDF statistics:
  690 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams
