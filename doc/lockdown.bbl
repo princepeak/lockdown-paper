@@ -1,0 +1,137 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{taaa021}
+Y.~Liu, A.~A. Gayle, A.~Wilder-Smith, J.~Rocklöv,
+  \href{https://doi.org/10.1093/jtm/taaa021}{The reproductive number of
+  covid-19 is higher compared to sars coronavirus}, Journal of Travel Medicine
+  27~(2).
+\newblock \href {http://dx.doi.org/10.1093/jtm/taaa021}
+  {\path{doi:10.1093/jtm/taaa021}}.
+\newline\urlprefix\url{https://doi.org/10.1093/jtm/taaa021}
+
+\bibitem{GN2020}
+G.~Viceconte, N.~Petrosillo,
+  \href{https://pubmed.ncbi.nlm.nih.gov/32201554}{Covid-19 r0: Magic number or
+  conundrum?}, Infectious disease reports 12~(1) (2020) 8516--8516.
+\newline\urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/32201554}
+
+\bibitem{BPH2020}
+A.~Banerjee, L.~Pasea, S.~Harris, A.~Gonzalez-Izquierdo, A.~Torralbo,
+  L.~Shallcross, M.~Noursadeghi, D.~Pillay, N.~Sebire, C.~Holmes, C.~Pagel,
+  W.~K. Wong, C.~Langenberg, B.~Williams, S.~Denaxas, H.~Hemingway, Estimating
+  excess 1-year mortality associated with the covid-19 pandemic according to
+  underlying conditions and age: a population-based cohort study, The Lancet
+  395~(10238) (2020) 1715--1725.
+
+\bibitem{RIS2020}
+A.~Rismanbaf, Potential treatments for covid-19; a narrative literature review,
+  Archives of academic emergency medicine 8~(1) (2020) e29--e29.
+
+\bibitem{PSL2020}
+S.~Price, S.~Singh, S.~Ledot, P.~Bianchi, M.~Hind, G.~Tavazzi, P.~Vranckx,
+  \href{https://doi.org/10.1177/2048872620924613}{Respiratory management in
+  severe acute respiratory syndrome coronavirus 2 infection}, European Heart
+  Journal: Acute Cardiovascular Care 9~(3) (2020) 229--238.
+\newblock \href {http://dx.doi.org/10.1177/2048872620924613}
+  {\path{doi:10.1177/2048872620924613}}.
+\newline\urlprefix\url{https://doi.org/10.1177/2048872620924613}
+
+\bibitem{ap08746}
+A.~Abadie, A.~Diamond, J.~Hainmueller, Synthetic control methods for
+  comparative case studies: Estimating the effect of california’s tobacco
+  control program, Journal of the American Statistical Association 105~(490)
+  (2010) 493--505.
+\newblock \href {http://dx.doi.org/10.1198/jasa.2009.ap08746}
+  {\path{doi:10.1198/jasa.2009.ap08746}}.
+
+\bibitem{JMLR18}
+M.~Amjad, D.~Shah, D.~Shen, Robust synthetic control, Journal of Machine
+  Learning Research 19~(22) (2018) 1--51.
+
+\bibitem{AMSS19}
+M.~Amjad, V.~Misra, D.~Shah, D.~Shen,
+  \href{https://doi.org/10.1145/3341617.3326152}{Mrsc: Multi-dimensional robust
+  synthetic control}, Proc. ACM Meas. Anal. Comput. Syst. 3~(2).
+\newblock \href {http://dx.doi.org/10.1145/3341617.3326152}
+  {\path{doi:10.1145/3341617.3326152}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3341617.3326152}
+
+\bibitem{Koh2020}
+W.~C. Koh, L.~Naing, J.~Wong, Estimating the impact of physical distancing
+  measures in containing covid-19: an empirical analysis, medRxiv\href
+  {http://dx.doi.org/10.1101/2020.06.11.20128074}
+  {\path{doi:10.1101/2020.06.11.20128074}}.
+
+\bibitem{KP2020}
+E.~Kong, D.~Prinz, The impact of shutdown policies on unemployment during a
+  pandemic  24--72\href
+  {http://arxiv.org/abs/https://cepr.org/sites/default/files/news/CovidEconomics17.pdf}
+  {\path{arXiv:https://cepr.org/sites/default/files/news/CovidEconomics17.pdf}}.
+
+\bibitem{Supino2020}
+M.~Supino, A.~d{\textquoteright}Onofrio, F.~Luongo, G.~Occhipinti, A.~Dal~Co,
+  The effects of containment measures in the italian outbreak of covid-19,
+  medRxiv\href {http://dx.doi.org/10.1101/2020.03.25.20042713}
+  {\path{doi:10.1101/2020.03.25.20042713}}.
+
+\bibitem{IVEGA2020}
+D.~Ibarra-Vega, Lockdown, one, two, none, or smart. modeling containing
+  covid-19 infection. a conceptual model, Science of The Total Environment 730
+  (2020) 138917.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.scitotenv.2020.138917}
+  {\path{doi:https://doi.org/10.1016/j.scitotenv.2020.138917}}.
+
+\bibitem{Chinazzi395}
+M.~Chinazzi, J.~T. Davis, M.~Ajelli, C.~Gioannini, M.~Litvinova, S.~Merler,
+  A.~Pastore~y Piontti, K.~Mu, L.~Rossi, K.~Sun, C.~Viboud, X.~Xiong, H.~Yu,
+  M.~E. Halloran, I.~M. Longini, A.~Vespignani,
+  \href{https://science.sciencemag.org/content/368/6489/395}{The effect of
+  travel restrictions on the spread of the 2019 novel coronavirus (covid-19)
+  outbreak}, Science 368~(6489) (2020) 395--400.
+\newblock \href
+  {http://arxiv.org/abs/https://science.sciencemag.org/content/368/6489/395.full.pdf}
+  {\path{arXiv:https://science.sciencemag.org/content/368/6489/395.full.pdf}},
+  \href {http://dx.doi.org/10.1126/science.aba9757}
+  {\path{doi:10.1126/science.aba9757}}.
+\newline\urlprefix\url{https://science.sciencemag.org/content/368/6489/395}
+
+\bibitem{HWP2020}
+T.~Hale, S.~Webster, A.~Petherick, T.~Phillips, B.~Kira,
+  \href{https://www.bsg.ox.ac.uk/research/publications}{Variation in government
+  responses to covid-19}.
+\newline\urlprefix\url{https://www.bsg.ox.ac.uk/research/publications}
+
+\bibitem{DDG2020}
+E.~Dong, H.~Du, L.~Gardner, {{A}n interactive web-based dashboard to track
+  {C}{O}{V}{I}{D}-19 in real time}, Lancet Infect Dis 20~(5) (2020) 533--534.
+
+\bibitem{JM2020}
+K.~Jin, L.~McGorman,
+  \href{https://about.fb.com/news/2020/04/data-for-good/}{Data for good: New
+  tools to help health researchers track and combat {C}{O}{V}{I}{D}-19} (4
+  2020).
+\newline\urlprefix\url{https://about.fb.com/news/2020/04/data-for-good/}
+
+\bibitem{Apple2020}
+Apple, \href{https://www.apple.com/covid19/mobility/}{Mobility trends reports}.
+\newline\urlprefix\url{https://www.apple.com/covid19/mobility/}
+
+\bibitem{Goog2020}
+J.~Fitzpatrick, K.~DeSalvo, Helping public health officials combat covid-19.
+
+\bibitem{Siettos2013}
+C.~I. Siettos, L.~Russo,
+  \href{https://pubmed.ncbi.nlm.nih.gov/23552814}{Mathematical modeling of
+  infectious disease dynamics}, Virulence 4~(4) (2013) 295--306,
+  23552814[pmid].
+\newblock \href {http://dx.doi.org/10.4161/viru.24041}
+  {\path{doi:10.4161/viru.24041}}.
+\newline\urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/23552814}
+
+\end{thebibliography}
